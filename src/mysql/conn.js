@@ -7,6 +7,7 @@
 //   //连接数据库
 //   var connection = mysql.createConnection({
 //     host: 'localhost',
+//     mo
 //     user: 'root',
 //     password: 'root',   //密码
 //     database: 'aymc',
