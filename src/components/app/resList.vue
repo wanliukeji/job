@@ -184,6 +184,9 @@ export default {
     /*border: #151515 1px solid;*/
     border-bottom: #e0e1e3 1px dashed;
     min-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-top-left {

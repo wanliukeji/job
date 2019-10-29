@@ -14,13 +14,13 @@
     <van-search placeholder="请输入搜索关键词" v-model="value" shape="round" class="search"/>
     <div style="position: relative;">
       <ul class="tab-ul">
-        <li class="tab-ul-li" v-for="i in [1,2,3,4,5,6,7,8,9,10]">
+        <li class="tab-ul-li" v-for="i in [1,2,3,4,5,6,7,8,9,10]" @click="goTo('jobInfo')">
           <div class="li-top">
             <p>
               <span class="p-title">PHP</span>
               <span class="p-right-a">8000~12000</span>
             </p>
-            <p>
+            <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
               <span class="tab-ul-li-p-span">苏州</span>
               <i class="tab-ul-li-p-i"></i>
               <span class="tab-ul-li-p-span">3-5年</span>
@@ -104,6 +104,9 @@ export default {
         this.isLoading = false
         this.count++
       }, 500)
+    },
+    goTo (name) {
+      this.$router.push({name: name})
     }
   }
 }
@@ -159,6 +162,9 @@ export default {
   .li-top {
     border-bottom: #F2F2F2 1px solid;
     padding: 0px 0px 10px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-div {
@@ -177,17 +183,26 @@ export default {
     display: inline-block;
     width: 60%;
     vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-div-name {
     color: #212121;
     font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-div-p {
     padding: 0;
     white-space: nowrap;
     margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-div-span {
@@ -195,6 +210,9 @@ export default {
     font-size: 12px;
     vertical-align: bottom;
     margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-right {

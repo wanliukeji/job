@@ -10,7 +10,7 @@
             <span class="p-title">PHP</span>
             <span class="p-right-a">8000~12000</span>
           </p>
-          <p style="line-height: 50px;">
+          <p style="line-height: 50px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
               <span class="tab-ul-li-p-span">
               <svg t="1572054956259" class="icon" viewBox="0 0 1024 1024" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" p-id="2100" width="16" height="16"><path
@@ -54,20 +54,20 @@
     <van-row>
       <van-col span="24">
         <div class="van-row-div">
-          <p>
+          <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
             <span class="p-title" style="font-size: 18px;">网易科技</span>
             <span class="tab-ul-li-p-span"
                   style="font-size: 13px; color: #808080; margin-left: 10px;"><a>江苏</a> <a>苏州</a></span>
           </p>
 
-          <p style="white-space: nowrap;">
+          <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
             <span class="li-bottom-div-span">500-999人</span>
             <span class="li-bottom-div-span">国有企业</span>
             <span class="li-bottom-div-span">互联网/电子商务</span>
           </p>
 
           <div class="row-col-name">
-            <p class="row-col-name-p">
+            <p class="row-col-name-p" @click="goTo('jobList');">
               <span class="row-col-name-left">该公司所有的职位</span>
               <span style="float: right;">
                 <svg t="1572225644917" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -215,6 +215,9 @@ export default {
         this.isLoading = false
         this.count++
       }, 500)
+    },
+    goTo (name) {
+      this.$router.push({name: name})
     }
   }
 }
@@ -352,6 +355,9 @@ export default {
     line-height: 40px;
     font-size: 16px;
     color: #151515;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .row-col-name-left {

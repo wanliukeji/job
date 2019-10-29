@@ -64,7 +64,7 @@
           <van-tabs type="card">
             <van-tab title="在招职位">
               <ul>
-                <li class="card-li" v-for="i in [0,1,2,3]">
+                <li class="card-li" v-for="i in [0,1,2,3]" @click="goTo('jobInfo')">
                   <div>
                     <p>
                       <span class="job-name">JAVA</span>
@@ -72,7 +72,7 @@
                     </p>
                   </div>
                   <div class="job-bottom">
-                    <p style="line-height: 38px;">
+                    <p style="line-height: 38px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
                       <span style="color: #9b9b9b;">
                                         <svg t="1572054956259" class="icon" viewBox="0 0 1024 1024" version="1.1"
                                              xmlns="http://www.w3.org/2000/svg" p-id="2100" width="16" height="16"><path
@@ -156,78 +156,81 @@
   </div>
 </template>
 <script>
-    export default {
-        name: "compayInfo",
-        data() {
-            return {
-                addr: '松花江',
-                x: '',
-                y: ''
-            }
-        },
-        mounted() {
-            /**================================================= 地图初始化定位 start ============================================*/
-            var geolocation = new BMap.Geolocation();
-            this.x = '';
-            this.y = '';
-            geolocation.getCurrentPosition(function (r) {
-                if (this.getStatus() == BMAP_STATUS_SUCCESS) {
-                    var mk = new BMap.Marker(r.point);
-                    map.addOverlay(mk);
-                    map.panTo(r.point);
-                    this.x = r.point.lng;
-                    this.y = r.point.lat;
-                } else {
-                    console.log('failed' + this.getStatus());
-                }
-            }, {enableHighAccuracy: true});
-
-            /**================================================= 地图初始化 start ============================================*/
-            var map = new BMap.Map("container");    // 创建Map实例
-            map.centerAndZoom(new BMap.Point(this.x, this.y), 11);  // 初始化地图,设置中心点坐标和地图级别
-            //添加地图类型控件
-            map.addControl(new BMap.MapTypeControl({
-                mapTypes: [
-                    BMAP_NORMAL_MAP,
-                    BMAP_HYBRID_MAP
-                ]
-            }));
-            map.addControl(new BMap.NavigationControl());
-            map.addControl(new BMap.ScaleControl());
-            map.addControl(new BMap.OverviewMapControl());
-            map.addControl(new BMap.MapTypeControl());
-            map.setCurrentCity("宁波");          // 设置地图显示的城市 此项是必须设置的
-            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-            var styleOptions = {
-                strokeColor: "red",    //边线颜色。
-                fillColor: "red",      //填充颜色。当参数为空时，圆形将没有填充效果。
-                strokeWeight: 3,       //边线的宽度，以像素为单位。
-                strokeOpacity: 0.8,    //边线透明度，取值范围0 - 1。
-                fillOpacity: 0.6,      //填充的透明度，取值范围0 - 1。
-                strokeStyle: 'solid' //边线的样式，solid或dashed。
-            }
-            var local = new BMap.LocalSearch(map, {
-                renderOptions: {map: map}
-            });
-            // 关键词搜索
-            local.search('松花江');
-        },
-        methods: {
-            onClickLeft() {
-                history.go(-1);
-            },
-            onClickRight() {
-                Toast('按钮');
-            },
-            onRefresh() {
-                setTimeout(() => {
-                    this.$toast('刷新成功');
-                    this.isLoading = false;
-                    this.count++;
-                }, 500);
-            }
-        }
+export default {
+  name: 'compayInfo',
+  data () {
+    return {
+      addr: '松花江',
+      x: '',
+      y: ''
     }
+  },
+  mounted () {
+    /** ================================================= 地图初始化定位 start ============================================ */
+    var geolocation = new BMap.Geolocation()
+    this.x = ''
+    this.y = ''
+    geolocation.getCurrentPosition(function (r) {
+      if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+        var mk = new BMap.Marker(r.point)
+        map.addOverlay(mk)
+        map.panTo(r.point)
+        this.x = r.point.lng
+        this.y = r.point.lat
+      } else {
+        console.log('failed' + this.getStatus())
+      }
+    }, {enableHighAccuracy: true})
+
+    /** ================================================= 地图初始化 start ============================================ */
+    var map = new BMap.Map('container') // 创建Map实例
+    map.centerAndZoom(new BMap.Point(this.x, this.y), 11) // 初始化地图,设置中心点坐标和地图级别
+    // 添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+      mapTypes: [
+        BMAP_NORMAL_MAP,
+        BMAP_HYBRID_MAP
+      ]
+    }))
+    map.addControl(new BMap.NavigationControl())
+    map.addControl(new BMap.ScaleControl())
+    map.addControl(new BMap.OverviewMapControl())
+    map.addControl(new BMap.MapTypeControl())
+    map.setCurrentCity('宁波') // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true) // 开启鼠标滚轮缩放
+    var styleOptions = {
+      strokeColor: 'red', // 边线颜色。
+      fillColor: 'red', // 填充颜色。当参数为空时，圆形将没有填充效果。
+      strokeWeight: 3, // 边线的宽度，以像素为单位。
+      strokeOpacity: 0.8, // 边线透明度，取值范围0 - 1。
+      fillOpacity: 0.6, // 填充的透明度，取值范围0 - 1。
+      strokeStyle: 'solid' // 边线的样式，solid或dashed。
+    }
+    var local = new BMap.LocalSearch(map, {
+      renderOptions: {map: map}
+    })
+    // 关键词搜索
+    local.search('松花江')
+  },
+  methods: {
+    onClickLeft () {
+      history.go(-1)
+    },
+    onClickRight () {
+      Toast('按钮')
+    },
+    onRefresh () {
+      setTimeout(() => {
+        this.$toast('刷新成功')
+        this.isLoading = false
+        this.count++
+      }, 500)
+    },
+    goTo (name) {
+      this.$router.push({name: name})
+    }
+  }
+}
 </script>
 <style scoped>
   .model {
@@ -277,6 +280,9 @@
     font-weight: bolder;
     color: #000;
     vertical-align: bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .col-icon {
@@ -295,6 +301,9 @@
     color: #404040;
     font-size: 16px;
     line-height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .row-col-link {
@@ -314,6 +323,9 @@
     font-size: 18px;
     color: #00c192;
     line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .van-col-map {
@@ -324,7 +336,7 @@
   .addr {
     color: #444444;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 40px;
   }
 
@@ -360,12 +372,18 @@
   .job-bottom {
     width: 100%;
     margin-top: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .job-time {
     color: #9b9b9b;
     font-size: 12px;
     float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .job-text {
@@ -422,6 +440,9 @@
     vertical-align: top;
     color: #999999;
     margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom {

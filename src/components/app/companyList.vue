@@ -12,7 +12,7 @@
     <van-search placeholder="请输入搜索关键词" v-model="value" shape="round" class="search"/>
     <div style="position: relative;">
       <ul>
-        <li class="row-lis" v-for="i in [1,2,3,4,5]">
+        <li class="row-lis" v-for="i in [1,2,3,4,5]" @click="goTo('compayInfo')">
           <div class="li-left">
             <h3 class="p-title">阿里巴巴</h3>
             <p class="li-left-p">该企业有10个在招职位</p>
@@ -37,57 +37,60 @@
 </template>
 
 <script>
-    export default {
-        name: "companyList",
-        data() {
-            return {
-                value: '',
-                value1: 0,
-                value2: 'a',
-                value3: 'a',
-                value4: 'a',
-                option1: [
-                    {text: '工作地点', value: 0},
-                    {text: '不限', value: 1},
-                    {text: '北仑区', value: 2},
-                    {text: '江东区', value: 3},
-                    {text: '鄞州区', value: 4},
-                    {text: '镇海区', value: 5},
-                    {text: '海曙区', value: 6},
-                    {text: '宁海县', value: 7},
-                    {text: '余姚县', value: 8}
-                ],
-                option2: [
-                    {text: '行业领域', value: 'a'}
-                ],
-                option3: [
-                    {text: '职业类型', value: 'a'},
-                    {text: '不限', value: 'b'}
-                ],
-                option4: [
-                    {text: '更多', value: 'a'},
-                    {text: '不限', value: 'b'}
-                ],
-                count: 0,
-                isLoading: false
-            }
-        },
-        methods: {
-            onClickLeft() {
-                history.go(-1);
-            },
-            onClickRight() {
-                Toast('按钮');
-            },
-            onRefresh() {
-                setTimeout(() => {
-                    this.$toast('刷新成功');
-                    this.isLoading = false;
-                    this.count++;
-                }, 500);
-            }
-        }
+export default {
+  name: 'companyList',
+  data () {
+    return {
+      value: '',
+      value1: 0,
+      value2: 'a',
+      value3: 'a',
+      value4: 'a',
+      option1: [
+        {text: '工作地点', value: 0},
+        {text: '不限', value: 1},
+        {text: '北仑区', value: 2},
+        {text: '江东区', value: 3},
+        {text: '鄞州区', value: 4},
+        {text: '镇海区', value: 5},
+        {text: '海曙区', value: 6},
+        {text: '宁海县', value: 7},
+        {text: '余姚县', value: 8}
+      ],
+      option2: [
+        {text: '行业领域', value: 'a'}
+      ],
+      option3: [
+        {text: '职业类型', value: 'a'},
+        {text: '不限', value: 'b'}
+      ],
+      option4: [
+        {text: '更多', value: 'a'},
+        {text: '不限', value: 'b'}
+      ],
+      count: 0,
+      isLoading: false
     }
+  },
+  methods: {
+    onClickLeft () {
+      history.go(-1)
+    },
+    onClickRight () {
+      Toast('按钮')
+    },
+    onRefresh () {
+      setTimeout(() => {
+        this.$toast('刷新成功')
+        this.isLoading = false
+        this.count++
+      }, 500)
+    },
+    goTo (name) {
+      this.$router.push({name: name})
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -150,12 +153,18 @@
     display: inline-block;
     height: 94px;
     position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-left-p {
     color: #8D8E91;
     font-size: 12px;
     line-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom {
@@ -163,6 +172,9 @@
     margin-bottom: 0;
     float: bottom;
     position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-rigth {
@@ -177,6 +189,9 @@
     padding: 10px 0px 10px;
     white-space: nowrap;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-span {
@@ -185,6 +200,5 @@
     white-space: nowrap;
     margin-right: 5px;
   }
-
 
 </style>

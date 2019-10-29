@@ -1,11 +1,16 @@
 <template>
   <div class="model">
     <van-nav-bar fixed title="阿拉招聘">
-      <svg t="1572229825059" @click="onClickRight" slot="right" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5058" width="20" height="20"><path d="M38.5536 858.8288v-66.0992h946.944v66.0992H38.5536z m0-330.2912V462.4384H856.064v66.0992H38.5536z m0-330.3424v-66.048h946.944v66.0992H38.5536z" p-id="5059" fill="#ffffff"></path></svg>
+      <svg t="1572229825059" @click="onClickRight" slot="right" class="icon" viewBox="0 0 1024 1024" version="1.1"
+           xmlns="http://www.w3.org/2000/svg" p-id="5058" width="20" height="20">
+        <path
+          d="M38.5536 858.8288v-66.0992h946.944v66.0992H38.5536z m0-330.2912V462.4384H856.064v66.0992H38.5536z m0-330.3424v-66.048h946.944v66.0992H38.5536z"
+          p-id="5059" fill="#ffffff"></path>
+      </svg>
     </van-nav-bar>
     <van-swipe :autoplay="3000" indicator-color="white">
       <van-swipe-item>
-        <img src="../../..../../../static/image/aali.jpg" class="img-item">
+        <img src="../../../static/image/aali.jpg" class="img-item">
       </van-swipe-item>
       <van-swipe-item>
         <img src="../../../static/image/google.jpg" class="img-item">
@@ -25,7 +30,7 @@
       </van-grid-item>
 
       <van-grid-item @click="goTo('resList')">
-        <img src="https://ihuoniao.cn/templates/job/touch/skin3/images/icon02.png" class="item-img" alt="">
+        <img src="https://ihuoniao.cn/templates/job/touch/skin3/images/icon02.png" class="item-img">
         <span class="grid-span">找人才</span>
       </van-grid-item>
 
@@ -70,7 +75,7 @@
         </p>
         <div class="row-col-div">
           <img src="../../../static/image/aali.jpg" class="row-col-div-img">
-          <p style="margin-top: 5px; white-space: nowrap; color: #333333;padding-right: 10px; max-width: 100%;">
+          <p class="row-col-div-p">
             9月14日宁波北仑秋季招人,春晓梅山现场招聘</p>
         </div>
       </van-col>
@@ -79,7 +84,7 @@
       <van-col span="24">
         <p class="row-p">
           <span class="p-title">热门企业</span>
-          <span class="p-right">查看更多</span>
+          <span class="p-right" @click="goTo('companyList')">查看更多</span>
         </p>
         <ul>
           <li class="row-lis" v-for="i in [1,2,3]" @click="goTo('compayInfo')">
@@ -97,7 +102,7 @@
               <img src="../../../static/image/aali.jpg" width="100%" height="90">
             </div>
           </li>
-          <li class="li-bottom-p">
+          <li class="li-bottom-p" @click="goTo('companyList')">
             查看更多
           </li>
         </ul>
@@ -118,7 +123,7 @@
                 <span class="p-title">PHP</span>
                 <span class="p-right-a">8000~12000</span>
               </p>
-              <p>
+              <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
                 <span class="tab-ul-li-p-span">苏州</span>
                 <i class="tab-ul-li-p-i"></i>
                 <span class="tab-ul-li-p-span">3-5年</span>
@@ -376,6 +381,16 @@ export default {
     padding: 5px;
   }
 
+  .row-col-div-p {
+    margin-top: 5px;
+    color: #333333;
+    padding-right: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .row-col-div-img {
     width: 100%;
     height: 150px;
@@ -419,6 +434,9 @@ export default {
     margin-bottom: 0;
     float: bottom;
     position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-rigth {
@@ -458,6 +476,15 @@ export default {
   .li-top {
     border-bottom: #F2F2F2 1px solid;
     padding: 0px 0px 10px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .li-top>p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-div {
@@ -481,12 +508,17 @@ export default {
   .li-bottom-div-name {
     color: #212121;
     font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .li-bottom-div-p {
     padding: 0;
     white-space: nowrap;
     margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .li-bottom-div-span {
