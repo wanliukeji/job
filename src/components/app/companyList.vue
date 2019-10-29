@@ -24,7 +24,7 @@
             </p>
           </div>
           <div class="li-rigth">
-            <img src="/static/image/aali.jpg" width="100%" height="90">
+            <img src="../../../static/image/aali.jpg" width="100%" height="90">
           </div>
         </li>
         <li class="li-bottom-p">

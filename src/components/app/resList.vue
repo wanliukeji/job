@@ -61,8 +61,8 @@
           </div>
           <div class="li-bottom">
             <div class="li-bottom-left">
-              <img v-show="index%2!=0" src="/static/image/wechat.jpg" class="li-bottom-left-img">
-              <img v-show="index%2==0" src="/static/image/nv.jpg" class="li-bottom-left-img">
+              <img v-show="index%2!=0" src="../../../static/image/wechat.jpg" class="li-bottom-left-img">
+              <img v-show="index%2==0" src="../../../static/image/nv.jpg" class="li-bottom-left-img">
               <div class="li-bottom-left-div">
                 <p class="li-bottom-p">期望职位&nbsp;<span class="li-bottom-p-name">软件开发工程师</span></p>
                 <p class="li-bottom-p">期望薪资&nbsp;<span class="li-bottom-p-span">8000</span>
@@ -80,57 +80,57 @@
 </template>
 
 <script>
-    export default {
-        name: "resList",
-        data() {
-            return {
-                value: '',
-                value1: 0,
-                value2: 'a',
-                value3: 'a',
-                value4: 'a',
-                option1: [
-                    {text: '工作地点', value: 0},
-                    {text: '不限', value: 1},
-                    {text: '北仑区', value: 2},
-                    {text: '江东区', value: 3},
-                    {text: '鄞州区', value: 4},
-                    {text: '镇海区', value: 5},
-                    {text: '海曙区', value: 6},
-                    {text: '宁海县', value: 7},
-                    {text: '余姚县', value: 8}
-                ],
-                option2: [
-                    {text: '行业领域', value: 'a'}
-                ],
-                option3: [
-                    {text: '职业类型', value: 'a'},
-                    {text: '不限', value: 'b'}
-                ],
-                option4: [
-                    {text: '更多', value: 'a'},
-                    {text: '不限', value: 'b'}
-                ],
-                count: 0,
-                isLoading: false
-            }
-        },
-        methods: {
-            onClickLeft() {
-                history.go(-1);
-            },
-            onClickRight() {
-                Toast('按钮');
-            },
-            onRefresh() {
-                setTimeout(() => {
-                    this.$toast('刷新成功');
-                    this.isLoading = false;
-                    this.count++;
-                }, 500);
-            }
-        }
+export default {
+  name: 'resList',
+  data () {
+    return {
+      value: '',
+      value1: 0,
+      value2: 'a',
+      value3: 'a',
+      value4: 'a',
+      option1: [
+        {text: '工作地点', value: 0},
+        {text: '不限', value: 1},
+        {text: '北仑区', value: 2},
+        {text: '江东区', value: 3},
+        {text: '鄞州区', value: 4},
+        {text: '镇海区', value: 5},
+        {text: '海曙区', value: 6},
+        {text: '宁海县', value: 7},
+        {text: '余姚县', value: 8}
+      ],
+      option2: [
+        {text: '行业领域', value: 'a'}
+      ],
+      option3: [
+        {text: '职业类型', value: 'a'},
+        {text: '不限', value: 'b'}
+      ],
+      option4: [
+        {text: '更多', value: 'a'},
+        {text: '不限', value: 'b'}
+      ],
+      count: 0,
+      isLoading: false
     }
+  },
+  methods: {
+    onClickLeft () {
+      history.go(-1)
+    },
+    onClickRight () {
+      Toast('按钮')
+    },
+    onRefresh () {
+      setTimeout(() => {
+        this.$toast('刷新成功')
+        this.isLoading = false
+        this.count++
+      }, 500)
+    }
+  }
+}
 </script>
 
 <style scoped>

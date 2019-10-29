@@ -97,8 +97,8 @@
         </tr>
       </table>
     </div>
-    <!--        <img src="/static/image/timg.jpg" alt="" width="1200" height="70">-->
-    <img src="/static/image/fuli.gif">
+    <!--        <img src="../../static/image/timg.jpg" alt="" width="1200" height="70">-->
+    <img src="../../static/image/fuli.gif">
   </div>
 
 </template>

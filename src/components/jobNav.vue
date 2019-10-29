@@ -230,7 +230,7 @@
                   </el-carousel-item>
                   <el-carousel-item><img width="250" height="150">
                   </el-carousel-item>
-                  <el-carousel-item><img src="/static/image/baidu.jpg" alt="" width="250" height="150">
+                  <el-carousel-item><img src="../../static/image/baidu.jpg" alt="" width="250" height="150">
                   </el-carousel-item>
                 </el-carousel>
               </div>
@@ -322,7 +322,7 @@ export default {
       localmap: new Map(),
       querymap: new Map(),
       subItem: [],
-      imgs: ['/static/image/job.jpg', '/static/image/google.jpg', 'static/image/microsoft.jpg', '/static/image/aali.jpg', '/static/image/sina.jpg'],
+      imgs: ['../../static/image/job.jpg', '../../static/image/google.jpg', 'static/image/microsoft.jpg', '../../static/image/aali.jpg', '../../static/image/sina.jpg'],
       jobs: [],
       companys: [],
       fairs: []
@@ -928,7 +928,7 @@ export default {
     box-shadow: 0px 5px #cfcfcf;
     /*margin-left: 5px;*/
     /*margin-right: -15px;*/
-    background: url('/static/image/aali.jpg') no-repeat;
+    background: url('../../static/image/aali.jpg') no-repeat;
     background-size: cover;
     margin: 0.1px;
   }

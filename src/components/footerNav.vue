@@ -11,7 +11,7 @@
           <p style="font-size: 12px; vertical-align: middle; color: #717171;" align="left">
             客服QQ
             <a href="https://wpa.qq.com/msgrd?v=3&uin=139578001&site=阿拉宁波网&menu=yes&from=discuz">
-              <img src="/static/image/site_qq.jpg" height="21" alt="点击咨询"/>
+              <img src="../../static/image/site_qq.jpg" height="21" alt="点击咨询"/>
             </a>&nbsp;
           </p>
         </div>
@@ -56,9 +56,9 @@
                 <td>APP客户端</td>
               </tr>
               <tr>
-                <td><img src="/static/image/weixin.png" class="footer-img"/></td>
+                <td><img src="../../static/image/weixin.png" class="footer-img"/></td>
                 <td></td>
-                <td><img src="/static/image/app.png" class="footer-img"/></td>
+                <td><img src="../../static/image/app.png" class="footer-img"/></td>
               </tr>
             </table>
           </div>

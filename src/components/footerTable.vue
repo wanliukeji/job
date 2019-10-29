@@ -87,40 +87,40 @@
 </template>
 
 <script>
-    export default {
-        name: "footerTable",
-        data() {
-            return {
-                items: []
-            }
-        },
-        created() {
-            this.$http.get('/static/data/footNav.json').then(res => {
-                var obj = res.data;
-                this.items = obj;
-                if (res.status == 200) {
-                    // this.$notify({
-                    //     title: '成功连接服务器',
-                    //     message: '获取数据成功！',
-                    //     type: 'success'
-                    // });
-                    // console.log(JSON.stringify(this.items));
-                } else {
-                    this.$notify.error({
-                        title: '获取数据失败',
-                        message: result,
-                        type: 'error'
-                    });
-                }
-            }).catch(function (result) {
-                this.$notify.error({
-                    title: '获取数据失败',
-                    message: result,
-                    type: 'error'
-                });
-            });
-        }
+export default {
+  name: 'footerTable',
+  data () {
+    return {
+      items: []
     }
+  },
+  created () {
+    this.$http.get('/static/data/footNav.json').then(res => {
+      var obj = res.data
+      this.items = obj
+      if (res.status == 200) {
+        // this.$notify({
+        //     title: '成功连接服务器',
+        //     message: '获取数据成功！',
+        //     type: 'success'
+        // });
+        // console.log(JSON.stringify(this.items));
+      } else {
+        this.$notify.error({
+          title: '获取数据失败',
+          message: result,
+          type: 'error'
+        })
+      }
+    }).catch(function (result) {
+      this.$notify.error({
+        title: '获取数据失败',
+        message: result,
+        type: 'error'
+      })
+    })
+  }
+}
 </script>
 
 <style scoped>

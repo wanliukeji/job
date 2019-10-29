@@ -244,7 +244,7 @@
     min-height: 120px;
     top: 0px;
     min-width: 1200px;
-    background: url("/static/image/header_bg.jpg") no-repeat;
+    background: url("../../static/image/header_bg.jpg") no-repeat;
     background-size: 100%;
     /*padding-left: 10%;*/
     /*padding-right: auto;*/
@@ -266,7 +266,7 @@
   }
 
   .img_log {
-    background: url("/static/image/logo.gif");
+    background: url("../../static/image/logo.gif");
     width: 230px;
     height: 70px;
     vertical-align: top;

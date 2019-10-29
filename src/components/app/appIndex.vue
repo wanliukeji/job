@@ -5,16 +5,16 @@
     </van-nav-bar>
     <van-swipe :autoplay="3000" indicator-color="white">
       <van-swipe-item>
-        <img src="/static/image/aali.jpg" class="img-item">
+        <img src="../../..../../../static/image/aali.jpg" class="img-item">
       </van-swipe-item>
       <van-swipe-item>
-        <img src="/static/image/google.jpg" class="img-item">
+        <img src="../../../static/image/google.jpg" class="img-item">
       </van-swipe-item>
       <van-swipe-item>
-        <img src="/static/image/baidu.jpg" class="img-item">
+        <img src="../../../static/image/baidu.jpg" class="img-item">
       </van-swipe-item>
       <van-swipe-item>
-        <img src="/static/image/microsoft.jpg" class="img-item">
+        <img src="../../../static/image/microsoft.jpg" class="img-item">
       </van-swipe-item>
     </van-swipe>
     <van-search placeholder="请输入搜索关键词" v-model="value" shape="round"/>
@@ -69,7 +69,7 @@
           <span class="p-right">查看更多</span>
         </p>
         <div class="row-col-div">
-          <img src="/static/image/aali.jpg" class="row-col-div-img">
+          <img src="../../../static/image/aali.jpg" class="row-col-div-img">
           <p style="margin-top: 5px; white-space: nowrap; color: #333333;padding-right: 10px; max-width: 100%;">
             9月14日宁波北仑秋季招人,春晓梅山现场招聘</p>
         </div>
@@ -94,7 +94,7 @@
               </p>
             </div>
             <div class="li-rigth">
-              <img src="/static/image/aali.jpg" width="100%" height="90">
+              <img src="../../../static/image/aali.jpg" width="100%" height="90">
             </div>
           </li>
           <li class="li-bottom-p">
@@ -135,7 +135,7 @@
             </div>
             <div class="li-bottom-div">
               <div class="li-bottom-div-img">
-                <img src="/static/image/baidu.jpg" width="50" height="43">
+                <img src="../../../static/image/baidu.jpg" width="50" height="43">
               </div>
               <div class="li-bottom-div-title">
                 <p class="li-bottom-div-name">北京百度网络科技</p>
@@ -179,7 +179,7 @@
             </div>
             <div class="li-bottom-div">
               <div class="li-bottom-div-img">
-                <img src="/static/image/google.jpg" width="50" height="43">
+                <img src="../../../static/image/google.jpg" width="50" height="43">
               </div>
               <div class="li-bottom-div-title">
                 <p class="li-bottom-div-name">Google</p>

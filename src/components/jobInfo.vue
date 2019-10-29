@@ -13,9 +13,9 @@
 </template>
 
 <script>
-    export default {
-        name: "jobInfo"
-    }
+export default {
+  name: 'jobInfo'
+}
 </script>
 
 <style scoped>

@@ -8,9 +8,9 @@
 </template>
 
 <script>
-    export default {
-        name: "imgModel"
-    }
+export default {
+  name: 'imgModel'
+}
 </script>
 
 <style scoped>

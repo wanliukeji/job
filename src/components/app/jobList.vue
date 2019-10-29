@@ -5,7 +5,6 @@
       <svg t="1572229825059" @click="onClickRight" slot="right" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5058" width="20" height="20"><path d="M38.5536 858.8288v-66.0992h946.944v66.0992H38.5536z m0-330.2912V462.4384H856.064v66.0992H38.5536z m0-330.3424v-66.048h946.944v66.0992H38.5536z" p-id="5059" fill="#ffffff"></path></svg>
     </van-nav-bar>
 
-
     <van-dropdown-menu class="menu">
       <van-dropdown-item v-model="value1" :options="option1"/>
       <van-dropdown-item v-model="value2" :options="option2"/>
@@ -38,7 +37,7 @@
           </div>
           <div class="li-bottom-div">
             <div class="li-bottom-div-img">
-              <img src="/static/image/baidu.jpg" width="50" height="43">
+              <img src="../../../static/image/baidu.jpg" width="50" height="43">
             </div>
             <div class="li-bottom-div-title">
               <p class="li-bottom-div-name">北京百度网络科技</p>
@@ -57,57 +56,57 @@
 </template>
 
 <script>
-    export default {
-        name: "jobList",
-        data() {
-            return {
-                value: '',
-                value1: 0,
-                value2: 'a',
-                value3: 'a',
-                value4: 'a',
-                option1: [
-                    {text: '工作地点', value: 0},
-                    {text: '不限', value: 1},
-                    {text: '北仑区', value: 2},
-                    {text: '江东区', value: 3},
-                    {text: '鄞州区', value: 4},
-                    {text: '镇海区', value: 5},
-                    {text: '海曙区', value: 6},
-                    {text: '宁海县', value: 7},
-                    {text: '余姚县', value: 8}
-                ],
-                option2: [
-                    {text: '行业领域', value: 'a'}
-                ],
-                option3: [
-                    {text: '职业类型', value: 'a'},
-                    {text: '不限', value: 'b'}
-                ],
-                option4: [
-                    {text: '更多', value: 'a'},
-                    {text: '不限', value: 'b'}
-                ],
-                count: 0,
-                isLoading: false
-            }
-        },
-        methods: {
-            onClickLeft() {
-                history.go(-1);
-            },
-            onClickRight() {
-                Toast('按钮');
-            },
-            onRefresh() {
-                setTimeout(() => {
-                    this.$toast('刷新成功');
-                    this.isLoading = false;
-                    this.count++;
-                }, 500);
-            }
-        }
+export default {
+  name: 'jobList',
+  data () {
+    return {
+      value: '',
+      value1: 0,
+      value2: 'a',
+      value3: 'a',
+      value4: 'a',
+      option1: [
+        {text: '工作地点', value: 0},
+        {text: '不限', value: 1},
+        {text: '北仑区', value: 2},
+        {text: '江东区', value: 3},
+        {text: '鄞州区', value: 4},
+        {text: '镇海区', value: 5},
+        {text: '海曙区', value: 6},
+        {text: '宁海县', value: 7},
+        {text: '余姚县', value: 8}
+      ],
+      option2: [
+        {text: '行业领域', value: 'a'}
+      ],
+      option3: [
+        {text: '职业类型', value: 'a'},
+        {text: '不限', value: 'b'}
+      ],
+      option4: [
+        {text: '更多', value: 'a'},
+        {text: '不限', value: 'b'}
+      ],
+      count: 0,
+      isLoading: false
     }
+  },
+  methods: {
+    onClickLeft () {
+      history.go(-1)
+    },
+    onClickRight () {
+      Toast('按钮')
+    },
+    onRefresh () {
+      setTimeout(() => {
+        this.$toast('刷新成功')
+        this.isLoading = false
+        this.count++
+      }, 500)
+    }
+  }
+}
 </script>
 
 <style scoped>

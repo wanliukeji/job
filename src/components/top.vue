@@ -71,17 +71,17 @@
             <DropdownMenu slot="list">
               <div class="img-div">
                 <div class="img-div-child">
-                  <img src="/static/image/app.png" class="img-hide" alt="手机版" title="手机版">
+                  <img src="../../static/image/app.png" class="img-hide" alt="手机版" title="手机版">
                   <br>
                   手机版
                 </div>
                 <div class="img-div-child">
-                  <img src="/static/image/weixin.png" class="img-hide" alt="微信公众号" title="微信公众号">
+                  <img src="../../static/image/weixin.png" class="img-hide" alt="微信公众号" title="微信公众号">
                   <br>
                   微信公众号
                 </div>
                 <div class="img-div-child">
-                  <img src="/static/image/xiao.png" class="img-hide" alt="小程序" title="小程序">
+                  <img src="../../static/image/xiao.png" class="img-hide" alt="小程序" title="小程序">
                   <br>
                   小程序
                 </div>
@@ -173,7 +173,7 @@
           <svg t="1566630465890" class="icon" viewBox="0 0 1024 1024" version="1.1"
                xmlns="http://www.w3.org/2000/svg" p-id="7678" width="14" height="14">
           </svg>
-          <img src="/static/image/panel-toggle.png" class="diy" @mouseover="showDiyChild" alt="">
+          <img src="../../static/image/panel-toggle.png" class="diy" @mouseover="showDiyChild" alt="">
         </a>
         <DropdownMenu slot="list">
           <DropdownItem @click="showHideTop">简易模式</DropdownItem>
@@ -249,7 +249,7 @@
               </td>
               <td class="td-input">
                 <a href="https://www.cnnb.com/connect.php?mod=login&amp;op=init&amp;referer=https%3A%2F%2Fwww.cnnb.com%2F&amp;statfrom=login"
-                  rel="nofollow"><img src="/static/image/qq_login.gif" width="100" height="20"></a>
+                  rel="nofollow"><img src="../../static/image/qq_login.gif" width="100" height="20"></a>
               </td>
             </tr>
           </table>

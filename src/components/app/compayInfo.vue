@@ -10,11 +10,11 @@
     </van-nav-bar>
     <van-row>
       <van-col span="24">
-        <img src="/static/image/aali.jpg" width="100%" height="220"/>
+        <img src="../../../static/image/aali.jpg" width="100%" height="220"/>
       </van-col>
     </van-row>
     <div class="model-img">
-      <img src="/static/image/wechat.jpg" width="90" height="90"/>
+      <img src="../../../static/image/wechat.jpg" width="90" height="90"/>
     </div>
     <van-row>
       <van-col span="24" style="background-color: white;">
@@ -135,7 +135,7 @@
         <ul style="margin: 0 auto;">
           <li v-for="i in [1,1,1,1,1]" class="li-div">
             <div class="li-img">
-              <img src="/static/image/aali.jpg" width="100" height="90">
+              <img src="../../../static/image/aali.jpg" width="100" height="90">
             </div>
             <div class="li-name">
               <p class="li-company-name">
