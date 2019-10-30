@@ -65,6 +65,7 @@
         <li class="nav-bottom-li" v-for="item in imgs"><a href=""><img :src="item" class="nav-bottom-li-img"></a></li>
       </ul>
     </div>
+
     <div class="model-div">
       <div class="model-div-title">
         <i class="row-left"></i>
@@ -74,49 +75,55 @@
       </div>
       <div class="model-div-row">
         <ul class="model-div-row-ul">
-          <li class="model-div-row-li-3" v-for="item in jobs" @click="gotJobInfo(item.code)">
-            <div class="hot-jop" :title="item.company">
+          <li class="model-div-row-li-3" v-for="item in jobList.slice(0,6)" @click="gotJobInfo(item.code)">
+            <div class="hot-jop" :title="item.jobName">
               <h3>
-                <a href="" class="hot-jop-title">{{item.name}}</a>
+                <a href="" class="hot-jop-title">{{item.jobName}}</a>
                 <span class="hot-jop-gz">{{item.salary}}</span>
               </h3>
               <br>
               <div>
                 <span class="hot-jop-yq">
-                  <a class="hot-jop-yq-span">{{item.addr}}</a>
-                  <a class="hot-jop-yq-span">{{item.education}}</a>
-                  <a class="hot-jop-yq-span">{{item.undergo}}</a>
-                  <a class="hot-jop-yq-span">{{item.jobType}}</a>
+                  <a class="hot-jop-yq-span">{{item.city.items[0].name}}</a>
+                  <a class="hot-jop-yq-span">{{item.eduLevel.name}}</a>
+                  <a class="hot-jop-yq-span">{{item.workingExp.name}}</a>
+                  <a class="hot-jop-yq-span">{{item.emplType}}</a>
                 </span>
-                <span class="hot-jop-yq-time">[{{item.time}}]</span>
+                <span class="hot-jop-yq-time">[{{item.updateDate}}]</span>
               </div>
               <div>
-                <span class="hot-jop-yq-word">{{item.name}}</span>
+                <span class="hot-jop-yq-word">{{item.jobName}}</span>
               </div>
               <div class="hot-jop-gs">
                 <div class="hot-jop-gs-logo">
-                  <img :src="item.imgUrl" width="50" height="50"/>
+                  <img :src="item.companyLogo" width="50" height="50"/>
                 </div>
                 <div class="hot-jop-gs-right">
                   <p class="hot-jop-gs-name">
-                    {{item.company}}
+                    {{item.company.name}}
                   </p>
                   <div class="hot-jop-gs-xx">
-                    <span class="hot-jop-gs-xx-span">{{item.scale}}人</span>
+                    <span class="hot-jop-gs-xx-span">
+                      {{item.company.size.name}}
+                      人</span>
                     <svg t="1566953991459" class="icon" viewBox="0 0 1024 1024" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" p-id="1709" width="16" height="16">
                       <path
                         d="M526.82030809 845.34844281c0 6.87480176-5.01638394 12.44768375-11.20346871 12.44768375l-7.23367953 0c-6.18787498 0-11.20425895-5.57288197-11.20425896-12.44768375L497.17890092 178.65076694c0-6.87401151 5.01638394-12.44768375 11.20425892-12.44768374l7.23367954 0c6.18708475 0 11.20346873 5.57367222 11.20346871 12.44768374L526.82030809 845.34844281z"
                         p-id="1710" fill="#bfbfbf"></path>
                     </svg>
-                    <span class="hot-jop-gs-xx-span">{{item.type}}</span>
+                    <span class="hot-jop-gs-xx-span">
+                      {{item.company.type.name}}
+                    </span>
                     <svg t="1566953991459" class="icon" viewBox="0 0 1024 1024" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" p-id="1709" width="16" height="16">
                       <path
                         d="M526.82030809 845.34844281c0 6.87480176-5.01638394 12.44768375-11.20346871 12.44768375l-7.23367953 0c-6.18787498 0-11.20425895-5.57288197-11.20425896-12.44768375L497.17890092 178.65076694c0-6.87401151 5.01638394-12.44768375 11.20425892-12.44768374l7.23367954 0c6.18708475 0 11.20346873 5.57367222 11.20346871 12.44768374L526.82030809 845.34844281z"
                         p-id="1710" fill="#bfbfbf"></path>
                     </svg>
-                    <span class="hot-jop-gs-xx-span">{{item.nature}}</span>
+                    <span class="hot-jop-gs-xx-span">
+                      {{item.jobType.items[0].name}}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -325,7 +332,8 @@ export default {
       imgs: ['../../static/image/job.jpg', '../../static/image/google.jpg', 'static/image/microsoft.jpg', '../../static/image/aali.jpg', '../../static/image/sina.jpg'],
       jobs: [],
       companys: [],
-      fairs: []
+      fairs: [],
+      jobList:[]
     }
   },
   created () {
@@ -358,30 +366,6 @@ export default {
       })
     })
 
-    this.$http.get('/static/data/jobs.json').then(res => {
-      var obj = res.data
-      if (res.status == 200) {
-        this.$notify({
-          title: '成功连接服务器',
-          message: '获取数据成功！',
-          type: 'success'
-        })
-        this.jobs = obj.data
-      } else {
-        this.$notify.error({
-          title: '获取数据失败',
-          message: result,
-          type: 'error'
-        })
-      }
-    }).catch(function (result) {
-      this.$notify.error({
-        title: '获取数据失败',
-        message: result,
-        type: 'error'
-      })
-    })
-
     this.$http.get('/static/data/company.json').then(res => {
       var obj = res.data
       if (res.status == 200) {
@@ -394,7 +378,7 @@ export default {
       } else {
         this.$notify.error({
           title: '获取数据失败',
-          message: result,
+          message: res.message,
           type: 'error'
         })
       }
@@ -414,6 +398,30 @@ export default {
           type: 'success'
         })
         this.fairs = obj.data
+      } else {
+        this.$notify.error({
+          title: '获取数据失败',
+          message: result,
+          type: 'error'
+        })
+      }
+    }).catch(function (result) {
+      this.$notify.error({
+        title: '获取数据失败',
+        message: result,
+        type: 'error'
+      })
+    })
+
+    this.$http.get('/static/data/jobList.json').then(res => {
+      var obj = res.data
+      if (res.status == 200) {
+        this.$notify({
+          title: '成功连接服务器',
+          message: '获取数据成功！',
+          type: 'success'
+        })
+        this.jobList = obj.data.results;
       } else {
         this.$notify.error({
           title: '获取数据失败',
@@ -499,7 +507,7 @@ export default {
       localStorage.setItem(item.code, JSON.stringify(item))
     },
     gotJobInfo (id) {
-      this.$router.push({name: 'jobInfo'})
+      this.$router.push({name: 'pcJobInfo'})
     }
   }
 }

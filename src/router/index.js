@@ -5,6 +5,7 @@ import $ from 'jquery'
 import index from '../components/index'
 import group from '../components/job/group'
 import info from '../components/job/info'
+import pcJobInfo from '../components/job/pcJobInfo'
 
 import appIndex from '../components/app/appIndex'
 import jobList from '../components/app/jobList'
@@ -73,6 +74,11 @@ export default new Router({
       path: '/jobInfo',
       name: 'jobInfo',
       component: jobInfo
+    },
+    {
+      path: '/pcJobInfo',
+      name: 'pcJobInfo',
+      component: pcJobInfo
     }
   ]
 })

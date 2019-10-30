@@ -359,19 +359,19 @@
 </template>
 
 <script>
-    export default {
-        name: "jobModel",
-        data() {
-            return {
-                cityList: [
-                    {
-                        value: '一天以内',
-                        label: '一天以内'
-                    }
-                ]
-            }
+export default {
+  name: 'jobModel',
+  data () {
+    return {
+      cityList: [
+        {
+          value: '一天以内',
+          label: '一天以内'
         }
+      ]
     }
+  }
+}
 </script>
 
 <style lang="css" scoped>
