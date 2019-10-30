@@ -5,7 +5,7 @@
     <!--    <search/>-->
     <!--    <menu-nav/>-->
     <!--    <table-nav/>-->
-    <router-view/>
+<!--    <router-view/>-->
     <!--    <footer-table/>-->
     <!--    <footerNav/>-->
     <!-- <app-index/>-->
