@@ -23,7 +23,7 @@
         <div class="hidden-div-center">
           <div class="hidden-div-model" v-for="(item,index) in subItem" :key="index">
             <h4>
-              <span @click="goGroup(item.name)" class="hidden-div-p" >
+              <span @click="goGroup(item.name)" class="hidden-div-p">
                 {{item.name}}
               </span>
             </h4>
@@ -71,7 +71,7 @@
         <i class="row-left"></i>
         热门职位
         <i class="row-right"></i>
-        <a class="model-div-title-right">查看更多</a>
+        <a class="model-div-title-right" @click="goTo('group')">查看更多</a>
       </div>
       <div class="model-div-row">
         <ul class="model-div-row-ul">
@@ -132,45 +132,47 @@
         </ul>
       </div>
     </div>
+
     <div class="model-div">
       <div class="model-div-title">
         <i class="row-left"></i>
         热门企业
         <i class="row-right"></i>
-        <a class="model-div-title-right">查看更多</a>
+        <a class="model-div-title-right" @click="goTo('companyGroup')">查看更多</a>
       </div>
       <div class="model-div-row">
         <ul class="model-div-row-ul">
-          <li class="model-div-row-li-4" v-for="item in companys" @click="gotInfo(item.code)">
+          <li class="model-div-row-li-4" v-for="(item,index) in companyList.slice(0,8)" :key="index"
+              @click="gotInfo(item.code)">
             <div class="hot-qy-top">
-              <img :src="item.imgUrl" class="hot-qy-img">
+              <img :src="item.companyLogo" class="hot-qy-img">
             </div>
             <div class="hot-qy-center">
-              <img :src="item.logo"
+              <img :src="item.companyLogo"
                    class="hot-qy-center-img">
             </div>
 
             <div class="hot-qy-bottom">
               <a align="center" class="hot-qy-bottom-title">
-                {{item.company}}
+                {{item.companyName}}
               </a>
 
               <div class="hot-qy-bottom-xx">
-                <span class="hot-qy-bottom-span">{{item.scale}}人</span>
+                <span class="hot-qy-bottom-span">{{item.companySize}}人</span>
                 <svg t="1566953991459" class="icon" viewBox="0 0 1024 1024" version="1.1"
                      xmlns="http://www.w3.org/2000/svg" p-id="1709" width="16" height="16">
                   <path
                     d="M526.82030809 845.34844281c0 6.87480176-5.01638394 12.44768375-11.20346871 12.44768375l-7.23367953 0c-6.18787498 0-11.20425895-5.57288197-11.20425896-12.44768375L497.17890092 178.65076694c0-6.87401151 5.01638394-12.44768375 11.20425892-12.44768374l7.23367954 0c6.18708475 0 11.20346873 5.57367222 11.20346871 12.44768374L526.82030809 845.34844281z"
                     p-id="1710" fill="#bfbfbf"></path>
                 </svg>
-                <span class="hot-qy-bottom-span">{{item.type}}</span>
+                <span class="hot-qy-bottom-span">{{item.property}}</span>
                 <svg t="1566953991459" class="icon" viewBox="0 0 1024 1024" version="1.1"
                      xmlns="http://www.w3.org/2000/svg" p-id="1709" width="16" height="16">
                   <path
                     d="M526.82030809 845.34844281c0 6.87480176-5.01638394 12.44768375-11.20346871 12.44768375l-7.23367953 0c-6.18787498 0-11.20425895-5.57288197-11.20425896-12.44768375L497.17890092 178.65076694c0-6.87401151 5.01638394-12.44768375 11.20425892-12.44768374l7.23367954 0c6.18708475 0 11.20346873 5.57367222 11.20346871 12.44768374L526.82030809 845.34844281z"
                     p-id="1710" fill="#bfbfbf"></path>
                 </svg>
-                <span class="hot-qy-bottom-span">{{item.nature}}</span>
+                <span class="hot-qy-bottom-span">{{item.industryName}}</span>
               </div>
               <div>
                 <a class="hot-qy-bottom-font">在招职位</a>
@@ -187,6 +189,7 @@
         </ul>
       </div>
     </div>
+
     <br>
     <div class="model-div">
       <div class="model-div-title">
@@ -333,7 +336,8 @@ export default {
       jobs: [],
       companys: [],
       fairs: [],
-      jobList:[]
+      jobList: [],
+      companyList: []
     }
   },
   created () {
@@ -421,7 +425,31 @@ export default {
           message: '获取数据成功！',
           type: 'success'
         })
-        this.jobList = obj.data.results;
+        this.jobList = obj.data.results
+      } else {
+        this.$notify.error({
+          title: '获取数据失败',
+          message: result,
+          type: 'error'
+        })
+      }
+    }).catch(function (result) {
+      this.$notify.error({
+        title: '获取数据失败',
+        message: result,
+        type: 'error'
+      })
+    })
+
+    this.$http.get('/static/data/companyList.json').then(res => {
+      var obj = res.data
+      if (res.status == 200) {
+        this.$notify({
+          title: '成功连接服务器',
+          message: '获取数据成功！',
+          type: 'success'
+        })
+        this.companyList = obj.data.list
       } else {
         this.$notify.error({
           title: '获取数据失败',
@@ -508,6 +536,9 @@ export default {
     },
     gotJobInfo (id) {
       this.$router.push({name: 'pcJobInfo'})
+    },
+    goTo (name) {
+      this.$router.push({name: name})
     }
   }
 }
@@ -1008,6 +1039,9 @@ export default {
     float: left;
     left: 0px;
     position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hot-jop-yq-span {
@@ -1070,6 +1104,9 @@ export default {
   .hot-jop-gs-xx {
     display: block;
     position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hot-jop-gs-xx-span {
@@ -1148,6 +1185,9 @@ export default {
     display: block;
     margin: 0 auto;
     line-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hot-qy-bottom-xx {
@@ -1155,6 +1195,9 @@ export default {
     margin: 0 auto;
     line-height: 45px;
     max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hot-qy-bottom-span {
