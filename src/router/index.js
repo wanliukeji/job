@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router' /* 引用vue路由模块，并赋值给变量Router */
 // eslint-disable-next-line no-unused-vars
 import $ from 'jquery'
-
 import index from '../components/index'
 import group from '../components/job/group'
 import info from '../components/job/info'

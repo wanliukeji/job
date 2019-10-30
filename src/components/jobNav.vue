@@ -427,11 +427,12 @@ export default {
         message: result,
         type: 'error'
       })
-    }),
-    this.$http.post('http://localhost:3000/api/user/addUser', {
-      username: 'CHENYU',
-      age: 26
-    }, {}).then((response) => { console.log(response) })
+    })
+    // node API
+    // this.$http.post('http://localhost:3000/api/user/addUser', {
+    //   username: 'CHENYU',
+    //   age: 26
+    // }, {}).then((response) => { console.log(response) })
   },
   methods: {
     changeActive (e, code) {

@@ -2,7 +2,7 @@
 
 var sqlMap = {
   user: {
-    add: 'insert into user(id,name,age) values (00001,?,?)'
+    add: 'insert into user(name,age) values (?,?)'
   }
 
 }
