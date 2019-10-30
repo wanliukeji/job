@@ -48,13 +48,21 @@ export default {
     this.activeDate = (new Date()).toString()
     var sUserAgent = navigator.userAgent.toLowerCase()
     console.log(sUserAgent)
+    // eslint-disable-next-line eqeqeq
     var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad'
+    // eslint-disable-next-line eqeqeq
     var bIsIphoneOs = sUserAgent.match(/iphone os/i) == 'iphone os'
+    // eslint-disable-next-line eqeqeq
     var bIsMidp = sUserAgent.match(/midp/i) == 'midp'
+    // eslint-disable-next-line eqeqeq
     var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4'
+    // eslint-disable-next-line eqeqeq
     var bIsUc = sUserAgent.match(/ucweb/i) == 'ucweb'
+    // eslint-disable-next-line eqeqeq
     var bIsAndroid = sUserAgent.match(/android/i) == 'android'
+    // eslint-disable-next-line eqeqeq
     var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce'
+    // eslint-disable-next-line eqeqeq
     var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile'
     if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
       console.log('您的浏览设备为：移动端')
