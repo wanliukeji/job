@@ -427,7 +427,11 @@ export default {
         message: result,
         type: 'error'
       })
-    })
+    }),
+    this.$http.post('http://localhost:3000/api/user/addUser', {
+      username: 'CHENYU',
+      age: 26
+    }, {}).then((response) => { console.log(response) })
   },
   methods: {
     changeActive (e, code) {
@@ -590,7 +594,7 @@ export default {
     min-width: 680px;
     height: 440px;
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     width: 50%;
     left: 25%;
     top: auto;
@@ -1282,5 +1286,9 @@ export default {
     color: #ababab;
     float: right;
     font-family: 宋体;
+  }
+
+  .hidden-div-model-li-a:hover, .hidden-div-model-li:hover {
+    cursor: pointer;
   }
 </style>
