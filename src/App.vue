@@ -1,15 +1,15 @@
 <template lang="html">
   <div class="container-body">
     <!--    -->
-    <!--    <top/>-->
-    <!--    <search/>-->
-    <!--    <menu-nav/>-->
-    <!--    <table-nav/>-->
-<!--    <router-view/>-->
-    <!--    <footer-table/>-->
-    <!--    <footerNav/>-->
-    <!-- <app-index/>-->
-    <!-- <job-list/>-->
+    <top/>
+    <search/>
+    <menu-nav/>
+    <table-nav/>
+    <router-view/>
+    <footer-table/>
+    <footerNav/>
+    <!--     <app-index/>-->
+    <!--     <job-list/>-->
   </div>
 </template>
 <script>
@@ -44,7 +44,7 @@ export default {
   },
   created () {
     this.activeDate = (new Date()).toString()
-    this.$router.push({name: 'appIndex'})
+    this.$router.push({name: 'index'})
   },
   mounted () {
 
