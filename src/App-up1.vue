@@ -1,15 +1,6 @@
 <template lang="html">
   <div class="container-body">
-    <!--    -->
-    <top v-show="isPC"/>
-    <search v-show="isPC"/>
-    <menu-nav v-show="isPC"/>
-    <table-nav v-show="isPC"/>
     <router-view/>
-    <footer-table v-show="isPC"/>
-    <footerNav v-show="isPC"/>
-    <!--     <app-index/>-->
-    <!--     <job-list/>-->
   </div>
 </template>
 <script>
@@ -23,15 +14,16 @@ import footerNav from './components/footerNav'
 import index from './components/index'
 import AppIndex from './components/app/appIndex'
 import JobList from './components/app/jobList'
+import Home from './home'
 
 export default {
   data () {
     return {
-      nowTab: 1,
-      isPC: true
+      nowTab: 1
     }
   },
   components: {
+    Home,
     JobList,
     AppIndex,
     FooterTable,
@@ -58,12 +50,10 @@ export default {
     var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile'
     if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
       console.log('您的浏览设备为：移动端')
-      this.isPC = false;
       this.$router.push({name: 'appIndex'})
     } else {
       console.log('您的浏览设备为：PC端')
-      this.isPC = true;
-      this.$router.push({name: 'index'})
+      this.$router.push({name: 'home'})
     }
   },
   mounted () {

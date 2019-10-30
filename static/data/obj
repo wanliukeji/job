@@ -1,0 +1,72 @@
+{
+  "number": "CC562244523J90356134000",
+  "jobName": "Python工程师",
+  "company": {
+    "name": "上海怡科信息科技有限公司",
+    "number": "CZ562244520",
+    "type": {
+      "name": "民营"
+    },
+    "size": {
+      "name": "500-999人"
+    },
+    "url": "https://company.zhaopin.com/CZ562244520.htm"
+  },
+  "city": {
+    "items": [
+      {
+        "name": "合肥",
+        "code": "664"
+      }
+    ],
+    "display": "合肥"
+  },
+  "updateDate": "2019-10-22 14:20:16",
+  "salary": "6K-8K",
+  "distance": 0,
+  "eduLevel": {
+    "name": "大专"
+  },
+  "jobType": {
+    "items": [
+      {
+        "name": "软件/互联网开发/系统集成"
+      }
+    ]
+  },
+  "feedbackRation": 0.98,
+  "workingExp": {
+    "name": "不限"
+  },
+  "industry": "300100,210500,160400,160200",
+  "emplType": "全职",
+  "applyType": "1",
+  "saleType": false,
+  "positionURL": "https://jobs.zhaopin.com/562244523356134.htm",
+  "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20160503/18EEDD8DFF7C43268ED2CAA1B878FF92.jpg",
+  "tags": [],
+  "expandCount": 0,
+  "score": "491",
+  "vipLevel": 1003,
+  "positionLabel": "{\"chatWindow\":null,\"refreshLevel\":0,\"skillLabel\":[]}",
+  "bestEmployerLabel": [],
+  "welfare": [
+    "五险一金",
+    "绩效奖金",
+    "节日福利",
+    "交通补助"
+  ],
+  "businessArea": "",
+  "futureJob": false,
+  "futureJobUrl": "",
+  "tagIntHighend": 0,
+  "rootOrgId": 56224452,
+  "staffId": 708510171,
+  "chatWindow": 0,
+  "selected": false,
+  "applied": false,
+  "collected": false,
+  "isShow": false,
+  "timeState": "招聘中",
+  "rate": "98%"
+}

@@ -75,7 +75,7 @@
       </div>
       <div class="model-div-row">
         <ul class="model-div-row-ul">
-          <li class="model-div-row-li-3" v-for="item in jobList.slice(0,6)" @click="gotJobInfo(item.code)">
+          <li class="model-div-row-li-3" v-for="item in jobList.slice(0,6)" @click="gotJobInfo(item)">
             <div class="hot-jop" :title="item.jobName">
               <h3>
                 <a href="" class="hot-jop-title">{{item.jobName}}</a>
@@ -534,8 +534,8 @@ export default {
     setloacl (item) {
       localStorage.setItem(item.code, JSON.stringify(item))
     },
-    gotJobInfo (id) {
-      this.$router.push({name: 'pcJobInfo'})
+    gotJobInfo (item) {
+      this.$router.push({path: '/pcJobInfo', query: item})
     },
     goTo (name) {
       this.$router.push({name: name})

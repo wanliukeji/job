@@ -113,12 +113,18 @@
 </template>
 
 <script>
-import map from './map'
 
 export default {
   name: 'pcJobInfo',
-  components: {map},
+  data () {
+    return {
+      entity: {}
+    }
+  },
   created () {
+    // eslint-disable-next-line no-unused-expressions
+    this.entity = this.$route.query;
+    console.log('>>>>>:' + JSON.stringify(this.entity));
   },
   methods: {
     goTo (name) {
