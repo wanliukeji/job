@@ -23,9 +23,9 @@
         <div class="hidden-div-center">
           <div class="hidden-div-model" v-for="(item,index) in subItem" :key="index">
             <h4>
-              <a @click="gotInfo(item.name)" class="hidden-div-p">
+              <span @click="goGroup(item.name)" class="hidden-div-p" >
                 {{item.name}}
-              </a>
+              </span>
             </h4>
             <ul class="hidden-div-model-ul">
               <li class="hidden-div-model-li" v-for="sub in item.subLevelModelList" @click="goGroup(sub.name)">
@@ -1289,7 +1289,8 @@ export default {
     font-family: 宋体;
   }
 
-  .hidden-div-model-li-a:hover, .hidden-div-model-li:hover {
+  .hidden-div-model-li-a:hover, .hidden-div-model-li:hover, .hidden-div-p:hover {
+    color: #0a6beb;
     cursor: pointer;
   }
 </style>
