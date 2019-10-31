@@ -13,7 +13,7 @@
         </div>
         <div class="model-row-left-body">
           <dl class="open">
-            <dt class="model-row-left-nav">
+            <dt class="model-row-left-nav" @click="selectedNav">
               <a href="javascript:;" class="open-title">公司性质
                 <i class="open-title-right">
                   <svg t="1571111429872" class="icon open-title-up" viewBox="0 0 1024 1024" version="1.1"
@@ -25,20 +25,20 @@
               </a>
             </dt>
             <dd class="display-block">
-              <span class="model-row-left-span left-selected">不限</span>
-              <span class="model-row-left-span">外商独资,外企办事处</span>
-              <span class="model-row-left-span">中外合营(合资,合作)</span>
-              <span class="model-row-left-span">股份制企业</span>
-              <span class="model-row-left-span">国内上市公司</span>
-              <span class="model-row-left-span">私营,民营企业</span>
-              <span class="model-row-left-span">国有企业</span>
-              <span class="model-row-left-span">政府机关/非营利机构</span>
-              <span class="model-row-left-span">事业单位</span>
-              <span class="model-row-left-span">其他</span>
+              <span class="model-row-left-span left-selected" @click="selectedNavSpan">不限</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">外商独资,外企办事处</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">中外合营(合资,合作)</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">股份制企业</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">国内上市公司</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">私营,民营企业</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">国有企业</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">政府机关/非营利机构</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">事业单位</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">其他</span>
             </dd>
           </dl>
           <dl class="open">
-            <dt class="model-row-left-nav">
+            <dt class="model-row-left-nav" @click="selectedNav">
               <a href="javascript:;" class="open-title">公司规模
                 <i class="open-title-right">
                   <svg t="1571111429872" class="icon open-title-up" viewBox="0 0 1024 1024" version="1.1"
@@ -50,11 +50,11 @@
               </a>
             </dt>
             <dd style="display: block;">
-              <span class="model-row-left-span left-selected">不限</span>
-              <span class="model-row-left-span">1-49人</span>
-              <span class="model-row-left-span">50-99人</span>
-              <span class="model-row-left-span">100-499人</span>
-              <span class="model-row-left-span">500-999人</span>
+              <span class="model-row-left-span left-selected" @click="selectedNavSpan">不限</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">1-49人</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">50-99人</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">100-499人</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">500-999人</span>
             </dd>
           </dl>
         </div>
@@ -62,7 +62,7 @@
       <div class="model-row-right">
         <div class="model-row-right-top">
           <div class="model-row-right-top-span">
-            <a class="model-row-right-top-span-a">
+            <a class="model-row-right-top-span-a" @click="selectedTop">
               {{addr}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -86,7 +86,7 @@
                 <span class="model-row-right-top-span-hidden-a" @click="getAddr('余姚区')">余姚区</span>
               </div>
             </a>
-            <a class="model-row-right-top-span-a">
+            <a class="model-row-right-top-span-a" id="job-hy" @click="centerDialogVisiblb = true">
               {{field}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -96,48 +96,17 @@
                         p-id="1814"></path>
                 </svg>
               </span>
-              <div class="model-row-right-top-span-hidden">
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('不限')">不限</span>
-                <span class="model-row-right-top-span-hidden-a">
-                  计算机软件/互联网/通信
-                  <svg t="1571298197868" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                       xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21"><path
-                    d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path></svg>
-                  <div class="model-row-right-top-span-hidden-ul">
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>
-                  </div>
-                </span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('会计/金融/银行/保险')">会计/金融/银行/保险</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('贸易/消费/制造/营运')">贸易/消费/制造/营运</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('制药/医疗')">制药/医疗</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('广告/传媒')">广告/传媒</span>
-              </div>
             </a>
           </div>
           <div class="model-row-right-top-right">
-            <a class="model-row-right-top-right-span">默认</a>
+            <a class="model-row-right-top-right-span" @click="clearVal">默认</a>
             <svg t="1571188338878" class="icon model-row-right-top-right-span-svg" viewBox="0 0 1024 1024" version="1.1"
                  xmlns="http://www.w3.org/2000/svg" p-id="1258" width="17" height="17">
               <path
                 d="M531.185456 943.532317c0 8.899694-6.493901 16.114003-14.503319 16.114003l-9.364275 0c-8.010441 0-14.504342-7.214309-14.504342-16.114003L492.81352 80.46666c0-8.898671 6.493901-16.114003 14.504342-16.114003l9.364275 0c8.009418 0 14.503319 7.215332 14.503319 16.114003L531.185456 943.532317z"
                 p-id="1259" fill="#9297a0"></path>
             </svg>
-            <a class="model-row-right-top-right-span">时间</a>
+            <a class="model-row-right-top-right-span" @click="descTime">时间</a>
             <svg t="1571188566789" class="icon model-row-right-top-right-span-svg" viewBox="0 0 1024 1024" version="1.1"
                  xmlns="http://www.w3.org/2000/svg" p-id="2049" width="16" height="16">
               <path
@@ -211,15 +180,15 @@
         </div>
       </div>
     </div>
-    <el-dialog style="min-width: 790px;"
-               title="请选择职业"
-               :visible.sync="centerDialogVisible"
-               width="50%"
+    <el-dialog style="min-width: 1140px;"
+               title="请选择行业"
+               :visible.sync="centerDialogVisiblb"
+               width="75%"
                center>
       <div class="model-alert-body" style="min-width: 790px;">
         <dl class="model-alert-body-dl">
           <dt style="text-align: left;">
-            计算机/互联网/通信/电子
+            计算机软件/互联网/通信
           </dt>
           <dd class="model-alert-body-dl-dd">
             <div class="model-alert-body-dl-dd-div" @click="getModelJobType">
@@ -250,15 +219,15 @@
               </svg>
             </div>
             <ul class="model-alert-body-dl-ul display-none" style="line-height: 17px;">
-              <li class="model-alert-body-dl-ul-li" @click="getJobType('初级工程师')">初级工程师</li>
-              <li class="model-alert-body-dl-ul-li" @click="getJobType('中级工程师')">中级工程师</li>
-              <li class="model-alert-body-dl-ul-li" @click="getJobType('高级工程师')">高级工程师</li>
+              <li class="model-alert-body-dl-ul-li" @click="getFied('JAVA开发')">JAVA开发</li>
+              <li class="model-alert-body-dl-ul-li" @click="getFied('PHP开发')">PHP开发</li>
+              <li class="model-alert-body-dl-ul-li" @click="getFied('Python开发')">Python开发</li>
             </ul>
           </dd>
         </dl>
       </div>
       <span slot="footer" class="dialog-footer">
-    <el-button @click="getJobType('不限')"
+    <el-button @click="getFied('不限')"
                style="right: 0; margin-right: 0px; width: 130px; position: relative;">不限</el-button>
   </span>
     </el-dialog>
@@ -266,160 +235,93 @@
 </template>
 
 <script>
-    export default {
-        name: "companyGroup",
-        watch: {},
-        data() {
-            return {
-                addr: '工作地点',
-                field: '行业领域',
-                jobType: '职业类型',
-                nature: '公司性质',
-                scale: '公司规模',
-                centerDialogVisible: false
-            };
-        },
-        methods: {
-            getAddr: function (val) {
-                if (val == '不限') {
-                    this.addr = '工作地点';
-                } else {
-                    this.addr = this.subVal(val);
-                    ;
-                }
-            },
-            getFied(val) {
-                if (val == '不限') {
-                    this.field = '行业领域';
-                } else {
-                    this.field = this.subVal(val);
-                }
-            },
-            getNature(val) {
-                if (val == '不限') {
-                    this.nature = '公司性质';
-                } else {
-                    this.nature = this.subVal(val);
-                }
-            },
-            getScale(val) {
-                if (val == '不限') {
-                    this.scale = '公司规模';
-                } else {
-                    this.scale = this.subVal(val);
-                    ;
-                }
-            }
-            ,
-            subVal(val) {
-                return val.substring(0, 4) + '..';
-            },
-            getJobType(val) {
-                if (val == '不限') {
-                    this.jobType = '职业类型';
-                    this.centerDialogVisible = false;
-                } else {
-                    this.jobType = this.subVal(val);
-                    this.centerDialogVisible = false;
-                }
-            },
-            getModelJobType(event) {
-                var $this = event.target;
-                var svg = $($this).children();
-                let ul = $($this).siblings('.model-alert-body-dl-ul');
-                $(ul).toggle(200);
-                if ($(svg).hasClass("icon-up")) {
-                    $(svg).removeClass("icon-up").addClass("icon-down");
-                } else {
-                    $(svg).removeClass("icon-down").addClass("icon-up");
-                }
-            },
-            goTo(name) {
-                this.$router.push({name: name});
-            }
+  export default {
+    name: 'companyGroup',
+    watch: {},
+    data () {
+      return {
+        addr: '工作地点',
+        field: '行业领域',
+        'centerDialogVisiblb': false
+      }
+    },
+    methods: {
+      getAddr: function (val) {
+        this.addr = this.subVal(val)
+      },
+      getFied (val) {
+        this.field = this.subVal(val)
+        this.centerDialogVisiblb = false
+      },
+      getNature (val) {
+        this.nature = this.subVal(val)
+      },
+      getScale (val) {
+        this.scale = this.subVal(val)
+      }
+      ,
+      subVal (val) {
+        return val.substring(0, 4) + '..'
+      },
+      getJobType (val) {
+        this.jobType = this.subVal(val)
+        this.centerDialogVisiblb = false
+      },
+      getModelJobType (event) {
+        var $this = event.target
+        var svg = $($this).children()
+        let ul = $($this).siblings('.model-alert-body-dl-ul')
+        $(ul).toggle(200)
+        if ($(svg).hasClass('icon-up')) {
+          $(svg).removeClass('icon-up').addClass('icon-down')
+        } else {
+          $(svg).removeClass('icon-down').addClass('icon-up')
         }
+      },
+      goTo (name) {
+        this.$router.push({name: name})
+      },
+      selectedNav (e) {
+        var dom = e.target
+        var sib = e.currentTarget.nextElementSibling
+        $(sib).toggle(1000)
+        let child = $(dom).children().children()
+        if ($(child).hasClass('open-title-up')) {
+          $(child).removeClass('open-title-up').addClass('open-title-down')
+        } else {
+          $(child).removeClass('open-title-down').addClass('open-title-up')
+        }
+      },
+      selectedNavSpan (e) {
+        var dom = e.currentTarget
+        $(dom).addClass('left-selected')
+        $(dom).siblings().removeClass('left-selected')
+        var val = $(dom).text()
+      },
+      selectedTop (e) {
+        var dom = e.currentTarget
+        var childen = $(dom).children('.model-row-right-top-span-hidden')
+        $(childen).toggle(500)
+        var subs = $(dom).siblings()
+        $(subs).children('.model-row-right-top-span-hidden').hide(500)
+      },
+      clearVal () {
+          this.addr = '工作地点',
+          this.field = '行业领域',
+          this.centerDialogVisiblb = false
+      },
+      descTime (e) {
+        var dom = e.currentTarget
+        var svg = $(dom).siblings('.model-row-right-top-right-span-svg')
+        if ($(svg[1]).hasClass('icon-up')) {
+          $(svg[1]).removeClass('icon-up').addClass('icon-down')
+        } else {
+          $(svg[1]).removeClass('icon-down').addClass('icon-up')
+        }
+      }
     }
+  }
 
-    $(function () {
-        $('.model-row-left-nav').bind('click', function () {
-            let dom = $(this).next().toggle(1000);
-            let child = $(this).children().children();
-            if ($(child).hasClass("open-title-up")) {
-                $(child).removeClass("open-title-up").addClass("open-title-down");
-            } else {
-                $(child).removeClass("open-title-down").addClass("open-title-up");
-            }
-
-        });
-
-        $('.text').click(function () {
-            var childen = $(this).children('.text-p');
-            if ($(childen).hasClass("height-fs")) {
-                $(childen).removeClass("height-fs").addClass('height-auto');
-            } else {
-                $(childen).addClass("height-fs").removeClass('height-auto');
-            }
-        });
-
-        $('.selectedAll').click(function (e) {
-            $('.checkbox-label').click();
-            document.getElementsByClassName('checkbox-label').onclick;
-        });
-
-        $('.qrc').click(function () {
-            let childen = $(this).children();
-            $(childen).show(500);
-        })
-
-
-        $('.model-row-right-top-span-a').click(function () {
-            var childen = $(this).children('.model-row-right-top-span-hidden');
-            $(childen).show(200);
-            var subs = $(this).siblings();
-            $(subs).children('.model-row-right-top-span-hidden').hide(200);
-        });
-
-        document.onclick = function (e) {
-            if (e.target._prevClass != 'model-row-right-top-span-a' && e.target._prevClass != 'model-row-right-top-span-hidden-a') {
-                $('.model-row-right-top-span-hidden').hide(200);
-            }
-        };
-
-        document.onclick = function (e) {
-            if (e.target._prevClass != 'qrc' && e.target._prevClass != 'hidden-qrc') {
-                $('.hidden-qrc').hide(200);
-            }
-        };
-
-        $('.model-row-right-top-span-hidden-a').click(function () {
-            var childen = $(this).children('.model-row-right-top-span-hidden-ul');
-            var svg = $(this).children('.icon');
-            $(childen).toggle(200);
-            if ($(svg).hasClass("icon-up")) {
-                $(svg).removeClass("icon-up").addClass("icon-down");
-            } else {
-                $(svg).removeClass("icon-down").addClass("icon-up");
-            }
-        });
-
-        $('.model-alert-body-dl-dd-div').click(function () {
-            var childen = $(this).first('model-alert-body-dl-ul');
-        });
-
-        $('.model-row-right-top-right-span').click(function () {
-            var svg = $(this).siblings('.model-row-right-top-right-span-svg');
-            if ($(svg[1]).hasClass("icon-up")) {
-                $(svg[1]).removeClass("icon-up").addClass("icon-down");
-            } else {
-                $(svg[1]).removeClass("icon-down").addClass("icon-up");
-            }
-        });
-
-        $('.model-row-left-span').click(function () {
-            $(this).addClass('left-selected');
-            $(this).siblings().removeClass('left-selected');
-        });
-    })
 </script>
 
 <style scoped>

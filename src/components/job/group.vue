@@ -484,7 +484,7 @@
         document.getElementsByClassName('checkbox-label').onclick
       },
       clearVal () {
-        this.addr = '工作地点',
+          this.addr = '工作地点',
           this.field = '行业领域',
           this.jobType = '职业类型',
           this.nature = '公司性质',
