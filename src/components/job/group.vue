@@ -25,11 +25,11 @@
               </a>
             </dt>
             <dd class="display-block">
-              <span class="model-row-left-span left-selected">不限</span>
-              <span class="model-row-left-span">全职</span>
-              <span class="model-row-left-span">兼职</span>
-              <span class="model-row-left-span">临时</span>
-              <span class="model-row-left-span">实习</span>
+              <span class="model-row-left-span left-selected" @click="selectedNavSpan">不限</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">全职</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">兼职</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">临时</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">实习</span>
             </dd>
           </dl>
           <dl class="open">
@@ -45,16 +45,16 @@
               </a>
             </dt>
             <dd style="display: block;" class="model-row-left-nav-dd">
-              <span class="model-row-left-span left-selected">不限</span>
-              <span class="model-row-left-span">一年以内</span>
-              <span class="model-row-left-span">1-2年</span>
-              <span class="model-row-left-span">3-5年</span>
-              <span class="model-row-left-span">6-7年</span>
-              <span class="model-row-left-span">8-10年</span>
+              <span class="model-row-left-span left-selected" @click="selectedNavSpan">不限</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">一年以内</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">1-2年</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">3-5年</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">6-7年</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">8-10年</span>
             </dd>
           </dl>
           <dl class="open">
-            <dt class="model-row-left-nav">
+            <dt class="model-row-left-nav" @click="selectedNav">
               <a href="javascript:;" class="open-title">学历要求
                 <i class="open-title-right">
                   <svg t="1571111429872" class="icon open-title-up" viewBox="0 0 1024 1024" version="1.1"
@@ -66,17 +66,17 @@
               </a>
             </dt>
             <dd style="display: block;">
-              <span class="model-row-left-span left-selected">不限</span>
-              <span class="model-row-left-span">高中以下</span>
-              <span class="model-row-left-span">中专/职高</span>
-              <span class="model-row-left-span">大专</span>
-              <span class="model-row-left-span">本科</span>
-              <span class="model-row-left-span">硕士</span>
-              <span class="model-row-left-span">研究生</span>
+              <span class="model-row-left-span left-selected" @click="selectedNavSpan">不限</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">高中以下</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">中专/职高</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">大专</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">本科</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">硕士</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">研究生</span>
             </dd>
           </dl>
           <dl class="open">
-            <dt class="model-row-left-nav">
+            <dt class="model-row-left-nav" @click="selectedNav">
               <a href="javascript:;" class="open-title">薪资范围
                 <i class="open-title-right">
                   <svg t="1571111429872" class="icon open-title-up" viewBox="0 0 1024 1024" version="1.1"
@@ -88,13 +88,13 @@
               </a>
             </dt>
             <dd style="display: block;">
-              <span class="model-row-left-span left-selected">不限</span>
-              <span class="model-row-left-span">面议</span>
-              <span class="model-row-left-span">1000以下</span>
-              <span class="model-row-left-span">1000~3999</span>
-              <span class="model-row-left-span">4000~6999</span>
-              <span class="model-row-left-span">6000~8999</span>
-              <span class="model-row-left-span">8000以上</span>
+              <span class="model-row-left-span left-selected" @click="selectedNavSpan">不限</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">面议</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">1000以下</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">1000~3999</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">4000~6999</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">6000~8999</span>
+              <span class="model-row-left-span" @click="selectedNavSpan">8000以上</span>
             </dd>
           </dl>
         </div>
@@ -102,7 +102,7 @@
       <div class="model-row-right">
         <div class="model-row-right-top">
           <div class="model-row-right-top-span">
-            <a class="model-row-right-top-span-a">
+            <a class="model-row-right-top-span-a" @click="selectedTop">
               {{addr}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -126,7 +126,7 @@
                 <span class="model-row-right-top-span-hidden-a" @click="getAddr('余姚区')">余姚区</span>
               </div>
             </a>
-            <a class="model-row-right-top-span-a">
+            <a class="model-row-right-top-span-a" @click="selectedTop">
               {{field}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -138,7 +138,7 @@
               </span>
               <div class="model-row-right-top-span-hidden">
                 <span class="model-row-right-top-span-hidden-a" @click="getFied('不限')">不限</span>
-                <span class="model-row-right-top-span-hidden-a">
+                <span class="model-row-right-top-span-hidden-a" @click="showChild">
                   计算机软件/互联网/通信
                   <svg t="1571298197868" class="icon" viewBox="0 0 1024 1024" version="1.1"
                        xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21"><path
@@ -179,7 +179,7 @@
                 </svg>
               </span>
             </a>
-            <a class="model-row-right-top-span-a">
+            <a class="model-row-right-top-span-a" @click="selectedTop">
               {{nature}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -199,7 +199,7 @@
                 <span class="model-row-right-top-span-hidden-a" @click="getNature('私营企业')">私营企业</span>
               </div>
             </a>
-            <a class="model-row-right-top-span-a">
+            <a class="model-row-right-top-span-a" @click="selectedTop">
               {{scale}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -236,10 +236,10 @@
           </div>
         </div>
         <div class="model-row-right-head">
-          <a class="selectAll" id="checkAll" style="margin-left: 23px;">
-            <input type="checkbox" id="全选" class="gcs-checkbox selectedAll">
+          <a class="selectAll" @click="selectedAll" id="checkAll" style="margin-left: 23px;">
+            <input type="checkbox" id="全选" class="gcs-checkbox selectedAll" @click="selectedAll">
             <label for="全选"></label>
-            <span style="display: inline-block; margin-bottom: 5px;">全选</span>
+            <span style="display: inline-block; margin-bottom: 5px;" disabled="true">全选</span>
           </a>
           <a class="selectAll">
             <button class="selectAll-btn-1">应聘</button>
@@ -257,12 +257,12 @@
           </div>
         </div>
         <ul class="joblist">
-          <li class="job-info" v-for="i in [1,2,3,4,5]">
+          <li class="job-info" v-for="(i,index) in [1,2,3,4,5]">
             <div class="job-info-top">
               <p>
                 <span class="job-info-btn">
-                <input type="checkbox" id="1" class="gcs-checkbox checkbox-item">
-                <label for="1" class="checkbox-label"></label>
+                <input type="checkbox" :id="index" class="gcs-checkbox checkbox-item">
+                <label :for="index" class="checkbox-label"></label>
               </span>
                 <a class="job-info-top-name" @click="goTo('info')">智能家居云平台高级/资深</a>
                 <i class="job-info-top-name-right" style="float: left; padding: 2px;">兼职</i>
@@ -367,6 +367,90 @@
 </template>
 
 <script>
+  // $(document).ready(function () {
+  //   $(function () {
+  //     $('.model-row-left-nav').click(function () {
+  //       let dom = $(this).next().toggle(1000)
+  //       let child = $(this).children().children()
+  //       if ($(child).hasClass('open-title-up')) {
+  //         $(child).removeClass('open-title-up').addClass('open-title-down')
+  //       } else {
+  //         $(child).removeClass('open-title-down').addClass('open-title-up')
+  //       }
+  //     })
+  //
+  //     $('.text').click(function () {
+  //       var childen = $(this).children('.text-p')
+  //       if ($(childen).hasClass('height-fs')) {
+  //         $(childen).removeClass('height-fs').addClass('height-auto')
+  //       } else {
+  //         $(childen).addClass('height-fs').removeClass('height-auto')
+  //       }
+  //     })
+  //
+  //     $('.selectedAll').click(function (e) {
+  //       $('.checkbox-label').click()
+  //       document.getElementsByClassName('checkbox-label').onclick
+  //     })
+  //
+  //     $('.qrc').click(function () {
+  //       let childen = $(this).children()
+  //       $(childen).show(500)
+  //     })
+  //
+  //     $('.model-row-right-top-span-a').click(function () {
+  //       var childen = $(this).children('.model-row-right-top-span-hidden')
+  //       $(childen).show(200)
+  //       var subs = $(this).siblings()
+  //       $(subs).children('.model-row-right-top-span-hidden').hide(200)
+  //     })
+  //
+  //     document.onclick = function (e) {
+  //       if (e.target._prevClass != 'model-row-right-top-span-a' && e.target._prevClass != 'model-row-right-top-span-hidden-a') {
+  //         $('.model-row-right-top-span-hidden').hide(200)
+  //       }
+  //     }
+  //
+  //     document.onclick = function (e) {
+  //       if (e.target._prevClass != 'qrc' && e.target._prevClass != 'hidden-qrc') {
+  //         $('.hidden-qrc').hide(200)
+  //       }
+  //     }
+  //
+  //     $('.model-row-right-top-span-hidden-a').click(function () {
+  //       var childen = $(this).children('.model-row-right-top-span-hidden-ul')
+  //       var svg = $(this).children('.icon')
+  //       $(childen).toggle(200)
+  //       if ($(svg).hasClass('icon-up')) {
+  //         $(svg).removeClass('icon-up').addClass('icon-down')
+  //       } else {
+  //         $(svg).removeClass('icon-down').addClass('icon-up')
+  //       }
+  //     })
+  //
+  //     $('.model-alert-body-dl-dd-div').click(function () {
+  //       var childen = $(this).first('model-alert-body-dl-ul')
+  //
+  //     })
+  //
+  //     $('.model-row-right-top-right-span').click(function () {
+  //       var svg = $(this).siblings('.model-row-right-top-right-span-svg')
+  //       if ($(svg[1]).hasClass('icon-up')) {
+  //         $(svg[1]).removeClass('icon-up').addClass('icon-down')
+  //       } else {
+  //         $(svg[1]).removeClass('icon-down').addClass('icon-up')
+  //       }
+  //     })
+  //
+  //     $('.model-row-left-span').click(function () {
+  //       $(this).addClass('left-selected')
+  //       $(this).siblings().removeClass('left-selected')
+  //     })
+  //   })
+  //   document.getElementsByClassName('model-row-left-nav').onclick = function () {
+  //     alert(2)
+  //   }
+  // })
   export default {
     'name': 'group',
     'watch': {},
@@ -382,6 +466,9 @@
     },
     'methods': {
       'getAddr': function (val) {
+        var dom = event.currentTarget
+        // console.log($(dom).parent());
+        $($(dom).parent()).hide(500)
         this.addr = this.subVal(val)
       },
       'getFied' (val) {
@@ -415,102 +502,52 @@
         this.$router.push({'name': name})
       },
       selectedNav (e) {
-        // var dom = e.target;
-        // $(dom).next('.model-row-left-nav-dd').toggle(1000)
-        // console.log($(dom).next());
-        // let child = $(dom).children().children()
-        // if ($(child).hasClass('open-title-up')) {
-        //   $(child).removeClass('open-title-up').addClass('open-title-down')
-        // } else {
-        //   $(child).removeClass('open-title-down').addClass('open-title-up')
-        // }
-      }
-    }
-  }
-
-  $(document).ready(function () {
-    $(function () {
-      $('.model-row-left-nav').click(function () {
-        let dom = $(this).next().toggle(1000)
-        let child = $(this).children().children()
+        var dom = e.target
+        var sib = e.currentTarget.nextElementSibling
+        $(sib).toggle(1000)
+        let child = $(dom).children().children()
         if ($(child).hasClass('open-title-up')) {
           $(child).removeClass('open-title-up').addClass('open-title-down')
         } else {
           $(child).removeClass('open-title-down').addClass('open-title-up')
         }
-      })
-
-      $('.text').click(function () {
-        var childen = $(this).children('.text-p')
-        if ($(childen).hasClass('height-fs')) {
-          $(childen).removeClass('height-fs').addClass('height-auto')
-        } else {
-          $(childen).addClass('height-fs').removeClass('height-auto')
-        }
-      })
-
-      $('.selectedAll').click(function (e) {
-        $('.checkbox-label').click()
-        document.getElementsByClassName('checkbox-label').onclick
-      })
-
-      $('.qrc').click(function () {
-        let childen = $(this).children()
-        $(childen).show(500)
-      })
-
-      $('.model-row-right-top-span-a').click(function () {
-        var childen = $(this).children('.model-row-right-top-span-hidden')
+      },
+      selectedNavSpan (e) {
+        var dom = e.currentTarget
+        $(dom).addClass('left-selected')
+        $(dom).siblings().removeClass('left-selected')
+        var val = $(dom).text()
+      },
+      selectedTop (e) {
+        var dom = e.currentTarget
+        var childen = $(dom).children('.model-row-right-top-span-hidden')
         $(childen).show(200)
-        var subs = $(this).siblings()
-        $(subs).children('.model-row-right-top-span-hidden').hide(200)
-      })
-
-      document.onclick = function (e) {
-        if (e.target._prevClass != 'model-row-right-top-span-a' && e.target._prevClass != 'model-row-right-top-span-hidden-a') {
-          $('.model-row-right-top-span-hidden').hide(200)
-        }
-      }
-
-      document.onclick = function (e) {
-        if (e.target._prevClass != 'qrc' && e.target._prevClass != 'hidden-qrc') {
-          $('.hidden-qrc').hide(200)
-        }
-      }
-
-      $('.model-row-right-top-span-hidden-a').click(function () {
-        var childen = $(this).children('.model-row-right-top-span-hidden-ul')
-        var svg = $(this).children('.icon')
+        var subs = $(dom).siblings()
+        // $(subs).children('.model-row-right-top-span-hidden').hide(200)
+      },
+      showChild (e) {
+        var dom = e.currentTarget
+        var childen = $(dom).children('.model-row-right-top-span-hidden-ul')
+        var svg = $(dom).children('.icon')
         $(childen).toggle(200)
         if ($(svg).hasClass('icon-up')) {
           $(svg).removeClass('icon-up').addClass('icon-down')
         } else {
           $(svg).removeClass('icon-down').addClass('icon-up')
         }
-      })
+      },
+      selectedAll (e) {
+        $('.checkbox-label').click()
+        document.getElementsByClassName('checkbox-label').onclick
+      }
+  // $('.selectedAll').click(function (e) {
+  //       $('.checkbox-label').click()
+  //       document.getElementsByClassName('checkbox-label').onclick
+  //     })
+  //
 
-      $('.model-alert-body-dl-dd-div').click(function () {
-        var childen = $(this).first('model-alert-body-dl-ul')
-      })
-
-      $('.model-row-right-top-right-span').click(function () {
-        var svg = $(this).siblings('.model-row-right-top-right-span-svg')
-        if ($(svg[1]).hasClass('icon-up')) {
-          $(svg[1]).removeClass('icon-up').addClass('icon-down')
-        } else {
-          $(svg[1]).removeClass('icon-down').addClass('icon-up')
-        }
-      })
-
-      $('.model-row-left-span').click(function () {
-        $(this).addClass('left-selected')
-        $(this).siblings().removeClass('left-selected')
-      })
-    })
-    document.getElementsByClassName('model-row-left-nav').onclick = function () {
-      alert(2)
-    }
-  })
+  }
+  }
 </script>
 
 <style scoped>
@@ -779,7 +816,7 @@
 
   .model-row-right-top-span-hidden-a:hover {
     cursor: pointer;
-    color: black;
+    /*color: black;*/
   }
 
   .model-row-right-top-span-hidden-ul {
