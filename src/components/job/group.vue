@@ -136,37 +136,6 @@
                         p-id="1814"></path>
                 </svg>
               </span>
-<!--              <div class="model-row-right-top-span-hidden">-->
-<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('不限')">不限</span>-->
-<!--                <span class="model-row-right-top-span-hidden-a" @click="showChild">-->
-<!--                  计算机软件/互联网/通信-->
-<!--                  <svg t="1571298197868" class="icon" viewBox="0 0 1024 1024" version="1.1"-->
-<!--                       xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21"><path-->
-<!--                    d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path></svg>-->
-<!--                  <div class="model-row-right-top-span-hidden-ul">-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>-->
-<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>-->
-<!--                  </div>-->
-<!--                </span>-->
-<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('会计/金融/银行/保险')">会计/金融/银行/保险</span>-->
-<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('贸易/消费/制造/营运')">贸易/消费/制造/营运</span>-->
-<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('制药/医疗')">制药/医疗</span>-->
-<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('广告/传媒')">广告/传媒</span>-->
-<!--              </div>-->
             </a>
             <a class="model-row-right-top-span-a" id="job-type" @click="centerDialogVisible = true">
               {{jobType}}
@@ -219,14 +188,14 @@
             </a>
           </div>
           <div class="model-row-right-top-right">
-            <a class="model-row-right-top-right-span">默认</a>
+            <a class="model-row-right-top-right-span" @click="clearVal">默认</a>
             <svg t="1571188338878" class="icon model-row-right-top-right-span-svg" viewBox="0 0 1024 1024" version="1.1"
                  xmlns="http://www.w3.org/2000/svg" p-id="1258" width="17" height="17">
               <path
                 d="M531.185456 943.532317c0 8.899694-6.493901 16.114003-14.503319 16.114003l-9.364275 0c-8.010441 0-14.504342-7.214309-14.504342-16.114003L492.81352 80.46666c0-8.898671 6.493901-16.114003 14.504342-16.114003l9.364275 0c8.009418 0 14.503319 7.215332 14.503319 16.114003L531.185456 943.532317z"
                 p-id="1259" fill="#9297a0"></path>
             </svg>
-            <a class="model-row-right-top-right-span">时间</a>
+            <a class="model-row-right-top-right-span" @click="descTime">时间</a>
             <svg t="1571188566789" class="icon model-row-right-top-right-span-svg" viewBox="0 0 1024 1024" version="1.1"
                  xmlns="http://www.w3.org/2000/svg" p-id="2049" width="16" height="16">
               <path
@@ -492,7 +461,7 @@
         var subs = $(dom).siblings()
         $(subs).children('.model-row-right-top-span-hidden').hide(500)
       },
-      selectedTop_b(e) {
+      selectedTop_b (e) {
         var dom = e.currentTarget
         var childen = $(dom).children('.model-row-right-top-span-hidden')
         $(childen).show(500)
@@ -513,6 +482,24 @@
       selectedAll (e) {
         $('.checkbox-label').click()
         document.getElementsByClassName('checkbox-label').onclick
+      },
+      clearVal () {
+        this.addr = '工作地点',
+          this.field = '行业领域',
+          this.jobType = '职业类型',
+          this.nature = '公司性质',
+          this.scale = '公司规模',
+          this.centerDialogVisible = false,
+          this.centerDialogVisiblb = false
+      },
+      descTime (e) {
+        var dom = e.currentTarget;
+        var svg = $(dom).siblings('.model-row-right-top-right-span-svg');
+        if ($(svg[1]).hasClass("icon-up")) {
+          $(svg[1]).removeClass("icon-up").addClass("icon-down");
+        } else {
+          $(svg[1]).removeClass("icon-down").addClass("icon-up");
+        }
       }
     }
   }
