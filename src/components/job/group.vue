@@ -281,10 +281,10 @@
         </div>
       </div>
     </div>
-    <el-dialog style="min-width: 1140px;"
+    <el-dialog
                title="请选择职业"
                :visible.sync="centerDialogVisible"
-               width="75%"
+               width="1200px"
                center>
       <div class="model-alert-body" style="min-width: 790px;">
         <dl class="model-alert-body-dl">
@@ -332,12 +332,12 @@
                style="right: 0; margin-right: 0px; width: 130px; position: relative;">不限</el-button>
   </span>
     </el-dialog>
-    <el-dialog style="min-width: 1140px;"
+    <el-dialog
                title="请选择行业"
                :visible.sync="centerDialogVisiblb"
-               width="75%"
+               width="1200px"
                center>
-      <div class="model-alert-body" style="min-width: 790px;">
+      <div class="model-alert-body">
         <dl class="model-alert-body-dl">
           <dt style="text-align: left;">
             计算机软件/互联网/通信
@@ -1192,7 +1192,7 @@
 
   .model-alert-body-dl-dd-div-svg {
     float: right;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-right: 30px;
   }
 
