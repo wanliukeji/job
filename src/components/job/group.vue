@@ -210,11 +210,11 @@
             <label for="全选"></label>
             <span style="display: inline-block; margin-bottom: 5px;" disabled="true">全选</span>
           </a>
-          <a class="selectAll">
+          <a class="selectAll" @click="employs">
             <button class="selectAll-btn-1">应聘</button>
           </a>
           <a class="selectAll">
-            <button class="selectAll-btn-2">收藏</button>
+            <button class="selectAll-btn-2" @click="collects">收藏</button>
           </a>
           <a class="selectAll">
               <span class="selectAll-a">
@@ -230,7 +230,7 @@
             <div class="job-info-top">
               <p>
                 <span class="job-info-btn">
-                <input type="checkbox" :id="index" class="gcs-checkbox checkbox-item">
+                <input type="checkbox" :id="index" :value="index" class="gcs-checkbox checkbox-item">
                 <label :for="index" class="checkbox-label"></label>
               </span>
                 <a class="job-info-top-name" @click="goTo('info')">智能家居云平台高级/资深</a>
@@ -244,7 +244,7 @@
                 <a class="job-info-title-span">大碶</a>
                 <a class="job-info-title-span">本科</a>
                 <a class="job-info-title-span">6-7年</a>
-                <a class="job-info-title-span price">8000~9000</a>
+                <a class="job-info-title-span price"><span class="price">8000~9000</span></a>
                 <a class="job-info-title-span">2019-10-10发布</a>
               </div>
               <div class="text" @click="showText">
@@ -259,8 +259,8 @@
                 </div>
               </div>
               <p class="job-info-bottom">
-                <a class="job-info-bottom-a">投递</a>
-                <a class="job-info-bottom-a">收藏</a>
+                <a class="job-info-bottom-a" @click="employ">投递</a>
+                <a class="job-info-bottom-a" @click="collect">收藏</a>
               </p>
             </div>
           </li>
@@ -504,12 +504,45 @@
           $(childen).addClass('height-fs').removeClass('height-auto')
         }
 
-        var li = $(childen).children().children();
+        var li = $(childen).children().children()
         if ($(li).hasClass('dik')) {
           $(li).removeClass('dik').addClass('dbk')
         } else {
           $(li).addClass('dik').removeClass('dbk')
         }
+      },
+      employs () {
+        var item = []
+        $('.checkbox-item').each(function () {
+          if ($(this).is(':checked')) {
+            item.push($(this).val())
+          }
+        })
+
+        if (item.length > 0) {
+          this.$message.success('投递成功,敬请来电')
+        } else {
+          this.$message.warning('请选择投递对象')
+        }
+      },
+      collects () {
+        var item = []
+        $('.checkbox-item').each(function () {
+          if ($(this).is(':checked')) {
+            item.push($(this).val())
+          }
+        })
+        if (item.length > 0) {
+          this.$message.success('收藏成功')
+        } else {
+          this.$message.warning('请选择收藏对象')
+        }
+      },
+      employ() {
+        this.$message.success('投递成功,敬请来电')
+      },
+      collect() {
+        this.$message.success('收藏成功')
       }
     }
   }
@@ -1011,8 +1044,11 @@
     color: #1C8CE9;
   }
 
+  .job-info-bottom-a:hover {
+    color: red;
+  }
+
   .text {
-    /*white-space: normal;*/
     color: #999;
     cursor: pointer;
     margin-left: 8px;
