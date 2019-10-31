@@ -14,7 +14,6 @@
 </template>
 <script>
 
-
 import Top from './components/top'
 import MenuNav from './components/menuNav'
 import TableNav from './components/tableNav'
