@@ -22,6 +22,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 
+import 'babel-polyfill'
+
 Vue.use(Vant);
 Vue.use(VueResource);
 Vue.use(ElementUI)

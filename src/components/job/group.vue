@@ -2,7 +2,8 @@
   <div class="model">
     <div class="model-row">
       <p style="padding: 5px 0px 10px; color: #727272;">当前位置:
-        <span class="model-row-p-span" @click="goTo('index')">阿拉招聘</span>&nbsp;>&nbsp;<span class="model-row-p-span" @click="goTo('group')">计算机/互联网/通信</span>
+        <span class="model-row-p-span" @click="goTo('index')">阿拉招聘</span>&nbsp;>&nbsp;<span class="model-row-p-span"
+                                                                                            @click="goTo('group')">计算机/互联网/通信</span>
       </p>
     </div>
     <div class="model-row">
@@ -12,7 +13,7 @@
         </div>
         <div class="model-row-left-body">
           <dl class="open">
-            <dt class="model-row-left-nav">
+            <dt class="model-row-left-nav" @click="selectedNav">
               <a href="javascript:;" class="open-title">职位性质
                 <i class="open-title-right">
                   <svg t="1571111429872" class="icon open-title-up" viewBox="0 0 1024 1024" version="1.1"
@@ -32,7 +33,7 @@
             </dd>
           </dl>
           <dl class="open">
-            <dt class="model-row-left-nav">
+            <dt class="model-row-left-nav" @click="selectedNav">
               <a href="javascript:;" class="open-title">工作经验
                 <i class="open-title-right">
                   <svg t="1571111429872" class="icon open-title-up" viewBox="0 0 1024 1024" version="1.1"
@@ -43,7 +44,7 @@
                 </i>
               </a>
             </dt>
-            <dd style="display: block;">
+            <dd style="display: block;" class="model-row-left-nav-dd">
               <span class="model-row-left-span left-selected">不限</span>
               <span class="model-row-left-span">一年以内</span>
               <span class="model-row-left-span">1-2年</span>
@@ -69,7 +70,7 @@
               <span class="model-row-left-span">高中以下</span>
               <span class="model-row-left-span">中专/职高</span>
               <span class="model-row-left-span">大专</span>
-              <span class="model-row-left-span"  >本科</span>
+              <span class="model-row-left-span">本科</span>
               <span class="model-row-left-span">硕士</span>
               <span class="model-row-left-span">研究生</span>
             </dd>
@@ -295,8 +296,8 @@
                 </p>
               </div>
               <p class="job-info-bottom">
-                <a    class="job-info-bottom-a">投递</a>
-                <a    class="job-info-bottom-a">收藏</a>
+                <a class="job-info-bottom-a">投递</a>
+                <a class="job-info-bottom-a">收藏</a>
               </p>
             </div>
           </li>
@@ -311,10 +312,10 @@
         </div>
       </div>
     </div>
-    <el-dialog style="min-width: 790px;"
+    <el-dialog style="min-width: 1140px;"
                title="请选择职业"
                :visible.sync="centerDialogVisible"
-               width="50%"
+               width="75%"
                center>
       <div class="model-alert-body" style="min-width: 790px;">
         <dl class="model-alert-body-dl">
@@ -366,160 +367,150 @@
 </template>
 
 <script>
-    export default {
-        name: "group",
-        watch: {},
-        data() {
-            return {
-                addr: '工作地点',
-                field: '行业领域',
-                jobType: '职业类型',
-                nature: '公司性质',
-                scale: '公司规模',
-                centerDialogVisible: false
-            };
-        },
-        methods: {
-            getAddr: function (val) {
-                if (val == '不限') {
-                    this.addr = '工作地点';
-                } else {
-                    this.addr = this.subVal(val);
-                    ;
-                }
-            },
-            getFied(val) {
-                if (val == '不限') {
-                    this.field = '行业领域';
-                } else {
-                    this.field = this.subVal(val);
-                }
-            },
-            getNature(val) {
-                if (val == '不限') {
-                    this.nature = '公司性质';
-                } else {
-                    this.nature = this.subVal(val);
-                }
-            },
-            getScale(val) {
-                if (val == '不限') {
-                    this.scale = '公司规模';
-                } else {
-                    this.scale = this.subVal(val);
-                    ;
-                }
-            }
-            ,
-            subVal(val) {
-                return val.substring(0, 4) + '..';
-            },
-            getJobType(val) {
-                if (val == '不限') {
-                    this.jobType = '职业类型';
-                    this.centerDialogVisible = false;
-                } else {
-                    this.jobType = this.subVal(val);
-                    this.centerDialogVisible = false;
-                }
-            },
-            getModelJobType(event) {
-                var $this = event.target;
-                var svg = $($this).children();
-                let ul = $($this).siblings('.model-alert-body-dl-ul');
-                $(ul).toggle(200);
-                if ($(svg).hasClass("icon-up")) {
-                    $(svg).removeClass("icon-up").addClass("icon-down");
-                } else {
-                    $(svg).removeClass("icon-down").addClass("icon-up");
-                }
-            },
-            goTo(name){
-                this.$router.push({name:name});
-            }
+  export default {
+    'name': 'group',
+    'watch': {},
+    'data' () {
+      return {
+        'addr': '工作地点',
+        'field': '行业领域',
+        'jobType': '职业类型',
+        'nature': '公司性质',
+        'scale': '公司规模',
+        'centerDialogVisible': false
+      }
+    },
+    'methods': {
+      'getAddr': function (val) {
+        this.addr = this.subVal(val)
+      },
+      'getFied' (val) {
+        this.field = this.subVal(val)
+      },
+      'getNature' (val) {
+        this.nature = this.subVal(val)
+      },
+      'getScale' (val) {
+        this.scale = this.subVal(val)
+      },
+      'subVal' (val) {
+        return val.substring(0, 4) + '..'
+      },
+      'getJobType' (val) {
+        this.jobType = this.subVal(val)
+        this.centerDialogVisible = false
+      },
+      'getModelJobType' (event) {
+        var $this = event.target
+        var svg = $($this).children()
+        let ul = $($this).siblings('.model-alert-body-dl-ul')
+        $(ul).toggle(200)
+        if ($(svg).hasClass('icon-up')) {
+          $(svg).removeClass('icon-up').addClass('icon-down')
+        } else {
+          $(svg).removeClass('icon-down').addClass('icon-up')
         }
+      },
+      'goTo' (name) {
+        this.$router.push({'name': name})
+      },
+      selectedNav (e) {
+        // var dom = e.target;
+        // $(dom).next('.model-row-left-nav-dd').toggle(1000)
+        // console.log($(dom).next());
+        // let child = $(dom).children().children()
+        // if ($(child).hasClass('open-title-up')) {
+        //   $(child).removeClass('open-title-up').addClass('open-title-down')
+        // } else {
+        //   $(child).removeClass('open-title-down').addClass('open-title-up')
+        // }
+      }
     }
+  }
 
+  $(document).ready(function () {
     $(function () {
-        $('.model-row-left-nav').bind('click', function () {
-            let dom = $(this).next().toggle(1000);
-            let child = $(this).children().children();
-            if ($(child).hasClass("open-title-up")) {
-                $(child).removeClass("open-title-up").addClass("open-title-down");
-            } else {
-                $(child).removeClass("open-title-down").addClass("open-title-up");
-            }
+      $('.model-row-left-nav').click(function () {
+        let dom = $(this).next().toggle(1000)
+        let child = $(this).children().children()
+        if ($(child).hasClass('open-title-up')) {
+          $(child).removeClass('open-title-up').addClass('open-title-down')
+        } else {
+          $(child).removeClass('open-title-down').addClass('open-title-up')
+        }
+      })
 
-        });
+      $('.text').click(function () {
+        var childen = $(this).children('.text-p')
+        if ($(childen).hasClass('height-fs')) {
+          $(childen).removeClass('height-fs').addClass('height-auto')
+        } else {
+          $(childen).addClass('height-fs').removeClass('height-auto')
+        }
+      })
 
-        $('.text').click(function () {
-            var childen = $(this).children('.text-p');
-            if ($(childen).hasClass("height-fs")) {
-                $(childen).removeClass("height-fs").addClass('height-auto');
-            } else {
-                $(childen).addClass("height-fs").removeClass('height-auto');
-            }
-        });
+      $('.selectedAll').click(function (e) {
+        $('.checkbox-label').click()
+        document.getElementsByClassName('checkbox-label').onclick
+      })
 
-        $('.selectedAll').click(function (e) {
-            $('.checkbox-label').click();
-            document.getElementsByClassName('checkbox-label').onclick;
-        });
+      $('.qrc').click(function () {
+        let childen = $(this).children()
+        $(childen).show(500)
+      })
 
-        $('.qrc').click(function () {
-            let childen = $(this).children();
-            $(childen).show(500);
-        })
+      $('.model-row-right-top-span-a').click(function () {
+        var childen = $(this).children('.model-row-right-top-span-hidden')
+        $(childen).show(200)
+        var subs = $(this).siblings()
+        $(subs).children('.model-row-right-top-span-hidden').hide(200)
+      })
 
+      document.onclick = function (e) {
+        if (e.target._prevClass != 'model-row-right-top-span-a' && e.target._prevClass != 'model-row-right-top-span-hidden-a') {
+          $('.model-row-right-top-span-hidden').hide(200)
+        }
+      }
 
-        $('.model-row-right-top-span-a').click(function () {
-            var childen = $(this).children('.model-row-right-top-span-hidden');
-            $(childen).show(200);
-            var subs = $(this).siblings();
-            $(subs).children('.model-row-right-top-span-hidden').hide(200);
-        });
+      document.onclick = function (e) {
+        if (e.target._prevClass != 'qrc' && e.target._prevClass != 'hidden-qrc') {
+          $('.hidden-qrc').hide(200)
+        }
+      }
 
-        document.onclick = function (e) {
-            if (e.target._prevClass != 'model-row-right-top-span-a' && e.target._prevClass != 'model-row-right-top-span-hidden-a') {
-                $('.model-row-right-top-span-hidden').hide(200);
-            }
-        };
+      $('.model-row-right-top-span-hidden-a').click(function () {
+        var childen = $(this).children('.model-row-right-top-span-hidden-ul')
+        var svg = $(this).children('.icon')
+        $(childen).toggle(200)
+        if ($(svg).hasClass('icon-up')) {
+          $(svg).removeClass('icon-up').addClass('icon-down')
+        } else {
+          $(svg).removeClass('icon-down').addClass('icon-up')
+        }
+      })
 
-        document.onclick = function (e) {
-            if (e.target._prevClass != 'qrc' && e.target._prevClass != 'hidden-qrc') {
-                $('.hidden-qrc').hide(200);
-            }
-        };
+      $('.model-alert-body-dl-dd-div').click(function () {
+        var childen = $(this).first('model-alert-body-dl-ul')
+      })
 
-        $('.model-row-right-top-span-hidden-a').click(function () {
-            var childen = $(this).children('.model-row-right-top-span-hidden-ul');
-            var svg = $(this).children('.icon');
-            $(childen).toggle(200);
-            if ($(svg).hasClass("icon-up")) {
-                $(svg).removeClass("icon-up").addClass("icon-down");
-            } else {
-                $(svg).removeClass("icon-down").addClass("icon-up");
-            }
-        });
+      $('.model-row-right-top-right-span').click(function () {
+        var svg = $(this).siblings('.model-row-right-top-right-span-svg')
+        if ($(svg[1]).hasClass('icon-up')) {
+          $(svg[1]).removeClass('icon-up').addClass('icon-down')
+        } else {
+          $(svg[1]).removeClass('icon-down').addClass('icon-up')
+        }
+      })
 
-        $('.model-alert-body-dl-dd-div').click(function () {
-            var childen = $(this).first('model-alert-body-dl-ul');
-        });
-
-        $('.model-row-right-top-right-span').click(function () {
-            var svg = $(this).siblings('.model-row-right-top-right-span-svg');
-            if ($(svg[1]).hasClass("icon-up")) {
-                $(svg[1]).removeClass("icon-up").addClass("icon-down");
-            } else {
-                $(svg[1]).removeClass("icon-down").addClass("icon-up");
-            }
-        });
-
-        $('.model-row-left-span').click(function () {
-            $(this).addClass('left-selected');
-            $(this).siblings().removeClass('left-selected');
-        });
+      $('.model-row-left-span').click(function () {
+        $(this).addClass('left-selected')
+        $(this).siblings().removeClass('left-selected')
+      })
     })
+    document.getElementsByClassName('model-row-left-nav').onclick = function () {
+      alert(2)
+    }
+  })
 </script>
 
 <style scoped>
@@ -809,7 +800,6 @@
     word-wrap: break-word;
   }
 
-
   .model-row-right-top-span-hidden-ul-a:hover {
     cursor: pointer;
     color: #eb6324;
@@ -887,6 +877,7 @@
     cursor: pointer;
     color: #0a6beb;
   }
+
   .seach-btn-div {
     display: inline-block;
     height: 28px;
@@ -1228,7 +1219,6 @@
     text-align: left;
     line-height: 30px;
   }
-
 
   .model-alert-body-dl-ul-li:hover {
     cursor: pointer;
