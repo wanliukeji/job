@@ -247,22 +247,16 @@
                 <a class="job-info-title-span price">8000~9000</a>
                 <a class="job-info-title-span">2019-10-10发布</a>
               </div>
-              <div class="text">
-                <p class="text-p height-fs">
-                  岗位职责：
-                  1. 按照产品经理的需求，能完成新功能的相关文档的设计;
-                  2. 高质量的完成软件系统代码的实现，编写代码注释和开发文档;
-                  3. 完成软件代码的单元测试、功能测试和自动化测试;
-                  4. 分析并解决软件开发过程中的问题，能够进行快速的软件bug定位并且及时修复;
-                  1. 按照产品经理的需求，能完成新功能的相关文档的设计;
-                  2. 高质量的完成软件系统代码的实现，编写代码注释和开发文档;
-                  3. 完成软件代码的单元测试、功能测试和自动化测试;
-                  4. 分析并解决软件开发过程中的问题，能够进行快速的软件bug定位并且及时修复;
-                  1. 按照产品经理的需求，能完成新功能的相关文档的设计;
-                  2. 高质量的完成软件系统代码的实现，编写代码注释和开发文档;
-                  3. 完成软件代码的单元测试、功能测试和自动化测试;
-                  4. 分析并解决软件开发过程中的问题，能够进行快速的软件bug定位并且及时修复;
-                </p>
+              <div class="text" @click="showText">
+                <div class="text-p height-fs">
+                  <ol>
+                    <li class="dik">岗位职责：</li>
+                    <li class="dik">按照产品经理的需求，能完成新功能的相关文档的设计;</li>
+                    <li class="dik">高质量的完成软件系统代码的实现，编写代码注释和开发文档;</li>
+                    <li class="dik">完成软件代码的单元测试、功能测试和自动化测试;</li>
+                    <li class="dik">分析并解决软件开发过程中的问题，能够进行快速的软件bug定位并且及时修复;</li>
+                  </ol>
+                </div>
               </div>
               <p class="job-info-bottom">
                 <a class="job-info-bottom-a">投递</a>
@@ -282,10 +276,10 @@
       </div>
     </div>
     <el-dialog
-               title="请选择职业"
-               :visible.sync="centerDialogVisible"
-               width="1200px"
-               center>
+      title="请选择职业"
+      :visible.sync="centerDialogVisible"
+      width="1200px"
+      center>
       <div class="model-alert-body" style="min-width: 790px;">
         <dl class="model-alert-body-dl">
           <dt style="text-align: left;">
@@ -333,10 +327,10 @@
   </span>
     </el-dialog>
     <el-dialog
-               title="请选择行业"
-               :visible.sync="centerDialogVisiblb"
-               width="1200px"
-               center>
+      title="请选择行业"
+      :visible.sync="centerDialogVisiblb"
+      width="1200px"
+      center>
       <div class="model-alert-body">
         <dl class="model-alert-body-dl">
           <dt style="text-align: left;">
@@ -484,7 +478,7 @@
         document.getElementsByClassName('checkbox-label').onclick
       },
       clearVal () {
-          this.addr = '工作地点',
+        this.addr = '工作地点',
           this.field = '行业领域',
           this.jobType = '职业类型',
           this.nature = '公司性质',
@@ -493,12 +487,28 @@
           this.centerDialogVisiblb = false
       },
       descTime (e) {
-        var dom = e.currentTarget;
-        var svg = $(dom).siblings('.model-row-right-top-right-span-svg');
-        if ($(svg[1]).hasClass("icon-up")) {
-          $(svg[1]).removeClass("icon-up").addClass("icon-down");
+        var dom = e.currentTarget
+        var svg = $(dom).siblings('.model-row-right-top-right-span-svg')
+        if ($(svg[1]).hasClass('icon-up')) {
+          $(svg[1]).removeClass('icon-up').addClass('icon-down')
         } else {
-          $(svg[1]).removeClass("icon-down").addClass("icon-up");
+          $(svg[1]).removeClass('icon-down').addClass('icon-up')
+        }
+      },
+      showText (e) {
+        var dom = e.currentTarget
+        var childen = $(dom).children('.text-p')
+        if ($(childen).hasClass('height-fs')) {
+          $(childen).removeClass('height-fs').addClass('height-auto')
+        } else {
+          $(childen).addClass('height-fs').removeClass('height-auto')
+        }
+
+        var li = $(childen).children().children();
+        if ($(li).hasClass('dik')) {
+          $(li).removeClass('dik').addClass('dbk')
+        } else {
+          $(li).addClass('dik').removeClass('dbk')
         }
       }
     }
@@ -1215,6 +1225,14 @@
   .model-alert-body-dl-ul-li:hover {
     cursor: pointer;
     color: #0a6beb;
+  }
+
+  .dbk {
+    display: block;
+  }
+
+  .dik {
+    display: inline-block;
   }
 
 </style>
