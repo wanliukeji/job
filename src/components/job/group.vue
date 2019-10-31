@@ -114,19 +114,19 @@
               </span>
               <div class="model-row-right-top-span-hidden">
                 <span class="model-row-right-top-span-hidden-a" @click="getAddr('不限')">不限</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('北仑区')">北仑区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('镇海区')">镇海区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('江北区')">江北区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('江东区')">江东区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('高新区')">高新区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('海曙区')">海曙区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('鄞州区')">鄞州区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('象山区')">象山区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('宁海区')">宁海区</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getAddr('余姚区')">余姚区</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('北仑')">北仑</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('鄞州')">鄞州</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('镇海')">镇海</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('余姚')">余姚</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('宁海')">宁海</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('慈溪')">慈溪</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('海曙')">海曙</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('江东')">江东</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('江北')">江北</span>
+                <span class="model-row-right-top-span-hidden-a" @click="getAddr('象山')">象山</span>
               </div>
             </a>
-            <a class="model-row-right-top-span-a" @click="selectedTop">
+            <a class="model-row-right-top-span-a" id="job-hy" @click="centerDialogVisiblb = true">
               {{field}}
               <span class="open-title-right">
                 <svg t="1571111429872" style="margin-top: 6px;" class="icon open-title-up" viewBox="0 0 1024 1024"
@@ -136,37 +136,37 @@
                         p-id="1814"></path>
                 </svg>
               </span>
-              <div class="model-row-right-top-span-hidden">
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('不限')">不限</span>
-                <span class="model-row-right-top-span-hidden-a" @click="showChild">
-                  计算机软件/互联网/通信
-                  <svg t="1571298197868" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                       xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21"><path
-                    d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path></svg>
-                  <div class="model-row-right-top-span-hidden-ul">
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>
-                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>
-                  </div>
-                </span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('会计/金融/银行/保险')">会计/金融/银行/保险</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('贸易/消费/制造/营运')">贸易/消费/制造/营运</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('制药/医疗')">制药/医疗</span>
-                <span class="model-row-right-top-span-hidden-a" @click="getFied('广告/传媒')">广告/传媒</span>
-              </div>
+<!--              <div class="model-row-right-top-span-hidden">-->
+<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('不限')">不限</span>-->
+<!--                <span class="model-row-right-top-span-hidden-a" @click="showChild">-->
+<!--                  计算机软件/互联网/通信-->
+<!--                  <svg t="1571298197868" class="icon" viewBox="0 0 1024 1024" version="1.1"-->
+<!--                       xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21"><path-->
+<!--                    d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path></svg>-->
+<!--                  <div class="model-row-right-top-span-hidden-ul">-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机软件')">计算机软件</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机硬件')">计算机硬件</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('计算机服务')">计算机服务</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('网络通信')">网络通信</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('宽带安装')">宽带安装</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('路由安装')">路由安装</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('服务器部署')">服务器部署</a>-->
+<!--                      <a class="model-row-right-top-span-hidden-ul-a" @click="getFied('软件测试')">软件测试</a>-->
+<!--                  </div>-->
+<!--                </span>-->
+<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('会计/金融/银行/保险')">会计/金融/银行/保险</span>-->
+<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('贸易/消费/制造/营运')">贸易/消费/制造/营运</span>-->
+<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('制药/医疗')">制药/医疗</span>-->
+<!--                <span class="model-row-right-top-span-hidden-a" @click="getFied('广告/传媒')">广告/传媒</span>-->
+<!--              </div>-->
             </a>
             <a class="model-row-right-top-span-a" id="job-type" @click="centerDialogVisible = true">
               {{jobType}}
@@ -363,94 +363,61 @@
                style="right: 0; margin-right: 0px; width: 130px; position: relative;">不限</el-button>
   </span>
     </el-dialog>
+    <el-dialog style="min-width: 1140px;"
+               title="请选择行业"
+               :visible.sync="centerDialogVisiblb"
+               width="75%"
+               center>
+      <div class="model-alert-body" style="min-width: 790px;">
+        <dl class="model-alert-body-dl">
+          <dt style="text-align: left;">
+            计算机软件/互联网/通信
+          </dt>
+          <dd class="model-alert-body-dl-dd">
+            <div class="model-alert-body-dl-dd-div" @click="getModelJobType">
+              计算机软件
+              <svg t="1571298197868" class="icon model-alert-body-dl-dd-div-svg" viewBox="0 0 1024 1024"
+                   version="1.1"
+                   xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21">
+                <path
+                  d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path>
+              </svg>
+            </div>
+            <div class="model-alert-body-dl-dd-div" @click="getModelJobType">
+              计算机硬件
+              <svg t="1571298197868" class="icon model-alert-body-dl-dd-div-svg" viewBox="0 0 1024 1024"
+                   version="1.1"
+                   xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21">
+                <path
+                  d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path>
+              </svg>
+            </div>
+            <div class="model-alert-body-dl-dd-div" @click="getModelJobType">
+              IT维护
+              <svg t="1571298197868" class="icon model-alert-body-dl-dd-div-svg" viewBox="0 0 1024 1024"
+                   version="1.1"
+                   xmlns="http://www.w3.org/2000/svg" p-id="536" width="21" height="21">
+                <path
+                  d="M213.333333 341.333333h597.333334l-298.666667 384z" p-id="537" fill="#dbdbdb"></path>
+              </svg>
+            </div>
+            <ul class="model-alert-body-dl-ul display-none" style="line-height: 17px;">
+              <li class="model-alert-body-dl-ul-li" @click="getFied('JAVA开发')">JAVA开发</li>
+              <li class="model-alert-body-dl-ul-li" @click="getFied('PHP开发')">PHP开发</li>
+              <li class="model-alert-body-dl-ul-li" @click="getFied('Python开发')">Python开发</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <span slot="footer" class="dialog-footer">
+    <el-button @click="getFied('不限')"
+               style="right: 0; margin-right: 0px; width: 130px; position: relative;">不限</el-button>
+  </span>
+    </el-dialog>
   </div>
 </template>
 
 <script>
-  // $(document).ready(function () {
-  //   $(function () {
-  //     $('.model-row-left-nav').click(function () {
-  //       let dom = $(this).next().toggle(1000)
-  //       let child = $(this).children().children()
-  //       if ($(child).hasClass('open-title-up')) {
-  //         $(child).removeClass('open-title-up').addClass('open-title-down')
-  //       } else {
-  //         $(child).removeClass('open-title-down').addClass('open-title-up')
-  //       }
-  //     })
-  //
-  //     $('.text').click(function () {
-  //       var childen = $(this).children('.text-p')
-  //       if ($(childen).hasClass('height-fs')) {
-  //         $(childen).removeClass('height-fs').addClass('height-auto')
-  //       } else {
-  //         $(childen).addClass('height-fs').removeClass('height-auto')
-  //       }
-  //     })
-  //
-  //     $('.selectedAll').click(function (e) {
-  //       $('.checkbox-label').click()
-  //       document.getElementsByClassName('checkbox-label').onclick
-  //     })
-  //
-  //     $('.qrc').click(function () {
-  //       let childen = $(this).children()
-  //       $(childen).show(500)
-  //     })
-  //
-  //     $('.model-row-right-top-span-a').click(function () {
-  //       var childen = $(this).children('.model-row-right-top-span-hidden')
-  //       $(childen).show(200)
-  //       var subs = $(this).siblings()
-  //       $(subs).children('.model-row-right-top-span-hidden').hide(200)
-  //     })
-  //
-  //     document.onclick = function (e) {
-  //       if (e.target._prevClass != 'model-row-right-top-span-a' && e.target._prevClass != 'model-row-right-top-span-hidden-a') {
-  //         $('.model-row-right-top-span-hidden').hide(200)
-  //       }
-  //     }
-  //
-  //     document.onclick = function (e) {
-  //       if (e.target._prevClass != 'qrc' && e.target._prevClass != 'hidden-qrc') {
-  //         $('.hidden-qrc').hide(200)
-  //       }
-  //     }
-  //
-  //     $('.model-row-right-top-span-hidden-a').click(function () {
-  //       var childen = $(this).children('.model-row-right-top-span-hidden-ul')
-  //       var svg = $(this).children('.icon')
-  //       $(childen).toggle(200)
-  //       if ($(svg).hasClass('icon-up')) {
-  //         $(svg).removeClass('icon-up').addClass('icon-down')
-  //       } else {
-  //         $(svg).removeClass('icon-down').addClass('icon-up')
-  //       }
-  //     })
-  //
-  //     $('.model-alert-body-dl-dd-div').click(function () {
-  //       var childen = $(this).first('model-alert-body-dl-ul')
-  //
-  //     })
-  //
-  //     $('.model-row-right-top-right-span').click(function () {
-  //       var svg = $(this).siblings('.model-row-right-top-right-span-svg')
-  //       if ($(svg[1]).hasClass('icon-up')) {
-  //         $(svg[1]).removeClass('icon-up').addClass('icon-down')
-  //       } else {
-  //         $(svg[1]).removeClass('icon-down').addClass('icon-up')
-  //       }
-  //     })
-  //
-  //     $('.model-row-left-span').click(function () {
-  //       $(this).addClass('left-selected')
-  //       $(this).siblings().removeClass('left-selected')
-  //     })
-  //   })
-  //   document.getElementsByClassName('model-row-left-nav').onclick = function () {
-  //     alert(2)
-  //   }
-  // })
   export default {
     'name': 'group',
     'watch': {},
@@ -461,18 +428,18 @@
         'jobType': '职业类型',
         'nature': '公司性质',
         'scale': '公司规模',
-        'centerDialogVisible': false
+        'centerDialogVisible': false,
+        'centerDialogVisiblb': false
       }
     },
     'methods': {
       'getAddr': function (val) {
-        var dom = event.currentTarget
-        // console.log($(dom).parent());
-        $($(dom).parent()).hide(500)
         this.addr = this.subVal(val)
       },
       'getFied' (val) {
+        // var dom = event.currentTarget;
         this.field = this.subVal(val)
+        this.centerDialogVisiblb = false
       },
       'getNature' (val) {
         this.nature = this.subVal(val)
@@ -521,9 +488,16 @@
       selectedTop (e) {
         var dom = e.currentTarget
         var childen = $(dom).children('.model-row-right-top-span-hidden')
-        $(childen).show(200)
+        $(childen).toggle(500)
         var subs = $(dom).siblings()
-        // $(subs).children('.model-row-right-top-span-hidden').hide(200)
+        $(subs).children('.model-row-right-top-span-hidden').hide(500)
+      },
+      selectedTop_b(e) {
+        var dom = e.currentTarget
+        var childen = $(dom).children('.model-row-right-top-span-hidden')
+        $(childen).show(500)
+        var subs = $(dom).siblings()
+        // $(subs).children('.model-row-right-top-span-hidden').hide(500)
       },
       showChild (e) {
         var dom = e.currentTarget
@@ -540,13 +514,7 @@
         $('.checkbox-label').click()
         document.getElementsByClassName('checkbox-label').onclick
       }
-  // $('.selectedAll').click(function (e) {
-  //       $('.checkbox-label').click()
-  //       document.getElementsByClassName('checkbox-label').onclick
-  //     })
-  //
-
-  }
+    }
   }
 </script>
 
@@ -806,7 +774,7 @@
   .model-row-right-top-span-hidden-a {
     display: block;
     font-size: 16px;
-    color: #6f6f6f;
+    color: #7e7e7e;
     margin: 0px;
     padding: 5px;
     text-align: left;
@@ -816,7 +784,7 @@
 
   .model-row-right-top-span-hidden-a:hover {
     cursor: pointer;
-    /*color: black;*/
+    color: black;
   }
 
   .model-row-right-top-span-hidden-ul {
