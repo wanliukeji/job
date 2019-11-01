@@ -91,10 +91,10 @@
       </p>
 
       <p style="padding-top: 20px; padding-bottom: 20px;">
-        <button class="job-btn" @click="employ">
+        <button class="job-btn btna" @click="employ">
           应聘
         </button>
-        <button class="job-btn" @click="collect" style="background-color: #eeb02a;">
+        <button class="job-btn btnb" @click="collect">
           收藏
         </button>
       </p>
@@ -438,6 +438,18 @@
     padding: 10px;
     width: 130px;
     font-size: 18px;
+  }
+
+  .btna:hover {
+    background-color: #0b856c;
+  }
+
+  .btnb {
+    background-color: #eeb02a;
+  }
+
+  .btnb:hover {
+    background-color: #c79423;
   }
 
   #container {

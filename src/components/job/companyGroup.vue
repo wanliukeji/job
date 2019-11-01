@@ -116,7 +116,7 @@
           </div>
         </div>
         <ul class="joblist">
-          <li class="job-info" v-for="i in [1,2,3,4,5,6]" @click="goTo('info')">
+          <li class="job-info" v-for="i in [1,2,3,4,5,6]" @click="goTo('comanyInfo')">
             <div class="div-left-img">
               <img class="div-left-img-info" src="../../../static/image/aali.jpg" data-url="../../../static/image/aali.jpg">
             </div>
@@ -279,6 +279,7 @@
         }
       },
       goTo (name) {
+        alert(name);
         this.$router.push({name: name})
       },
       selectedNav (e) {
