@@ -266,7 +266,7 @@
   }
 
   .img_log {
-    background: url("../../static/image/logo.gif");
+    background: url("/static/image/logo.gif");
     width: 230px;
     height: 70px;
     vertical-align: top;

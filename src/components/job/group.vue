@@ -1176,6 +1176,7 @@
     text-align: center;
     vertical-align: middle;
     padding: 0 auto;
+    margin-bottom: 25px;
   }
 
   .page-btn {

@@ -100,13 +100,7 @@
           style="background-color: #f8ac59; color: #f2f3f5; border: none; padding: 10px; width: 130px; font-size: 18px;">
           收藏
         </button>
-        <!--        <button style="background-color: #f8ac59; color: #f2f3f5;">收藏</button>-->
       </p>
-
-      <!--      <h2 class="body-title">企业地图</h2>-->
-      <!--      <div class="body-map">-->
-      <!--        <map/>-->
-      <!--      </div>-->
     </div>
 
   </div>
@@ -133,19 +127,6 @@ export default {
   }
 }
 
-$(function () {
-  // var map = new BMap.Map("container");
-  // map.centerAndZoom(new BMap.Point(121.528599, 31.217681), 18);
-  // map.addControl(new BMap.ScaleControl());
-  // map.addControl(new BMap.OverviewMapControl());
-  // var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
-  // map.addControl(ctrl_nav);
-
-  // map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
-  // map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
-  // map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
-  // map.enableKeyboard(); //启用键盘上下左右键移动地图
-})
 </script>
 
 <style scoped>
@@ -233,7 +214,6 @@ $(function () {
   .model-center-div-btn {
     display: block;
     float: left;
-    /*padding: 0 15px;*/
     margin-right: 5px;
     font-size: 18px;
     color: #333;
