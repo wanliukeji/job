@@ -29,60 +29,6 @@
     <ul class="ul-div">
       <li class="li-div" v-for="(item,index) in items.slice(32,36)">{{item.name}}</li>
     </ul>
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">北仑区幼</li>-->
-    <!--      <li class="li-div">上虞论坛</li>-->
-    <!--      <li class="li-div">泉州论坛</li>-->
-    <!--      <li class="li-div">蚌埠论坛</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">化龙巷</li>-->
-    <!--      <li class="li-div">平湖论坛</li>-->
-    <!--      <li class="li-div">莱芜论坛</li>-->
-    <!--      <li class="li-div">徐州论坛</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">乐清上班族</li>-->
-    <!--      <li class="li-div">海宁论坛</li>-->
-    <!--      <li class="li-div">高邮论坛</li>-->
-    <!--      <li class="li-div">湖州南太湖</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">女排在线</li>-->
-    <!--      <li class="li-div">新昌论坛</li>-->
-    <!--      <li class="li-div">潍坊论坛</li>-->
-    <!--      <li class="li-div">易车论坛</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">慈溪论坛</li>-->
-    <!--      <li class="li-div">星空论坛</li>-->
-    <!--      <li class="li-div">丹阳翼网</li>-->
-    <!--      <li class="li-div">番禺社区</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">余姚论坛</li>-->
-    <!--      <li class="li-div">东林书院</li>-->
-    <!--      <li class="li-div">昆山热线</li>-->
-    <!--      <li class="li-div">株洲在线</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">宁海在线</li>-->
-    <!--      <li class="li-div">烟台论坛</li>-->
-    <!--      <li class="li-div">重庆论坛</li>-->
-    <!--      <li class="li-div">荆州论坛</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">奉化论坛</li>-->
-    <!--      <li class="li-div">昆山论坛</li>-->
-    <!--      <li class="li-div">镇江论坛</li>-->
-    <!--      <li class="li-div">长沙论坛</li>-->
-    <!--    </ul>-->
-    <!--    <ul class="ul-div">-->
-    <!--      <li class="li-div">厦门小鱼网</li>-->
-    <!--      <li class="li-div">淮北人论坛</li>-->
-    <!--      <li class="li-div">碧海潮声</li>-->
-    <!--      <li class="li-div">YY515游戏</li>-->
-    <!--    </ul>-->
   </div>
 </template>
 
@@ -95,7 +41,7 @@ export default {
     }
   },
   created () {
-    this.$http.get('/static/data/footNav.json').then(res => {
+    this.$http.get('../../../static/data/footNav.json').then(res => {
       var obj = res.data
       this.items = obj
       if (res.status == 200) {

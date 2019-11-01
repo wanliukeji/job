@@ -20,7 +20,7 @@ export default {
     }
   },
   created () {
-    // this.$http.get('/static/data/demo.json').then(res => {
+    // this.$http.get('../../../static/data/demo.json').then(res => {
     //     var obj = res.data;
     //     this.items = obj;
     //     this.movieList = res.data;

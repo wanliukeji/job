@@ -6,7 +6,7 @@
     </p>
     <div class="model-row">
       <div class="model-left">
-        <img src="/static/image/baidu.jpg" class="model-top-img">
+        <img src="../../../static/image/baidu.jpg" class="model-top-img">
       </div>
       <div class="model-center">
         <p class="model-center-title">

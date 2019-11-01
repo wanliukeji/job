@@ -118,7 +118,7 @@
         <ul class="joblist">
           <li class="job-info" v-for="i in [1,2,3,4,5,6]" @click="goTo('info')">
             <div class="div-left-img">
-              <img class="div-left-img-info" src="/static/image/aali.jpg" data-url="/static/image/aali.jpg">
+              <img class="div-left-img-info" src="../../../static/image/aali.jpg" data-url="../../../static/image/aali.jpg">
             </div>
             <div class="div-left-div">
               <p class="div-left-div-name"> 北京网络科技有限公司</p>

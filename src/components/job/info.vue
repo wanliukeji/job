@@ -6,7 +6,7 @@
     </p>
     <div class="model-row">
       <div class="model-left">
-        <img src="/static/image/baidu.jpg" class="model-top-img">
+        <img src="../../../static/image/baidu.jpg" class="model-top-img">
       </div>
       <div class="model-center">
         <p class="model-center-title">
@@ -57,20 +57,20 @@
       <div>
         <ul class="body-jpgs">
           <li class="body-li">
-            <a href="/static/image/google.jpg" target="_blank">
-              <img src="/static/image/google.jpg" class="body-img"
-                   data-url="/static/image/google.jpg" alt=""></a></li>
+            <a href="../../../static/image/google.jpg" target="_blank">
+              <img src="../../../static/image/google.jpg" class="body-img"
+                   data-url="../../../static/image/google.jpg" alt=""></a></li>
           <li class="body-li">
-            <a href="/static/image/aali.jpg" target="_blank"
-               title=""><img src="/static/image/aali.jpg"
+            <a href="../../../static/image/aali.jpg" target="_blank"
+               title=""><img src="../../../static/image/aali.jpg"
                              class="body-img"
-                             data-url="/static/image/aali.jpg"
+                             data-url="../../../static/image/aali.jpg"
                              alt=""></a></li>
           <li class="body-li">
-            <a href="/static/image/microsoft.jpg" target="_blank"
-               title=""><img src="/static/image/microsoft.jpg"
+            <a href="../../../static/image/microsoft.jpg" target="_blank"
+               title=""><img src="../../../static/image/microsoft.jpg"
                              class="body-img"
-                             data-url="/static/image/microsoft.jpg"
+                             data-url="../../../static/image/microsoft.jpg"
                              alt=""></a></li>
         </ul>
       </div>

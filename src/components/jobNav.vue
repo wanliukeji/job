@@ -341,7 +341,7 @@ export default {
     }
   },
   created () {
-    this.$http.get('/static/data/job_work.json').then(res => {
+    this.$http.get('../../static/data/job_work.json').then(res => {
       var obj = res.data
       if (res.status == 200) {
         this.$notify({
@@ -370,7 +370,7 @@ export default {
       })
     })
 
-    this.$http.get('/static/data/company.json').then(res => {
+    this.$http.get('../../static/data/company.json').then(res => {
       var obj = res.data
       if (res.status == 200) {
         this.$notify({
@@ -393,7 +393,7 @@ export default {
         type: 'error'
       })
     })
-    this.$http.get('/static/data/fair.json').then(res => {
+    this.$http.get('../../static/data/fair.json').then(res => {
       var obj = res.data
       if (res.status == 200) {
         this.$notify({
@@ -417,7 +417,7 @@ export default {
       })
     })
 
-    this.$http.get('/static/data/jobList.json').then(res => {
+    this.$http.get('../../static/data/jobList.json').then(res => {
       var obj = res.data
       if (res.status == 200) {
         this.$notify({
@@ -441,7 +441,7 @@ export default {
       })
     })
 
-    this.$http.get('/static/data/companyList.json').then(res => {
+    this.$http.get('../../static/data/companyList.json').then(res => {
       var obj = res.data
       if (res.status == 200) {
         this.$notify({

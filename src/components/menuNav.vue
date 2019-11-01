@@ -22,7 +22,7 @@
             }
         },
         created() {
-            this.$http.get('/static/data/menuNav.json').then(res => {
+            this.$http.get('../../static/data/menuNavs.json').then(res => {
                 var obj = res.data;
                 this.items = obj;
                 if (res.status == 200) {
@@ -103,17 +103,3 @@
   }
 </style>
 
-
-<!--备份-->
-<!--        <li class="li-div">-->
-<!--          论坛-->
-<!--        </li>-->
-<!--        <li class="li-div">-->
-<!--          手机版-->
-<!--        </li>-->
-<!--        <li class="li-div">-->
-<!--          我的贴子-->
-<!--        </li>-->
-<!--        <li class="li-div">-->
-<!--          APP下载-->
-<!--        </li>-->
