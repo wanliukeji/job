@@ -4,7 +4,7 @@ import Router from 'vue-router' /* 引用vue路由模块，并赋值给变量Rou
 import $ from 'jquery'
 import index from '../components/index'
 import group from '../components/job/group'
-import info from '../components/job/info'
+import comanyInfo from '../components/job/comanyInfo'
 import pcJobInfo from '../components/job/pcJobInfo'
 import home from '../home'
 
@@ -32,9 +32,9 @@ export default new Router({
       component: group
     },
     {
-      path: '/info',
-      name: 'info',
-      component: info
+      path: '/comanyInfo',
+      name: 'comanyInfo',
+      component: comanyInfo
     },
     {
       path: '/appIndex',

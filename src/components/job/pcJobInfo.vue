@@ -24,13 +24,12 @@
           地址：江苏 苏州 东宁路553号东溪德必易园A区325室
         </p>
         <p class="model-center-bottom">
-          <a class="model-center-div-btn">企业首页</a>
-          <a class="model-center-div-btn">企业相册(1)</a>
-          <a class="model-center-div-btn btn" style="color: #f2f3f5;">招聘职位(10)</a>
-          <a class="model-center-div-btn">工资(3)</a>
+          <a class="model-center-div-btn" @click="goTo('comanyInfo')">企业首页</a>
+          <a class="model-center-div-btn btn" style="color: #f2f3f5;">招聘职位</a>
         </p>
       </div>
     </div>
+
     <div class="model-row">
       <p style="height: 20px;"/>
       <h2 class="body-title">
@@ -92,40 +91,176 @@
       </p>
 
       <p style="padding-top: 20px; padding-bottom: 20px;">
-        <button
-          style="background-color: #0EA788; color: #f2f3f5; border: none; padding: 10px; width: 130px; font-size: 18px;">
+        <button class="job-btn" @click="employ">
           应聘
         </button>
-        <button
-          style="background-color: #f8ac59; color: #f2f3f5; border: none; padding: 10px; width: 130px; font-size: 18px;">
+        <button class="job-btn" @click="collect" style="background-color: #eeb02a;">
           收藏
         </button>
       </p>
     </div>
-
+    <div class="model-row">
+      <h2 class="body-title">面试地址</h2>
+      <p class="body-div-p">
+        <input type="text" v-model="addr" class="body-input"
+               placeholder="请输入地址"/>
+        <button @click="searchAddr" class="body-btn">
+          搜索
+        </button>
+      </p>
+      <div id="container"></div>
+    </div>
   </div>
 </template>
 
 <script>
 
-export default {
-  name: 'pcJobInfo',
-  data () {
-    return {
-      entity: {}
-    }
-  },
-  created () {
-    // eslint-disable-next-line no-unused-expressions
-    this.entity = this.$route.query;
-    console.log('>>>>>:' + JSON.stringify(this.entity));
-  },
-  methods: {
-    goTo (name) {
-      this.$router.push({name: name})
+  export default {
+    name: 'pcJobInfo',
+    data () {
+      return {
+        entity: {},
+        addr: '宁波',
+        x: '',
+        y: ''
+      }
+    },
+    mounted () {
+      /**================================================= 地图初始化定位 start ============================================*/
+      var geolocation = new BMap.Geolocation()
+      this.x = ''
+      this.y = ''
+      geolocation.getCurrentPosition(function (r) {
+        if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+          var mk = new BMap.Marker(r.point)
+          map.addOverlay(mk)
+          map.panTo(r.point)
+          this.x = r.point.lng
+          this.y = r.point.lat
+        } else {
+          console.log('failed' + this.getStatus())
+        }
+      }, {enableHighAccuracy: true})
+
+      /**================================================= 地图初始化 start ============================================*/
+      var map = new BMap.Map('container')    // 创建Map实例
+      map.centerAndZoom(new BMap.Point(this.x, this.y), 11)  // 初始化地图,设置中心点坐标和地图级别
+      //添加地图类型控件
+      map.addControl(new BMap.MapTypeControl({
+        mapTypes: [
+          BMAP_NORMAL_MAP,
+          BMAP_HYBRID_MAP
+        ]
+      }))
+      map.addControl(new BMap.NavigationControl())
+      map.addControl(new BMap.ScaleControl())
+      map.addControl(new BMap.OverviewMapControl())
+      map.addControl(new BMap.MapTypeControl())
+      map.setCurrentCity('宁波')          // 设置地图显示的城市 此项是必须设置的
+      map.enableScrollWheelZoom(true)     //开启鼠标滚轮缩放
+      var styleOptions = {
+        strokeColor: 'red',    //边线颜色。
+        fillColor: 'red',      //填充颜色。当参数为空时，圆形将没有填充效果。
+        strokeWeight: 3,       //边线的宽度，以像素为单位。
+        strokeOpacity: 0.8,    //边线透明度，取值范围0 - 1。
+        fillOpacity: 0.6,      //填充的透明度，取值范围0 - 1。
+        strokeStyle: 'solid' //边线的样式，solid或dashed。
+      }
+      //实例化鼠标绘制工具
+      var drawingManager = new BMapLib.DrawingManager(map, {
+        isOpen: false, //是否开启绘制模式
+        enableDrawingTool: true, //是否显示工具栏
+        drawingToolOptions: {
+          anchor: BMAP_ANCHOR_TOP_RIGHT, //位置
+          offset: new BMap.Size(5, 5), //偏离值
+        },
+        circleOptions: styleOptions, //圆的样式
+        polylineOptions: styleOptions, //线的样式
+        polygonOptions: styleOptions, //多边形的样式
+        rectangleOptions: styleOptions //矩形的样式
+      })
+      var local = new BMap.LocalSearch(map, {
+        renderOptions: {map: map}
+      })
+      // 关键词搜索
+      local.search(this.addr)
+    },
+    created () {
+      // eslint-disable-next-line no-unused-expressions
+      this.entity = this.$route.query
+      console.log('>>>>>:' + JSON.stringify(this.entity))
+    },
+    methods: {
+      goTo (name) {
+        this.$router.push({name: name})
+      },
+      searchAddr () {
+        var geolocation = new BMap.Geolocation()
+        this.x = ''
+        this.y = ''
+        geolocation.getCurrentPosition(function (r) {
+          if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+            var mk = new BMap.Marker(r.point)
+            map.addOverlay(mk)
+            map.panTo(r.point)
+            this.x = r.point.lng
+            this.y = r.point.lat
+          } else {
+            console.log('failed' + this.getStatus())
+          }
+        }, {enableHighAccuracy: true})
+
+        /**================================================= 地图初始化 start ============================================*/
+        var map = new BMap.Map('container')    // 创建Map实例
+        map.centerAndZoom(new BMap.Point(this.x, this.y), 11)  // 初始化地图,设置中心点坐标和地图级别
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+          mapTypes: [
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+          ]
+        }))
+        map.addControl(new BMap.NavigationControl())
+        map.addControl(new BMap.ScaleControl())
+        map.addControl(new BMap.OverviewMapControl())
+        map.addControl(new BMap.MapTypeControl())
+        map.setCurrentCity(this.addr)          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true)     //开启鼠标滚轮缩放
+        var styleOptions = {
+          strokeColor: 'red',    //边线颜色。
+          fillColor: 'red',      //填充颜色。当参数为空时，圆形将没有填充效果。
+          strokeWeight: 3,       //边线的宽度，以像素为单位。
+          strokeOpacity: 0.8,    //边线透明度，取值范围0 - 1。
+          fillOpacity: 0.6,      //填充的透明度，取值范围0 - 1。
+          strokeStyle: 'solid' //边线的样式，solid或dashed。
+        }
+        //实例化鼠标绘制工具
+        var drawingManager = new BMapLib.DrawingManager(map, {
+          isOpen: false, //是否开启绘制模式
+          enableDrawingTool: true, //是否显示工具栏
+          drawingToolOptions: {
+            anchor: BMAP_ANCHOR_TOP_RIGHT, //位置
+            offset: new BMap.Size(5, 5), //偏离值
+          },
+          circleOptions: styleOptions, //圆的样式
+          polylineOptions: styleOptions, //线的样式
+          polygonOptions: styleOptions, //多边形的样式
+          rectangleOptions: styleOptions //矩形的样式
+        })
+        var local = new BMap.LocalSearch(map, {
+          renderOptions: {map: map}
+        })
+        // 关键词搜索
+        local.search(this.addr)
+      },
+      employ() {
+        this.$message.success('投递成功,敬请来电')
+      },
+      collect() {
+        this.$message.success('收藏成功')
+      }
     }
   }
-}
 
 </script>
 
@@ -272,4 +407,42 @@ export default {
     font-size: 16px;
   }
 
+  .body-div-p {
+    z-index: 10;
+    position: absolute;
+  }
+
+  .body-input {
+    border: none;
+    margin: 10px 0px 0px 70px;
+    padding: 5px;
+    display: inline-block;
+    width: 300px;
+  }
+
+  .body-btn {
+    border: none;
+    margin: 10px 5px 0px 0px;
+    padding: 5px;
+    display: inline-block;
+    background-color: #0a6beb;
+    color: #f2f3f5;
+    width: 70px;
+    border-radius: 3px;
+  }
+
+  .job-btn {
+    background-color: #0EA788;
+    color: #f2f3f5;
+    border: none;
+    padding: 10px;
+    width: 130px;
+    font-size: 18px;
+  }
+
+  #container {
+    width: 100%;
+    height: 700px;
+    border: #151515 0.5px solid;
+  }
 </style>

@@ -87,7 +87,7 @@
     padding-bottom: 30px;
     margin: 0 auto;
     margin-bottom: 10px;
-    margin-top: -5px;
+    margin-top: 20px;
   }
 
   .p-font, a {

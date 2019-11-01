@@ -12,14 +12,14 @@ import TableNav from './tableNav'
 import MenuNav from './menuNav'
 import FooterTable from './footerTable'
 import footerNav from './footerNav'
-import Info from './job/info'
+import comanyInfo from './job/comanyInfo'
 import Group from './job/group'
 
 export default {
   name: 'index',
   components: {
     Group,
-    Info,
+    comanyInfo,
     TableNav,
     FooterTable,
     Top,

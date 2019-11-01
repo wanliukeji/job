@@ -25,9 +25,7 @@
         </p>
         <p class="model-center-bottom">
           <a class="model-center-div-btn btn" style="color: #f2f3f5;">企业首页</a>
-          <a class="model-center-div-btn">企业相册(1)</a>
-          <a class="model-center-div-btn">招聘职位(10)</a>
-          <a class="model-center-div-btn">工资(3)</a>
+          <a class="model-center-div-btn" @click="goTo('pcJobInfo')">招聘职位</a>
         </p>
       </div>
     </div>
@@ -76,10 +74,6 @@
       </div>
       <div class="body-more"><a href="https://ihuoniao.cn/sz/job/company-album-50.html">查看所有照片(4)>></a></div>
       <p style="height: 30px;"/>
-      <!--      <h2 class="body-title">企业地图</h2>-->
-      <!--      <div class="body-map">-->
-      <!--        <map/>-->
-      <!--      </div>-->
     </div>
     <div class="model-row">
       <h2 class="body-title">公司地址</h2>
@@ -97,7 +91,7 @@
 
 <script>
     export default {
-        name: "info",
+        name: "comanyInfo",
         components: {},
         created() {
         },

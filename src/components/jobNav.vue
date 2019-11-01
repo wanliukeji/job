@@ -436,7 +436,7 @@
         this.$router.push({name: 'group'})
       },
       gotInfo (id) {
-        this.$router.push({name: 'info'})
+        this.$router.push({name: 'comanyInfo'})
       },
       gotCompanyList (id) {
         this.$router.push({name: 'companyGroup'})
@@ -875,6 +875,7 @@
     width: 100%;
     height: 460px;
     min-width: 1200px;
+    margin-bottom: -15px;
   }
 
   .foot-left {
