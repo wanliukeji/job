@@ -33,9 +33,10 @@
       <div class="hide-div-nav">
         <p class="hide-p">
           <span class="hide-p-span">
-            阿拉宁波网 > 阿拉宁波-职场 > 个人求职专区 &nbsp;[进入板块]
+            阿拉宁波网 > 阿拉宁波-职场 > 个人求职专区 &nbsp;<span class="go-model">[进入板块]</span>
           </span>
-          <button class="hide-p-btn">发新帖</button>
+          <!-- <button id="postbtn" class="hide-p-btn" onclick="hideWindow('nav');showWindow('newthread', 'forum.php?mod=post&amp;action=newthread&amp;fid=' + selectfid)" fwin="nav" disabled="disabled"><span>发新帖</span></button>-->
+          <button class="hide-p-btn" @click="sendMsg">发新帖</button>
         </p>
         <ul class="hide-ul-div" style="padding: 8px;">
           <li class="hide-ul-div-li">
@@ -226,7 +227,10 @@
                 // this.$dialog.alert(this.info.name);
                 this.showFlag = false;
                 this.adapterSelected = this.radio;
-            }
+            },
+          sendMsg() {
+              alert(1);
+          }
         }
     }
 </script>
@@ -558,6 +562,14 @@
     display: inline-block;
     left: 0;
     margin-left: 80px;
+  }
+
+  .hide-p-btn:hover, .hide-ul-div-li-span:hover {
+    color: #151515;
+  }
+
+  .go-model {
+    color: #0a6beb;
   }
 
 </style>
