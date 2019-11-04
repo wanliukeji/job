@@ -235,7 +235,8 @@
       radioEvent () {
         // this.$dialog.alert(this.info.name);
         this.showFlag = false
-        this.adapterSelected = this.radio
+        this.adapterSelected = this.radio;
+
       },
       sendMsg () {
         alert(1)

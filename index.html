@@ -1,44 +1,588 @@
 <!DOCTYPE html>
-<html lang="el">
+<html>
 <head>
-  <title>阿拉宁波网 - 宁波本地招聘网</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="keywords" content="招聘首页"/>
-  <meta name="description" content="招聘首页 "/>
-  <meta name="generator" content="nbjb v1.0"/>
-  <meta name="author" content="chenny"/>
-  <meta name="copyright" content="2019-2050 Comsenz Inc."/>
-  <meta name="MSSmartTagsPreventParsing" content="True"/>
-  <meta http-equiv="MSThemeCompatible" content="Yes"/>
-  <meta name="application-name" content="阿拉宁波招聘网"/>
-  <meta name="msapplication-tooltip" content="阿拉宁波招聘网"/>
-  <meta name="msapplication-task"
-        content="name=招聘首页;action-uri=https://www.cnnb.com;icon-uri=https://www.cnnb.com/template/weixia_cms/weixia/src//portal.ico"/>
-  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
-  <meta name="msapplication-task"
-        content="name=阿拉招聘;action-uri=https://www.cnnb.com/forum.php;icon-uri=https://www.cnnb.com/template/weixia_cms/weixia/src//bbs.ico"/>
-<!--  <base href="https://127.0.0.1:8080/nbjb" /><-->
-  <link rel="Shortcut Icon" href="./static/ico/favicon.ico" type="image/x-icon" />
-  <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
-  <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
-  <!--[if lt IE 9]>
-  <script src="static/js/html5shiv.js"></script>
-  <script src="static/js/respond.js"></script>
-  <![endif]-->
-  <!-- 引入百度地图API -->
-  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QmcMSpFIvtQyMkkvBQwMyEcWyaAF0dZi"/>
-  <!--  <script type = "text/javascript" src = "http://api.map.baidu.com/api?v=2.0&ak=NP160iZgGFkIGoe3LiQrRWC1L554h1It"/>-->
-  <!--  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=F5g7TtwB3sBzNS7AKWvtCQTtCqlxxtGw"></script>-->
-  <script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
-  <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
-  <style type="text/css">
-    html {
-      background-color: #f2f3f5;
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>宁波、北仑求职招聘就上阿拉招聘网</title>
+  <meta name="description" content="宁波、北仑招聘求职">
+  <meta name="keywords" content="宁波招聘,北仑招聘,宁波求职,北仑求职">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta content="telephone=no,email=no" name="format-detection"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <base href="http://dev.bbs.cnnb.com/"/>
+  <link rel="stylesheet" href="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/css/common.css?v=2019110415">
+  <script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/rem.js?v=2019110415"
+          type="text/javascript"></script>
+  <script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/zepto.min.js?v=2019110415"
+          type="text/javascript"></script>
+  <script type="text/javascript">
+    var qscms = {
+      base: 'http://dev.bbs.cnnb.com/',
+      domain: 'http://dev.bbs.cnnb.com/',
+      root: 'plugin.php?id=alazhaopin',
+      is_subsite: 0,
+      subsite_level: '1',
+      smsTatus: '1'
     }
-  </style>
-<body>
-<div id="app"></div>
+    if (!!window.ActiveXObject || 'ActiveXObject' in window) {
+      window.location.href = ''
+    }
+  </script>
+  <link rel="stylesheet"
+        href="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/css/common_search.css?v=2019110415">
+  <link rel="stylesheet"
+        href="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/css/company.css?v=2019110415">
+  <link rel="stylesheet"
+        href="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/css/nprogress.css?v=2019110415">
+  <script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/categorycache.js?v=2019110415"
+          type="text/javascript" charset="UTF-8"></script>
+</head>
+<body class="bg_white">
+<div class="headernavfixed">
+  <div class="headernav font16">
+    <div class="title">
+      <em>阿拉招聘</em>
+      <a class="return-back" href="javascript:history.go(-1);"></a>
+      <div class="list-icon"></div>
+    </div>
+  </div>
+  <div class="t-mask"></div>
+  <div class="topnavshow">
+    <div class="navlis">
+      <a class="topnav" href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin">
+        <div class="imgbox"><img
+          src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/images/i_icon_home.png"/></div>
+        <div class="tit">返回首页</div>
+      </a>
+      <a class="topnav" href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=my">
+        <div class="imgbox"><img
+          src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/images/i_icon_member.png"/></div>
+        <div class="tit">用户中心</div>
+      </a>
+      <a class="topnav" href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin">
+        <div class="imgbox"><img src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/images/i_icon_2.png"/>
+        </div>
+        <div class="tit">找工作</div>
+      </a>
+      <a class="topnav" href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin">
+        <div class="imgbox"><img src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/images/i_icon_3.png"/>
+        </div>
+        <div class="tit">找人才</div>
+      </a>
+      <a class="topnav" href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=qiye">
+        <div class="imgbox"><img
+          src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/images/i_icon_company.png"/></div>
+        <div class="tit">找公司</div>
+      </a>
+      <div class="clear"></div>
+    </div>
+    <div class="h-navclose qs-center">
+      <div class="navclose"></div>
+    </div>
+  </div>
+</div>
+<div class="list_txt_tip font12">请先开通企业帐户，有助于您更快的招聘到意向人才。</div>
+<div class="split-block bg_light"></div>
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">企业名称</div>
+  <div class="describe">
+    <span>宁波亿普瑞物流自动化分拣设备有限公司</span>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">企业性质</div>
+  <div class="describe">
+    <span>民营</span>
+  </div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">所属行业</div>
+  <div class="describe">
+    <span>钢铁/机械/设备/重工</span>
+  </div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">企业规模</div>
+  <div class="describe">
+    <span>50-99人</span>
+  </div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">所在地区</div>
+  <div class="describe">
+    <span>宁波市镇海区</span>
+  </div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">企业福利</div>
+  <div class="describe">
+    <span>五险,全勤奖,带薪年假,包食宿,通讯补助</span>
+  </div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">企业简介</div>
+  <div class="describe" style="height: auto; white-space: initial; word-break: initial; text-indent: 2em;">
+    <p>
+      宁波亿普瑞物流自动化分拣设备有限公司创立于2007年10月，是集研发、设计、制造、安装、调试和售后于一体的专业从事自动化物流输送系统的高科技企业，为客户提供整体规划和解决方案。
+      公司拥有一支朝气蓬勃、有胆、有识并富有二十年以上经验的技术团队，形成了一整套适合自身发展并符合ISO9001规范的科学管理体系，使得整个公司在从业务咨询、技术认证、精工制造、安装调试及售后服务的“交钥匙工程”运作中得到规范运行，为企业的发展奠定了坚实的基础。目前公司共有员工200人，其中管理人员35人，工程技术人员25人，高级工程师5人，工程师15人。
+      公司核心产品及优势：自主研发、设计（计算机软件开发）、大型智能化物流分拣中心方案规划等；主要设备有“交叉带分拣机”（非接触供电及滑触式供电系统）、直线滑块高速分拣机、物流集成分拣系统、伸缩皮带机、高低速转弯皮带机
+      、高低速直线皮带机、倾斜皮带机、可移动式爬坡电动滚筒一体机等自动化输送设备。全体员工凭着“不断创新，追求卓越”的精神，设计制造的各类光机电一体化系统工程、物流输送成套设备，以其独特的设计和专业制造技术，在国内同行业中占据领先地位。
+      目前产品市场开发涉及的行业面广泛，已与国内知名的快递行业、电商行业、邮政、烟草、服装、医药行业、大型工业自动化生产线、仓储出入输送设备企业等合作。特别是物流自动化的分拣项目，其中快递与电商行业在国内已有上百个工程案例，布遍23个省、4个直辖市、3个自治区。由于我司的设备结构设计合理、制作精良、故障率低，全国各个分点都布置有专业的售后服务团队，现我司已成为国内众多行业的合作伙伴。
+    </p>
+  </div>
+</div>
+
+<div class="split-block bg_light"></div>
+<div class="plist-input" style="margin-top: 20px; text-align: center; padding: 0;">
+  <div class="pic"></div>
+  <div class="describe" style="font-size: .3rem; color: #6b6b6b; border-bottom: 1px #CCCCCC solid; margin: 0 auto; padding: 0px;">
+    <span>申领人信息填写</span>
+  </div>
+</div>
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">联系人</div>
+  <div class="describe">
+    <input type="text" name="contact" placeholder="请输入联系人" value="CHENNY">
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">手机号码</div>
+  <div class="describe">
+    <input name="telephone" placeholder="请输入联系手机" value="15050870645">
+  </div>
+</div>
+
+<div class="plist-input">
+  <div class="pic"></div>
+  <div class="tit">联系地址</div>
+  <div class="describe">
+    <input type="text" name="address" placeholder="请输入详细地址" value="">
+  </div>
+</div>
+
+<div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
+  <div class="upload_box">
+    <div class="addicon">+</div>
+    <div class="font14 font_gray9 qs-center">点击上传营业执照</div>
+    <input type="file" id="browseFile_certificate_img" class="browseFile">
+    <input type="hidden" id="certificate_img_up" name="certificate_img_up" value="">
+    <div class="img_box"></div>
+  </div>
+
+  <div class="font14 font_gray3 qs-center mt4">注：请确保企业名称与企业执照一致<br><strong class="font_yellow">上传认证后可优先展示职位信息</strong>
+  </div>
+</div>
+
+<div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
+  <div class="upload_box">
+    <div class="addicon">+</div>
+    <div class="font14 font_gray9 qs-center">点击上传企业授权认证</div>
+    <input type="file" id="qy_pass_img" class="browseFile">
+    <input type="hidden" id="qy_pass_img_up" name="qy_pass_img_up" value="">
+    <div class="img_box"></div>
+  </div>
+  </div>
+</div>
+
+<div class="btn-spacing">
+  <input type="hidden" name="map_x" id="tpl_map_x" value="">
+  <input type="hidden" name="map_y" id="tpl_map_y" value="">
+  <input type="hidden" name="map_zoom" id="tpl_map_zoom" value="">
+  <input type="hidden" name="logovalue" id="logovalue" value="">
+  <input type="hidden" id="tag" value="">
+  <div id="save_info" class="qs-btn qs-btn-blue font15">保存</div>
+</div>
+
+<div class="bottomContact font10 link_blue">
+  如有任何问题可<a href="tel:86800055">联系客服 ：86800055</a>
+</div>
+
+<div class="split-block"></div>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/QSpopout.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/QSfilter.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/global.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<div id="backtop"><i></i></div>
+<div class="qsfooter link_gray6">
+  <div class="txt font10"></div>
+</div>
+
+
+<div style="width: 100%;height: 1.2rem;"></div>
+<div class="bottomfixed">
+  <div class="navlis">
+    <a class="topnav " href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&noblank=1">
+      <div class="imgbox img1"></div>
+      <div class="tit">首页</div>
+    </a>
+    <a class="topnav " href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=jobs&noblank=1">
+      <div class="imgbox img2"></div>
+      <div class="tit">找工作</div>
+    </a>
+    <a class="topnav " href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=resume&noblank=1">
+      <div class="imgbox img3"></div>
+      <div class="tit">找人才</div>
+    </a>
+    <a class="topnav " href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=my&noblank=1">
+      <div class="imgbox img4"></div>
+      <div class="tit">我的</div>
+    </a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div style="display:none">
+  <script
+    type="text/javascript">var cnzz_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://')
+  document.write(unescape('%3Cspan id=\'cnzz_stat_icon_1278115629\'%3E%3C/span%3E%3Cscript src=\'' + cnzz_protocol + 'v1.cnzz.com/z_stat.php%3Fid%3D1278115629%26show%3Dpic\' type=\'text/javascript\'%3E%3C/script%3E'))</script>
+</div>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/qsCategory.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/popWin.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/mobileBUGFix.mini.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/LocalResizeIMG.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script src="http://dev.bbs.cnnb.com/source/plugin/alazhaopin/static/wap/js/nprogress.js?v=2019110415"
+        type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+  $(function () {
+    $('.js-showActionSheet').on('click', function () {
+      var iosActionsheet = $(this).closest('.js-actionParent').find('.js-actionsheet')
+      var iosMask = $(this).closest('.js-actionParent').find('.qs-mask')
+      iosActionsheet.removeClass('qs-actionsheet-toggle')
+      iosActionsheet.addClass('qs-actionsheet-toggle')
+      iosMask.fadeIn(200)
+      iosMask.on('click', hideActionSheet)
+      $(this).closest('.js-actionParent').find('.js-cancelActionSheet').on('click', hideActionSheet)
+      $(this).closest('.js-actionParent').find('.qs-actionsheet-cell').on('click', hideActionSheet)
+
+      function hideActionSheet () {
+        $(this).closest('.js-actionParent').find('.js-actionsheet').removeClass('qs-actionsheet-toggle')
+        $(this).closest('.js-actionParent').find('.qs-mask').fadeOut(200)
+      }
+    })
+
+    $('#district').change(function () {
+      $('#district_cn').val($('#district').find('option:checked').text())
+    })
+
+  })
+
+  function exit_tig (url_txt) {
+    var dialog = new QSpopout()
+    dialog.setContent('将跳转到新页面，您修改未保存的资料将丢失，建议保存后再确定操作')
+    dialog.setBtn(2, ['先保存', '去修改'])
+    dialog.show()
+    dialog.getPrimaryBtn().on('click', function () {
+      window.location.href = url_txt
+    })
+  }
+
+  var describeTemp = $('#tpl-describe').html()
+  $('.describeText').on('click', function () {
+    var baseTxt = $(this).text()
+    popWin.init({
+      from: 'right',
+      html: describeTemp,
+      handle: function (a) {
+        if ($('#contents').val().length) {
+          $('#tpl_contents').val($('#contents').val())
+        }
+        $('.J_empty').on('click', function () {
+          $('#tpl_contents').val('')
+        })
+        $('#contentsBtn').on('click', function () {
+          if ($.trim($('#tpl_contents').val()) == '') {
+            qsToast({type: 2, context: '请填写企业简介'})
+            return false
+          }
+          $('#contents').val($('#tpl_contents').val())
+          $('.describeText').html($('#tpl_contents').val())
+          a.close()
+        })
+      }
+    })
+  })
+
+  var tpl_tagvalueArray = $('#tag').val()
+  $.each(tpl_tagvalueArray.split(','), function (k, v) {
+    $('.tag[tid="' + v + '"]').addClass('select')
+  })
+  $('#J_tagWrap .tag,#J_taglist .tag').on('click', function () {
+    if ($(this).hasClass('select')) {
+      $(this).removeClass('select')
+    } else {
+      if ($('.tag.select').length >= 6) {
+        qsToast({type: 2, context: '企业福利最多可以选6项！'})
+        return false
+      }
+      $(this).addClass('select')
+    }
+    var tagvalueArray = $('.tag.select').map(function () {
+      return $(this).attr('tid')
+    }).get().join(',')
+    var tagcnvalueArray = $('.tag.select').map(function () {
+      return $(this).attr('title')
+    }).get().join(',')
+    $('#tag').val(tagvalueArray)
+  })
+
+  /* 保存企业基本资料 */
+  var regularMobile = /^13[0-9]{9}$|14[0-9]{9}$|15[0-9]{9}$|16[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$|19[0-9]{9}$/ // 验证手机号
+  var regularEmail = /^[_\.0-9a-zA-Z-]+[_0-9a-zA-Z-]@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,3}$/ // 验证邮箱
+  var regularTelFirst = /^[0-9]{3}[0-9]?$/ // 验证区号
+  var regularTelNext = /^[0-9]{6,11}$/ // 验证电话号码
+  var regularTelLast = /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/ // 验证分机号码
+  $('#save_info').click(function () {
+    var companyname = $.trim($('input[name=companyname]').val())
+    var nature = $.trim($('#nature').val())
+    var trade = $.trim($('#trade').val())
+    var scale = $.trim($('#scale').val())
+    var district = $.trim($('#district').val())
+    var district_cn = $.trim($('input[name=district_cn]').val())
+    var contents = $.trim($('#contents').val())
+    var tag = $.trim($('#tag').val())
+    var contact = $.trim($('input[name=contact]').val())
+    var telephone = $.trim($('input[name=telephone]').val())
+    var mobile_vcode = $.trim($('#mobile_vcode').val())
+    var landline_tel = $.trim($('input[name=landline_tel]').val())
+    var address = $.trim($('input[name=address]').val())
+    var map_x = $.trim($('input[name=map_x]').val())
+    var map_y = $.trim($('input[name=map_y]').val())
+    var logovalue = $.trim($('input[name=logovalue]').val())
+    var cid = ''
+    if (logovalue == '') {
+      qsToast({type: 2, context: '请上传企业logo'})
+      return false
+    }
+    if (companyname == '') {
+      qsToast({type: 2, context: '请填写企业名称'})
+      return false
+    }
+    if (!nature) {
+      qsToast({type: 2, context: '请选择企业性质'})
+      return false
+    }
+    if (!trade) {
+      qsToast({type: 2, context: '请选择所属行业'})
+      return false
+    }
+    if (scale == '0') {
+      qsToast({type: 2, context: '请选择企业规模'})
+      return false
+    }
+    if (district == '0') {
+      qsToast({type: 2, context: '请选择所在地区'})
+      return false
+    }
+    if (contents == '') {
+      qsToast({type: 2, context: '请填写企业简介'})
+      return false
+    }
+    if (contact == '') {
+      qsToast({type: 2, context: '请填写联系人'})
+      return false
+    }
+    if (contact != '' && contact.length > 10) {
+      qsToast({type: 2, context: '联系人1-10个字'})
+      return false
+    }
+
+    if (address == '') {
+      qsToast({type: 2, context: '联系地址不能为空'})
+      return false
+    }
+    if (address != '' && address.length > 100) {
+      qsToast({type: 2, context: '联系地址不能大于100个字'})
+      return false
+    }
+
+    var certificate_img = $('#certificate_img_up').val()
+
+    $(this).html('正在保存...')
+    $(this).addClass('qs-btn-border-disabled')
+    $.post('http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=company&ac=com_info&tosubmit=1&formhash=d8192fdb', {
+      cid: cid,
+      companyname: companyname,
+      nature: nature,
+      trade: trade,
+      scale: scale,
+      district: district,
+      district_cn: district_cn,
+      contents: contents,
+      tag: tag,
+      contact: contact,
+      telephone: telephone,
+      mobile_vcode: mobile_vcode,
+      landline_tel: landline_tel,
+      address: address,
+      map_x: map_x,
+      map_y: map_y,
+      logovalue: logovalue,
+      certificate_img: certificate_img
+    }, function (r) {
+      if (r.status == 1) {
+        var html = ''
+        if (r.data) html += ''
+        html += '<p class="mt2">您还可以操作</p>'
+        html += '<a href="http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=company&ac=jobs_add" class="qs-btn qs-btn-medium qs-btn-orange mt2">发布招聘职位</a>'
+        var popout = new QSpopout('企业资料' + r.msg)
+        popout.setBtn(1)
+        popout.setContent(html)
+        popout.show()
+        popout.getPrimaryBtn().on('click', function () {
+          window.location.href = 'http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=mycompany'
+        })
+        return false
+      } else {
+        qsToast({type: 2, context: r.msg})
+      }
+      $('#save_info').html('保存')
+      $('#save_info').removeClass('qs-btn-border-disabled')
+    }, 'json')
+  })
+
+  $('#browseFile').localResizeIMG({
+    width: 800,
+    quality: 1,
+    success: function (result) {
+      var submitData = {
+        base64_string: result.clearBase64,
+        company_id: ''
+      }
+      NProgress.start()
+      $.ajax({
+        type: 'POST',
+        url: 'http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=upload&ac=company_logo',
+        data: submitData,
+        dataType: 'json',
+        success: function (result) {
+          NProgress.done()
+          if (result.status == 1) {
+            $('#logo').attr('src', result.data.path)
+            $('#logovalue').val(result.data.path)
+          } else {
+            qsToast({type: 2, context: result.msg})
+          }
+        },
+        complete: function (XMLHttpRequest, textStatus) {
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) { //上传失败
+          qsToast({type: 2, context: 'LOGO上传失败！'})
+        }
+      })
+    }
+  })
+
+  $('#browseFile_certificate_img').localResizeIMG({
+    width: 800,
+    quality: 1,
+    success: function (result) {
+      var submitData = {
+        base64_string: result.clearBase64,
+        company_id: ''
+      }
+      NProgress.start()
+      $.ajax({
+        type: 'POST',
+        url: 'http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=upload&ac=certificate_img',
+        data: submitData,
+        dataType: 'json',
+        success: function (result) {
+          NProgress.done()
+          if (result.status == 1) {
+            $('#certificate_img_up').val(result.data.path)
+            $('.img_box').css('background-image', 'url(\'' + result.data.path + '\')')
+          } else {
+            qsToast({type: 2, context: result.msg})
+          }
+        },
+        complete: function (XMLHttpRequest, textStatus) {
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) { //上传失败
+          qsToast({type: 2, context: '营业执照上传失败！'})
+        }
+      })
+    }
+  })
+
+</script>
+<script type="text/javascript">
+  var uploadinput = $('#browseFile')
+  var browseFile_certificate_img = $('#browseFile_certificate_img')
+</script>
+<link rel="stylesheet" href="/source/plugin/alazhaopin/static/wap/js/mobileSelect/mobileSelect.css?v=2019110415">
+<script src="/source/plugin/alazhaopin/static/wap/js/mobileSelect/mobileSelect.js?v=2019110415" type="text/javascript"
+        charset="UTF-8"></script>
+<script type="text/javascript">
+  var mobileSelect1 = new MobileSelect({
+    trigger: '#district_select',
+    title: '请选择职位类别',
+    wheels: [
+      {
+        data: [{
+          id: '16',
+          value: '舟山市',
+          childs: [{id: '17', value: '定海区'},
+            {id: '18', value: '普陀区'},
+            {id: '19', value: '岱山县'},
+            {id: '20', value: '嵊泗县'},
+          ]
+        },
+          {
+            id: '1',
+            value: '宁波市',
+            childs: [{id: '2', value: '北仑区'},
+              {id: '3', value: '江东区'},
+              {id: '4', value: '江北区'},
+              {id: '5', value: '海曙区'},
+              {id: '6', value: '鄞州区'},
+              {id: '7', value: '镇海区'},
+              {id: '9', value: '奉化区'},
+              {id: '8', value: '余姚市'},
+              {id: '11', value: '慈溪市'},
+              {id: '10', value: '宁海县'},
+              {id: '12', value: '象山县'},
+            ]
+          },
+        ]
+      }
+    ],
+    position: [0, 0],
+    callback: function (indexArr, data) {
+      if (data[1]) {
+        $('#district').val(data[1].id)
+        $('#district_cn').val(data[0].value + data[1].value)
+      } else {
+        $('#district').val(data[0].id)
+        $('#district_cn').val(data[0].value)
+      }
+    }
+  })
+</script>
 </body>
 </html>
