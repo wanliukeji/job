@@ -11,6 +11,15 @@
             <option>全部板块</option>
             <option>阿拉新闻</option>
           </select>
+
+          <svg style="position: absolute; left: 82px; top: 8px;" t="1572829841235" class="icon" viewBox="0 0 1024 1024"
+               version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1716" width="26" height="26">
+            <path d="M207.826489 384.273067l48.264533-48.287289 303.968711 303.968711-48.287289 48.241778z" p-id="1717"
+                  fill="#707070"></path>
+            <path d="M464.099556 639.726933l303.945955-303.945955 48.287289 48.264533-303.968711 303.968711z"
+                  p-id="1718" fill="#bcbcbc"></path>
+          </svg>
+
           <svg t="1566630465890" class="icon icon-select-left" viewBox="0 0 1024 1024" version="1.1"
                xmlns="http://www.w3.org/2000/svg"
                p-id="7678" width="27" height="27">
@@ -201,38 +210,38 @@
 </template>
 
 <script>
-    export default {
-        name: "example",
-        data() {
-            return {
-                showFlag: false,
-                radio: "",
-                info: {
-                    name: 'chenny',
-                    job: '程序猿',
-                    address: '宁波北仑区大榭',
-                    sex: '男'
-                },
-                input1: '',
-                input2: '',
-                input3: '',
-                select: ''
-            }
+  export default {
+    name: 'example',
+    data () {
+      return {
+        showFlag: false,
+        radio: '',
+        info: {
+          name: 'chenny',
+          job: '程序猿',
+          address: '宁波北仑区大榭',
+          sex: '男'
         },
-        methods: {
-            show() {
+        input1: '',
+        input2: '',
+        input3: '',
+        select: ''
+      }
+    },
+    methods: {
+      show () {
 
-            },
-            radioEvent() {
-                // this.$dialog.alert(this.info.name);
-                this.showFlag = false;
-                this.adapterSelected = this.radio;
-            },
-          sendMsg() {
-              alert(1);
-          }
-        }
+      },
+      radioEvent () {
+        // this.$dialog.alert(this.info.name);
+        this.showFlag = false
+        this.adapterSelected = this.radio
+      },
+      sendMsg () {
+        alert(1)
+      }
     }
+  }
 </script>
 
 
@@ -288,11 +297,11 @@
 
   .select-div {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 42px;
-    font-size: 13px;
+    font-size: 15px;
     color: #454545;
-    padding-left: 15px;
+    padding-left: 14.5px;
     text-align: center;
     appearance: none;
     -moz-appearance: none; /* Firefox */
@@ -304,7 +313,10 @@
     outline: none;
     /*将默认的select选择框样式清除*/
     -ms-appearance: none;
-    /*在选择框的最右侧中间显示小箭头图片*/
+  }
+
+  .select-div > option {
+    border: cyan 1px solid;
   }
 
   .select-div:hover {
@@ -561,7 +573,7 @@
     z-index: 10;
     display: inline-block;
     left: 0;
-    margin-left: 80px;
+    margin-left: 106px;
   }
 
   .hide-p-btn:hover, .hide-ul-div-li-span:hover {
