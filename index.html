@@ -161,93 +161,95 @@
 </div>
 
 <div class="split-block bg_light"></div>
-<!--<form method="post" action="" enctype="multipart/form-data" id="company_apply_form">-->
-<div class="plist-input" style="margin: 10px 0px 0px 0px; text-align: center; padding: 0;">
-  <div class="pic"></div>
-  <div class="describe"
-       style="font-size: .3rem; color: #6b6b6b; border-bottom: 1px #efefef solid; margin: 0 auto; padding: 0px;">
-    <span>申领人信息填写</span>
+<form method="post" action="" enctype="multipart/form-data" id="company_apply_form">
+  <div class="plist-input" style="margin: 10px 0px 0px 0px; text-align: center; padding: 0;">
+    <div class="pic"></div>
+    <div class="describe"
+         style="font-size: .3rem; color: #6b6b6b; border-bottom: 1px #efefef solid; margin: 0 auto; padding: 0px;">
+      <span>申领人信息填写</span>
+    </div>
   </div>
-</div>
-<div class="plist-input">
-  <div class="pic"></div>
-  <div class="tit" style="font-size: 13px;">
-    联系人
-    <span style="color: red; font-size: 8px; float: right;" id="contact_span"></span>
-  </div>
-  <div class="describe" style="padding-right: 0px;">
-    <input type="text" id="contact" name="contact" placeholder="请输入联系人" value="chenyu"
-           style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px;">
-  </div>
-</div>
-
-<div class="plist-input">
-  <div class="pic"></div>
-  <div class="tit" style="font-size: 13px;">
-    手机号码
-    <span style="color: red; font-size: 8px; float: right;" id="telephone_span"></span>
-  </div>
-  <div class="describe" style="padding-right: 0px;">
-    <input name="telephone" id="telephone" placeholder="请输入联系手机" value="13278789090"
-           style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px;">
-  </div>
-</div>
-
-<div class="plist-input">
-  <div class="pic"></div>
-  <div class="tit" style="font-size: 13px;">
-    验证码
-    <span style="color: red; font-size: 8px; float: right;" id="mobile_vcode_span"></span>
-  </div>
-  <div class="describe" style="padding-right: 0px;">
-    <input type="text" id="mobile_vcode" name="mobile_vcode" placeholder="请输入验证码" value=""
-           style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px; height: 30px;">
-    <button id="getVerfyCode"
-            style="position:absolute; width: 80px; right: 5px; background: #3191e9; border-radius: 5px; color: #ffffff; font-size: 10px; border: none; padding: 8px;">
-      获取验证码
-    </button>
-  </div>
-</div>
-
-<div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
-  <div class="upload_box">
-    <!--    <div class="addicon" style="margin: 0 auto;">+</div>-->
-    <div class="font14 font_gray9 qs-center" style="vertical-align: middle; margin-top: 15%;">点击上传营业执照</div>
-    <input type="file" encyp id="yy_img" enctype="multipart/form-data" accept="image/*" name="yy_img" class="browseFile"
-           onchange="xmTanUploadImg(this)"/>
-    <input type="hidden" id="certificate_img_up" name="certificate_img_up" value=""/>
-    <div class="img_box">
-      <img width="100%" height="250"/><br/>
+  <div class="plist-input">
+    <div class="pic"></div>
+    <div class="tit" style="font-size: 13px;">
+      联系人
+      <span style="color: red; font-size: 8px; float: right;" id="contact_span"></span>
+    </div>
+    <div class="describe" style="padding-right: 0px;">
+      <input type="text" id="contact" name="contact" placeholder="请输入联系人" value="chenyu"
+             style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px;">
     </div>
   </div>
 
-  <div class="font14 font_gray3 qs-center mt4">注：请确保企业名称与企业执照一致<br><strong class="font_yellow">上传认证后可优先展示职位信息</strong>
-  </div>
-</div>
-
-<div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
-  <div class="upload_box">
-    <!--    <div class="addicon">+</div>-->
-    <div class="font14 font_gray9 qs-center" style=" margin-top: 15%;">点击上传企业授权认证</div>
-    <input type="file" id="qy_pass_img" enctype="multipart/form-data" accept="image/*" name="qy_pass_img"
-           class="browseFile" onchange="xmTanUploadImg(this)">
-    <input type="hidden" id="qy_pass_img_up" name="qy_pass_img_up" value="">
-    <div class="img_box">
-      <img width="100%" height="250"/><br/>
+  <div class="plist-input">
+    <div class="pic"></div>
+    <div class="tit" style="font-size: 13px;">
+      手机号码
+      <span style="color: red; font-size: 8px; float: right;" id="telephone_span"></span>
+    </div>
+    <div class="describe" style="padding-right: 0px;">
+      <input name="telephone" id="telephone" placeholder="请输入联系手机" value="13278789090"
+             style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px;">
     </div>
   </div>
-</div>
-</div>
 
-<div class="btn-spacing">
-  <input type="hidden" name="map_x" id="tpl_map_x" value="">
-  <input type="hidden" name="map_y" id="tpl_map_y" value="">
-  <input type="hidden" name="map_zoom" id="tpl_map_zoom" value="">
-  <input type="hidden" name="logovalue" id="logovalue" value="">
-  <input type="hidden" id="tag" value="">
-  <button id="save_info" class="qs-btn qs-btn-blue font15" style="width: 100%;">保存</button>
-</div>
-<!--</form>-->
+  <div class="plist-input">
+    <div class="pic"></div>
+    <div class="tit" style="font-size: 13px;">
+      验证码
+      <span style="color: red; font-size: 8px; float: right;" id="mobile_vcode_span"></span>
+    </div>
+    <div class="describe" style="padding-right: 0px;">
+      <input type="text" id="mobile_vcode" name="mobile_vcode" placeholder="请输入验证码" value=""
+             style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px; height: 30px;">
+      <button id="getVerfyCode"
+              style="position:absolute; width: 80px; right: 5px; background: #3191e9; border-radius: 5px; color: #ffffff; font-size: 10px; border: none; padding: 8px;">
+        获取验证码
+      </button>
+    </div>
+  </div>
+
+  <div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
+    <div class="upload_box">
+      <!--    <div class="addicon" style="margin: 0 auto;">+</div>-->
+      <div class="font14 font_gray9 qs-center" style="vertical-align: middle; margin-top: 15%;">点击上传营业执照</div>
+      <input type="file" encyp id="yy_img" enctype="multipart/form-data" accept="image/*" name="yy_img"
+             class="browseFile"
+             onchange="xmTanUploadImg(this)"/>
+      <input type="hidden" id="certificate_img_up" name="certificate_img_up" value=""/>
+      <div class="img_box">
+        <img width="100%" height="250"/><br/>
+      </div>
+    </div>
+
+    <div class="font14 font_gray3 qs-center mt4">注：请确保企业名称与企业执照一致<br><strong class="font_yellow">上传认证后可优先展示职位信息</strong>
+    </div>
+  </div>
+
+  <div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
+    <div class="upload_box">
+      <!--    <div class="addicon">+</div>-->
+      <div class="font14 font_gray9 qs-center" style=" margin-top: 15%;">点击上传企业授权认证</div>
+      <input type="file" id="qy_pass_img" enctype="multipart/form-data" accept="image/*" name="qy_pass_img"
+             class="browseFile" onchange="xmTanUploadImg(this)">
+      <input type="hidden" id="qy_pass_img_up" name="qy_pass_img_up" value="">
+      <div class="img_box">
+        <img width="100%" height="250"/><br/>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="btn-spacing">
+    <input type="hidden" name="map_x" id="tpl_map_x" value="">
+    <input type="hidden" name="map_y" id="tpl_map_y" value="">
+    <input type="hidden" name="map_zoom" id="tpl_map_zoom" value="">
+    <input type="hidden" name="logovalue" id="logovalue" value="">
+    <input type="hidden" id="tag" value="">
+    <button id="save_info" class="qs-btn qs-btn-blue font15" style="width: 100%;">保存</button>
+  </div>
+
+</form>
 <div class="bottomContact font10 link_blue">
   如有任何问题可<a href="tel:86800055">联系客服 ：86800055</a>
 </div>
@@ -308,7 +310,8 @@
 <script src="/source/plugin/alazhaopin/static/wap/js/mobileSelect/mobileSelect.js?v=2019110415" type="text/javascript"
         charset="UTF-8"></script>
 <script type="text/javascript">
-  var timer, ountdownVal = 60
+  var regularMobile = /^13[0-9]{9}$|14[0-9]{9}$|15[0-9]{9}$|16[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$|19[0-9]{9}$/ // 验证手机号
+  var timer, ountdownVal = 180
   $('#contact').blur(function () {
     is_contact()
   })
@@ -320,7 +323,7 @@
 
   //获取验证码
   $('#getVerfyCode').click(function () {
-    if (ountdownVal < 60) return false
+    if (ountdownVal < 180) return false
     var mobile = $.trim($('input[name=telephone]').val())
     if (mobile == '') {
       $('#telephone_span').text('*请输入手机号码')
@@ -365,6 +368,8 @@
     if (!is_Exits(contact)) {
       $('#contact_span').text('*请输入联系人')
       return false
+    } else if (contact.length > 10) {
+      $('#contact_span').text('*联系人1-10个字')
     } else {
       $('#contact_span').text('')
       return true
@@ -389,9 +394,9 @@
     // var contact = $.trim($('input[name=contact]').val())
     // var telephone = $.trim($('input[name=telephone]').val())
     if (is_contact() && is_telephone()) {
-      $(this).text('正在保存...')
+      $(this).text('正在保存...');
       $(this).attr('disabled', 'disabled').css({'background': '#246bab'})
-      ajax_http();
+      ajax_http()
     } else {
       $(this).text('请将信息填写完整')
       setTimeout(function () {
@@ -438,13 +443,7 @@
 
   // ajax 请求
   function ajax_http () {
-    var formData = new FormData()
-    var yy_img = document.getElementById('yy_img').files[0];
-    var qy_pass_img = document.getElementById('qy_pass_img').files[0];
-    formData.append('yy_img', yy_img);
-    formData.append('qy_pass_img', qy_pass_img);
-    console.log(formData.get('yy_img'));
-
+    var formData = new FormData(document.getElementById('company_apply_form'))
     var url = 'http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=company&ac=apply&tosubmit=1&formhash=a0d7229f'
     $.ajax({
       url: url,
@@ -453,7 +452,6 @@
       processData: false,
       contentType: false,
       dataType: 'json',
-      sync: false,
       success: function (r) {
         if (r.status == 1) {
           if (r.data) {
@@ -461,17 +459,18 @@
             qsDialogTip.setContent('<div class="batch_delivery" style="width:400px"><div class="result_info">\
                                                   <div class="top_txt">企业认领申请成功，请等待审核通过!</div></div></div>')
           } else {
-            // disapperTooltip('success', r.msg)
+            disapperTooltip('success', r.msg)
           }
-          var jump_auth = parseInt('1');
+          var jump_auth = parseInt('1')
           if (jump_auth) {
             setTimeout(function () {
               location.href = 'http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=company&ac='
             }, 2000)
           }
         } else {
-          console.log(r.msg)
+          disapperTooltip('remind', r.msg)
         }
+        $('#save_info').text('保存')
       },
       error: function (e) {
         console.log(e)
@@ -479,7 +478,6 @@
     })
   }
 
-  var regularMobile = /^13[0-9]{9}$|14[0-9]{9}$|15[0-9]{9}$|16[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$|19[0-9]{9}$/ // 验证手机号
 </script>
 </body>
 </html>
