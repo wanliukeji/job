@@ -211,11 +211,13 @@
 
 <div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
   <div class="upload_box">
-    <div class="addicon">+</div>
-    <div class="font14 font_gray9 qs-center">点击上传营业执照</div>
-    <input type="file" id="browseFile_certificate_img" class="browseFile">
-    <input type="hidden" id="certificate_img_up" name="certificate_img_up" value="">
-    <div class="img_box"></div>
+<!--    <div class="addicon" style="margin: 0 auto;">+</div>-->
+    <div class="font14 font_gray9 qs-center" style="vertical-align: middle; margin-top: 15%;">点击上传营业执照</div>
+    <input type="file" id="yy_img" name="yy_img" class="browseFile"  onchange="xmTanUploadImg(this)"/>
+    <input type="hidden" id="certificate_img_up" name="certificate_img_up" value=""/>
+    <div class="img_box">
+      <img width="100%" height="250" id="xmTanImg_a"/><br/>
+    </div>
   </div>
 
   <div class="font14 font_gray3 qs-center mt4">注：请确保企业名称与企业执照一致<br><strong class="font_yellow">上传认证后可优先展示职位信息</strong>
@@ -224,11 +226,13 @@
 
 <div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
   <div class="upload_box">
-    <div class="addicon">+</div>
-    <div class="font14 font_gray9 qs-center">点击上传企业授权认证</div>
-    <input type="file" id="qy_pass_img" class="browseFile">
+<!--    <div class="addicon">+</div>-->
+    <div class="font14 font_gray9 qs-center" style=" margin-top: 15%;">点击上传企业授权认证</div>
+    <input type="file" id="qy_pass_img" name="qy_pass_img"  class="browseFile" onchange="xmTanUploadImg(this)">
     <input type="hidden" id="qy_pass_img_up" name="qy_pass_img_up" value="">
-    <div class="img_box"></div>
+    <div class="img_box">
+      <img width="100%" height="250" id="xmTanImg_b"/><br/>
+    </div>
   </div>
 </div>
 </div>
@@ -302,8 +306,7 @@
 <script src="/source/plugin/alazhaopin/static/wap/js/mobileSelect/mobileSelect.js?v=2019110415" type="text/javascript"
         charset="UTF-8"></script>
 <script type="text/javascript">
-  $(function () {
-    var timer, ountdownVal = 180
+    var timer, ountdownVal = 60
     $('#contact').blur(function () {
       is_contact()
     })
@@ -315,7 +318,7 @@
 
     //获取验证码
     $('#getVerfyCode').click(function () {
-      if (ountdownVal < 180) return false
+      if (ountdownVal < 60) return false
       var mobile = $.trim($('input[name=telephone]').val())
       if (mobile == '') {
         $('#telephone_span').text('*请输入手机号码')
@@ -375,7 +378,66 @@
       }
     }
 
-  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //选择图片，马上预览
+    try {
+      function xmTanUploadImg(obj) {
+        var file = obj.files[0];
+        console.log('file.size = ' + file.size)
+        var reader = new FileReader()
+        //读取文件过程方法
+        reader.onloadstart = function (e) {
+          console.log('开始读取....')
+        }
+        reader.onprogress = function (e) {
+          console.log('正在读取中....')
+        }
+        reader.onabort = function (e) {
+          console.log('中断读取....')
+        }
+        reader.onerror = function (e) {
+          console.log('读取异常....')
+        }
+        reader.onload = function (e) {
+          if(file.size>10*1024*1024){
+            disapperTooltip("remind", "上传图片的大小须小于10M");
+            return false;
+          }
+          console.log('成功读取....')
+          var img_box = $(obj).siblings('.img_box');
+          var img = $(img_box[0]).children()[0];
+          $(img).attr('src',e.target.result);
+        }
+        reader.readAsDataURL(file)
+      }
+
+    } catch (e) {
+      console.log(e);
+    }
 
   var regularMobile = /^13[0-9]{9}$|14[0-9]{9}$|15[0-9]{9}$|16[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$|19[0-9]{9}$/ // 验证手机号
 </script>
