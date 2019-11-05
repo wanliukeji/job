@@ -1,0 +1,3711 @@
+{
+  "data": {
+    "chatWindowState": 0,
+    "count": 4101,
+    "jobLabel": {
+      "featureLabel": {
+        "defaultColor": {
+          "backgroundColor": "#EDF6FF",
+          "borderColor": "",
+          "fontColor": "#1A8AFA"
+        },
+        "highLight": {
+          "backgroundColor": "#EDF6FF",
+          "borderColor": "",
+          "fontColor": "#1A8AFA"
+        },
+        "icon": true,
+        "iconUrl": ""
+      },
+      "skillLabel": {
+        "defaultColor": {
+          "backgroundColor": "",
+          "borderColor": "#E6E6E6",
+          "fontColor": "#888888"
+        },
+        "highLight": {
+          "backgroundColor": "#EDF6FF",
+          "borderColor": "",
+          "fontColor": "#1A8AFA"
+        },
+        "icon": false,
+        "iconUrl": ""
+      },
+      "welfareLabel": {
+        "defaultColor": {
+          "backgroundColor": "#F8F8FA",
+          "borderColor": "",
+          "fontColor": "#666666"
+        },
+        "highLight": {
+          "backgroundColor": "#EDF6FF",
+          "borderColor": "",
+          "fontColor": "#1A8AFA"
+        },
+        "icon": false,
+        "iconUrl": ""
+      }
+    },
+    "list": [
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 18913032,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京金电恒通科技有限公司",
+        "companyNumber": "CZ189130320",
+        "companySize": "100-499人",
+        "companyUrl": "http://company.zhaopin.com/%E5%8C%97%E4%BA%AC%E9%87%91%E7%94%B5%E6%81%92%E9%80%9A%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8_CC189130321.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "员工旅游"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "弹性工作"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400,210500,300500,160000",
+        "industryName": "计算机软件,互联网/电子商务,银行,IT服务(系统/数据/维护)",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "JAVA/J2EE中高级软件工程师",
+        "number": "CC189130321J00193478614",
+        "positionURL": "http://jobs.zhaopin.com/CC189130321J00193478614.htm",
+        "property": "其它",
+        "publishTime": "2019-10-30 15:13:05",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "MySQL"
+          },
+          {
+            "state": 0,
+            "value": "Linux"
+          },
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "Web前端"
+          },
+          {
+            "state": 0,
+            "value": "VUE"
+          },
+          {
+            "state": 0,
+            "value": "HTML5"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "员工旅游"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "弹性工作"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 81520089,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京汇才卓远科技有限公司",
+        "companyNumber": "CZ815200890",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ815200890.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "大专",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400",
+        "industryName": "计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "java开发工程师",
+        "number": "CC815200890J00175698909",
+        "positionURL": "http://jobs.zhaopin.com/CC815200890J00175698909.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 15:08:58",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "上地",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "朝阳区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 81520089,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京汇才卓远科技有限公司",
+        "companyNumber": "CZ815200890",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ815200890.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "大专",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400",
+        "industryName": "计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "Java开发工程师",
+        "number": "CC815200890J00190964909",
+        "positionURL": "http://jobs.zhaopin.com/CC815200890J00190964909.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 15:08:58",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "15001-20000元/月",
+        "salary60": "1.5万-2万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "东坝",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 14548466,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20080530/3299B5E6C941444FAE983752DF1223E2.gif",
+        "companyName": "泛海物业管理有限公司",
+        "companyNumber": "CZ145484660",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://special.zhaopin.com/pagepublish/14548466/index.html",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "年底双薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "补充医疗保险"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "140200,140000",
+        "industryName": "物业管理/商业中心,房地产/建筑/建材/工程",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "急聘高级JAVA开发工程师，六险一金，坐标朝阳公园",
+        "number": "CC145484668J00212019811",
+        "positionURL": "http://jobs.zhaopin.com/CC145484668J00212019811.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 15:01:04",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "20001-30000元/月",
+        "salary60": "2万-3万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "甜水园",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "年底双薪"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "海淀区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 12081334,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20150911/D35236658AB4479C8EC296B2989CF5F6.jpg",
+        "companyName": "北京方胜有成科技股份有限公司",
+        "companyNumber": "CZ120813340",
+        "companySize": "100-499人",
+        "companyUrl": "http://company.zhaopin.com/CZ120813340.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "通讯补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "990000,160000,130100,160400",
+        "industryName": "其他,IT服务(系统/数据/维护),电气/电力/水利,计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "高级java开发工程师",
+        "number": "CC120813347J00158463215",
+        "positionURL": "http://jobs.zhaopin.com/CC120813347J00158463215.htm",
+        "property": "上市公司",
+        "publishTime": "2019-10-30 14:59:56",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "15000-25000元/月",
+        "salary60": "1.5万-2.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "西北旺",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 2,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "朝阳区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 30374903,
+        "companyLogo": "https://zhaopin-rd5-pub.oss-cn-beijing.aliyuncs.com/imgs/company/6e946e0e91e5288cafc32384de1ff689.jpg",
+        "companyName": "链金行科技发展(北京)有限公司",
+        "companyNumber": "CZ303749030",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ303749030.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "不加班"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "补充医疗保险"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "300900,300900,210500,300500",
+        "industryName": "信托/担保/拍卖/典当,信托/担保/拍卖/典当,互联网/电子商务,银行",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 0,
+        "menVipUrl": "",
+        "name": "java开发工程师(金融APP)",
+        "number": "CC303749039J00085020815",
+        "positionURL": "http://jobs.zhaopin.com/CC303749039J00085020815.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:52:15",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "8000-15000元/月",
+        "salary60": "8千-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "C#/.NET"
+          }
+        ],
+        "tradingArea": "CBD",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "不加班"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "海淀区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 43594832,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20150910/904C1A0DD46041B6846DED86BA2FD46F.gif",
+        "companyName": "北京中盈安信技术服务股份有限公司",
+        "companyNumber": "CZ435948320",
+        "companySize": "100-499人",
+        "companyUrl": "http://company.zhaopin.com/CZ435948320.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "年底双薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "通讯补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "补充医疗保险"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500,160400,160000",
+        "industryName": "互联网/电子商务,计算机软件,IT服务(系统/数据/维护)",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "中级JAVA工程师",
+        "number": "CC435948321J90250771000",
+        "positionURL": "http://jobs.zhaopin.com/435948321250771.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:50:12",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "学院路",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "年底双薪"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "1-3年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 40374898,
+        "companyLogo": "https://zhaopin-rd5-pub.oss-cn-beijing.aliyuncs.com/imgs/company/5a5e9785576cc54221e2512d044ffa24.png",
+        "companyName": "晋商博创(北京)科技有限公司",
+        "companyNumber": "CZ403748980",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ403748980.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "弹性工作"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "14薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "周末双休"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400,210500,160000,990000",
+        "industryName": "计算机软件,互联网/电子商务,IT服务(系统/数据/维护),其他",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "java开发工程师",
+        "number": "CC403748980J00024672013",
+        "positionURL": "http://jobs.zhaopin.com/CC403748980J00024672013.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:41:36",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "15001-20000元/月",
+        "salary60": "1.5万-2万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "丰台体育馆",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "弹性工作"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "14薪"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "不限"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 47240961,
+        "companyLogo": "http://campusimage.zhaopin.com/pic/cimg/Company/A//200989275811_100x100.jpg",
+        "companyName": "阳光财产保险股份有限公司3",
+        "companyNumber": "CZ472409610",
+        "companySize": "10000人以上",
+        "companyUrl": "http://special.zhaopin.com/bj/2013/sinosig031305/",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "年底双薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "采暖补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "定期体检"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "300500",
+        "industryName": "银行",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "java高级开发工程师",
+        "number": "CC472409611J00094640814",
+        "positionURL": "http://jobs.zhaopin.com/CC472409611J00094640814.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:30:39",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "20001-30000元/月",
+        "salary60": "2万-3万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "tomcat"
+          },
+          {
+            "state": 0,
+            "value": "Redis"
+          }
+        ],
+        "tradingArea": "朝阳门",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "年底双薪"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "采暖补贴"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 29863131,
+        "companyLogo": "http://campusimage.zhaopin.com/pic/cimg/Company/A//131991809668_100x100.jpg",
+        "companyName": "Lily教育集团",
+        "companyNumber": "CZ298631310",
+        "companySize": "500-999人",
+        "companyUrl": "http://company.zhaopin.com/CZ298631310.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "全勤奖"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "补充医疗保险"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "201100",
+        "industryName": "教育/培训/院校",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1005,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1005.png",
+        "name": "Java工程师",
+        "number": "CC298631312J00194969713",
+        "positionURL": "http://jobs.zhaopin.com/CC298631312J00194969713.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:30:36",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "15001-20000元/月",
+        "salary60": "1.5万-2万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "万泉河",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "全勤奖"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "顺义区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 21983622,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "华道数据处理(苏州)有限公司北京分公司",
+        "companyNumber": "CZ219836220",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://company.zhaopin.com/CZ219836220.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "员工旅游"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "大专",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "300300,300300,300500",
+        "industryName": "外包服务,外包服务,银行",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "JAVA工程师 (海淀区)",
+        "number": "CC219836226J00190681112",
+        "positionURL": "http://jobs.zhaopin.com/CC219836226J00190681112.htm",
+        "property": "外商独资",
+        "publishTime": "2019-10-30 14:27:28",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "MySQL"
+          },
+          {
+            "state": 0,
+            "value": "Linux"
+          },
+          {
+            "state": 0,
+            "value": "Shell"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "员工旅游"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 31777408,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "德逸科技(北京)有限公司",
+        "companyNumber": "CZ317774080",
+        "companySize": "100-499人",
+        "companyUrl": "http://special.zhaopin.com/pagepublish/31777408/index.html",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "周末双休"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160500,100100",
+        "industryName": "电子技术/半导体/集成电路,跨领域经营",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "Java开发工程师",
+        "number": "CC317774089J00187891814",
+        "positionURL": "http://jobs.zhaopin.com/CC317774089J00187891814.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:27:22",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "12000-21000元/月",
+        "salary60": "1.2万-2.1万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "牡丹园",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 36934941,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20170930/9D252CE8CCEAE992ED93199024FF64E4.jpg",
+        "companyName": "北京恒荣汇彬保险代理股份有限公司",
+        "companyNumber": "CZ369349410",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://company.zhaopin.com/CC369349410.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "不加班"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "通讯补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "五险一金"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "180100",
+        "industryName": "保险",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "JAVA中高级开发",
+        "number": "CC369349410J00203066510",
+        "positionURL": "http://jobs.zhaopin.com/CC369349410J00203066510.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:27:16",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "15000-30000元/月",
+        "salary60": "1.5万-3万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "SQL"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "不加班"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "全额公积金"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 28295313,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20161208/EE2EBAB936594D5F9B1A4FA391849342.jpg",
+        "companyName": "内蒙古博微计算机有限公司",
+        "companyNumber": "CZ282953130",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CC282953132.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "包吃"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "周末双休"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "硕士",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400",
+        "industryName": "计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "开发专员",
+        "number": "CC282953132J00349646802",
+        "positionURL": "http://jobs.zhaopin.com/CC282953132J00349646802.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:27:13",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "6001-8000元/月",
+        "salary60": "6千-8千",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "Linux"
+          },
+          {
+            "state": 0,
+            "value": "MySQL"
+          },
+          {
+            "state": 0,
+            "value": "Javascript"
+          }
+        ],
+        "tradingArea": "红庙",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "包吃"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "不限"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 1,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 13422831,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20060906/F789E9F0A2F04C648494C5190E19351F.gif",
+        "companyName": "北京京港地铁有限公司",
+        "companyNumber": "CZ134228310",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://special.zhaopin.com/bj/2012/jingang100827/",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "129900,150000,200100",
+        "industryName": "大型设备/机电设备/重工业,交通/运输,政府/公共事业/非盈利机构",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1005,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1005.png",
+        "name": "高级IT工程师（JAVA方向）",
+        "number": "CC134228313J00172106911",
+        "positionURL": "http://jobs.zhaopin.com/CC134228313J00172106911.htm",
+        "property": "合资",
+        "publishTime": "2019-10-30 14:27:08",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "面议",
+        "salary60": "面议",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          }
+        ],
+        "tradingArea": "广渠门",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "顺义区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 19232531,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京中德福林软件科技有限公司",
+        "companyNumber": "CZ192325310",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/P2/CC1923/2531/CC192325313.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "加班补助"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400,160000",
+        "industryName": "计算机软件,IT服务(系统/数据/维护)",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "Java中级开发工程师（顺义）",
+        "number": "CC192325313J00190689012",
+        "positionURL": "http://jobs.zhaopin.com/CC192325313J00190689012.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:27:08",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "SQL"
+          },
+          {
+            "state": 0,
+            "value": "java"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "加班补助"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "1-3年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 67902212,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "易安财产保险股份有限公司",
+        "companyNumber": "CZ679022120",
+        "companySize": "100-499人",
+        "companyUrl": "http://company.zhaopin.com/CC679022121.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "弹性工作"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "补充医疗保险"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "180100,210500",
+        "industryName": "保险,互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "Java开发工程师",
+        "number": "CC679022121J00463269205",
+        "positionURL": "http://jobs.zhaopin.com/CC679022121J00463269205.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:27:04",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "8000-16000元/月",
+        "salary60": "8千-1.6万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          }
+        ],
+        "tradingArea": "北下关",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "弹性工作"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "不限"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 83033415,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京中育亿达科技有限公司",
+        "companyNumber": "CZ830334150",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ830334150.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "年底双薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "创业公司"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "周末双休"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500,160400",
+        "industryName": "互联网/电子商务,计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "Java中级开发工程师",
+        "number": "CC830334150J00184671815",
+        "positionURL": "http://jobs.zhaopin.com/CC830334150J00184671815.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:26:09",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "6001-8000元/月",
+        "salary60": "6千-8千",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "JS"
+          },
+          {
+            "state": 0,
+            "value": "Javascript"
+          }
+        ],
+        "tradingArea": "上地",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "年底双薪"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "创业公司"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "公司重点项目"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "1-3年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 67346853,
+        "companyLogo": "https://fileihr.zhaopin.com/067/346/067346853/logo/0ab28e93-cbf0-45c8-8657-878bdcdefd16.jpg",
+        "companyName": "北京思柯瑞科技有限公司",
+        "companyNumber": "CZ673468530",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ673468530.htm",
+        "detailWelfareTab": [],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160000,300100,160000,160400",
+        "industryName": "IT服务(系统/数据/维护),通信/电信/网络设备,IT服务(系统/数据/维护),计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "高级Java工程师",
+        "number": "CC673468533J00193814709",
+        "positionURL": "http://jobs.zhaopin.com/CC673468533J00193814709.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:26:09",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "13000-20000元/月",
+        "salary60": "1.3万-2万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "万柳",
+        "welfareLabel": [],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "海淀区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 70032628,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京安盟信息技术股份有限公司",
+        "companyNumber": "CZ700326280",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ700326280.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "周末双休"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "300100,160200",
+        "industryName": "通信/电信/网络设备,计算机硬件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "高级java工程师（华御数观）",
+        "number": "CC700326280J00175993310",
+        "positionURL": "http://jobs.zhaopin.com/CC700326280J00175993310.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:25:28",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "18000-25000元/月",
+        "salary60": "1.8万-2.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "MySQL"
+          }
+        ],
+        "tradingArea": "上地",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "周末双休"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 22715252,
+        "companyLogo": "http://campusimage.zhaopin.com/pic/cimg/Company/Logo/22715252/133192581212_136x136.png",
+        "companyName": "北京汉雅天诚教育科技有限公司",
+        "companyNumber": "CZ227152520",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/P3/CC2271/5252/CC227152525.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "通讯补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500,160400,201100",
+        "industryName": "互联网/电子商务,计算机软件,教育/培训/院校",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "JAVA开发工程师",
+        "number": "CC227152525J90250128000",
+        "positionURL": "http://jobs.zhaopin.com/227152525250128.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:25:24",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "6000-10000元/月",
+        "salary60": "6千-1万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "清河",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "1-3年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 13001599,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京殷图网联科技股份有限公司",
+        "companyNumber": "CZ130015990",
+        "companySize": "100-499人",
+        "companyUrl": "http://company.zhaopin.com/P10/CC1300/1599/CC130015995.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160000,160400,210500",
+        "industryName": "IT服务(系统/数据/维护),计算机软件,互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "java开发工程师(springboot)",
+        "number": "CC130015995J00228046611",
+        "positionURL": "http://jobs.zhaopin.com/CC130015995J00228046611.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:25:19",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "9000-17000元/月",
+        "salary60": "9千-1.7万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "Javascript"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 40344343,
+        "companyLogo": "https://zhaopin-rd5-pub.oss-cn-beijing.aliyuncs.com/imgs/company/c4dfa0dccdffa9da8652bd4b7b9d50ff.jpg",
+        "companyName": "大连汇银金融科技有限责任公司",
+        "companyNumber": "CZ403443430",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ403443430.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "包吃"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "包住"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "交通补助"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160400,160000,10200,210500",
+        "industryName": "计算机软件,IT服务(系统/数据/维护),金融业,互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "Java中级开发工程师-非3年工作经验勿投",
+        "number": "CC403443430J00211050813",
+        "positionURL": "http://jobs.zhaopin.com/CC403443430J00211050813.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:25:13",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "Javascript"
+          },
+          {
+            "state": 0,
+            "value": "后端开发"
+          },
+          {
+            "state": 0,
+            "value": "需求分析"
+          },
+          {
+            "state": 0,
+            "value": "项目实施"
+          },
+          {
+            "state": 0,
+            "value": "前端开发"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "包吃"
+          },
+          {
+            "state": 0,
+            "value": "包住"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 21880473,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20150605/692CF725E37D426BAED2A416019F7128.jpg",
+        "companyName": "北京车与车科技有限公司",
+        "companyNumber": "CZ218804730",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://company.zhaopin.com/CC218804737.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "通讯补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "节日福利"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500,160400",
+        "industryName": "互联网/电子商务,计算机软件",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "高级JAVA工程师",
+        "number": "CC218804737J00186997415",
+        "positionURL": "http://jobs.zhaopin.com/CC218804737J00186997415.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:25:09",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "30001-50000元/月",
+        "salary60": "3万-5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "试用期全额"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 12001997,
+        "companyLogo": "https://fileihr.zhaopin.com/012/001/012001997/logo/6f94ffa3-518e-421a-b3bb-374463a275c5.jpg",
+        "companyName": "智联招聘",
+        "companyNumber": "CZ120019970",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://company.zhaopin.com/CZ120019970.html",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "弹性工作"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "年底双薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "补充医疗保险"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "绩效奖金"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500",
+        "industryName": "互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1005,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1005.png",
+        "name": "大数据工程师",
+        "number": "CC120019970J00211967511",
+        "positionURL": "http://jobs.zhaopin.com/CC120019970J00211967511.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:25:04",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "20001-30000元/月",
+        "salary60": "2万-3万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "Hadoop"
+          },
+          {
+            "state": 0,
+            "value": "java"
+          },
+          {
+            "state": 0,
+            "value": "Linux"
+          },
+          {
+            "state": 0,
+            "value": "Shell"
+          },
+          {
+            "state": 0,
+            "value": "SQL"
+          },
+          {
+            "state": 0,
+            "value": "Python"
+          }
+        ],
+        "tradingArea": "望京",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "弹性工作"
+          },
+          {
+            "state": 0,
+            "value": "年底双薪"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "工作居住证"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "补充医疗保险"
+          },
+          {
+            "state": 0,
+            "value": "试用期全额"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "海淀区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 49084133,
+        "companyLogo": "https://storage-public.zhaopin.cn/CompanyLogo/20170621/C4592320A0AA4F68ACC69C854BC3F101.jpg",
+        "companyName": "北京易诚互动软件技术有限公司",
+        "companyNumber": "CZ490841330",
+        "companySize": "1000-9999人",
+        "companyUrl": "http://company.zhaopin.com/CC490841330.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "通讯补贴"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "7",
+            "val": "加班补助"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500,160000,200300,300500",
+        "industryName": "互联网/电子商务,IT服务(系统/数据/维护),专业服务/咨询(财会/法律/人力资源等),银行",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "高级软件工程师",
+        "number": "CC490841330J00196359709",
+        "positionURL": "http://jobs.zhaopin.com/CC490841330J00196359709.htm",
+        "property": "股份制企业",
+        "publishTime": "2019-10-30 14:25:03",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "18000-28000元/月",
+        "salary60": "1.8万-2.8万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "分布式视频编解码系统"
+          },
+          {
+            "state": 0,
+            "value": "应用开发"
+          },
+          {
+            "state": 0,
+            "value": "互联网金融"
+          },
+          {
+            "state": 0,
+            "value": "英语"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "加班补助"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "昌平区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 46482291,
+        "companyLogo": "https://zhaopin-rd5-pub.oss-cn-beijing.aliyuncs.com/imgs/company/d1cd7429314daf98969979c6e5f5318c.png",
+        "companyName": "北京晶朝科技有限责任公司",
+        "companyNumber": "CZ464822910",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ464822910.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "每年多次调薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "周末双休"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "通讯补贴"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160000,201100,160400,210500",
+        "industryName": "IT服务(系统/数据/维护),教育/培训/院校,计算机软件,互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "Java开发工程师",
+        "number": "CC464822911J00227015111",
+        "positionURL": "http://jobs.zhaopin.com/CC464822911J00227015111.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:24:08",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "10001-15000元/月",
+        "salary60": "1万-1.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "SQL"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "每年多次调薪"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "通讯补助"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "3-5年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "海淀区",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 69080772,
+        "companyLogo": "https://zhaopin-rd5-pub.oss-cn-beijing.aliyuncs.com/imgs/company/4a10fb6c66b23ba2b595a26b98c5673e.jpg",
+        "companyName": "北京大账房信息技术有限公司",
+        "companyNumber": "CZ690807720",
+        "companySize": "500-999人",
+        "companyUrl": "http://company.zhaopin.com/CZ690807720.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "定期体检"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "创业公司"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "周末双休"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "160000,160400,210500",
+        "industryName": "IT服务(系统/数据/维护),计算机软件,互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "高级java工程师",
+        "number": "CC690807720J00162270914",
+        "positionURL": "http://jobs.zhaopin.com/CC690807720J00162270914.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:23:19",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "20001-30000元/月",
+        "salary60": "2万-3万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "高级JAVA工程师"
+          }
+        ],
+        "tradingArea": "苏州街",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "股权"
+          },
+          {
+            "state": 0,
+            "value": "创业公司"
+          },
+          {
+            "state": 0,
+            "value": "定期团建"
+          },
+          {
+            "state": 0,
+            "value": "周末双休"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 65285092,
+        "companyLogo": "http://img09.zhaopin.com/2012/other/mobile/mi/companyLogo/03/default.png",
+        "companyName": "北京险峰华兴投资咨询有限公司",
+        "companyNumber": "CZ652850920",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CC652850926.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "年底双薪"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "绩效奖金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "年终分红"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "带薪年假"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500",
+        "industryName": "互联网/电子商务",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1003,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1003.png",
+        "name": "高级Java工程师",
+        "number": "CC652850926J00194227614",
+        "positionURL": "http://jobs.zhaopin.com/CC652850926J00194227614.htm",
+        "property": "其它",
+        "publishTime": "2019-10-30 14:23:19",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "25000-50000元/月",
+        "salary60": "2.5万-5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [
+          {
+            "state": 0,
+            "value": "java"
+          }
+        ],
+        "tradingArea": "",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "年底双薪"
+          },
+          {
+            "state": 0,
+            "value": "绩效奖金"
+          },
+          {
+            "state": 0,
+            "value": "年终分红"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      },
+      {
+        "applyType": "1",
+        "bestEmployerType": 0,
+        "businessIconPath": "",
+        "chatWindow": 0,
+        "cityDistrict": "",
+        "cityId": "530",
+        "commercializationType": 0,
+        "companyAutoID": 30114588,
+        "companyLogo": "https://rd5-public.zhaopin.cn/imgs/company/49e8a8bfde4e379f12429d43231cc4d7.png",
+        "companyName": "北京甲子营科技有限公司",
+        "companyNumber": "CZ301145880",
+        "companySize": "20-99人",
+        "companyUrl": "http://company.zhaopin.com/CZ301145880.htm",
+        "detailWelfareTab": [
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "0",
+            "val": "五险一金"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "1",
+            "val": "交通补助"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "2",
+            "val": "餐补"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "3",
+            "val": "带薪年假"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "4",
+            "val": "节日福利"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "5",
+            "val": "全勤奖"
+          },
+          {
+            "desc": "",
+            "imgurl": "",
+            "key": "6",
+            "val": "定期体检"
+          }
+        ],
+        "distance": 0.0,
+        "distanceSubways": [],
+        "education": "本科",
+        "emplType": "",
+        "expandCount": 0,
+        "fastPosition": false,
+        "featureLabel": [],
+        "feedbackRation": 0.0,
+        "futureJob": false,
+        "futureJobUrl": "",
+        "hasAppliedPosition": false,
+        "industry": "210500,160400,200300,160000",
+        "industryName": "互联网/电子商务,计算机软件,专业服务/咨询(财会/法律/人力资源等),IT服务(系统/数据/维护)",
+        "isFastPosition": false,
+        "jobDesc": "",
+        "jobId": 0,
+        "jobType": "",
+        "menVipLevel": 1002,
+        "menVipUrl": "http://img09.zhaopin.com/2012/other/mobile/mi/MenVip/vip104/1002.png",
+        "name": "java开发工程师",
+        "number": "CC301145888J00133022109",
+        "positionURL": "http://jobs.zhaopin.com/CC301145888J00133022109.htm",
+        "property": "民营",
+        "publishTime": "2019-10-30 14:23:17",
+        "publishTimeDt": "",
+        "refreshLevelType": 0,
+        "salary": "12500-25000元/月",
+        "salary60": "1.3万-2.5万",
+        "salaryReal": "",
+        "score": "1.0",
+        "scoreState": 0,
+        "skillLabel": [],
+        "tradingArea": "北苑",
+        "welfareLabel": [
+          {
+            "state": 0,
+            "value": "五险一金"
+          },
+          {
+            "state": 0,
+            "value": "交通补助"
+          },
+          {
+            "state": 0,
+            "value": "餐补"
+          },
+          {
+            "state": 0,
+            "value": "带薪年假"
+          },
+          {
+            "state": 0,
+            "value": "节日福利"
+          },
+          {
+            "state": 0,
+            "value": "全勤奖"
+          },
+          {
+            "state": 0,
+            "value": "定期体检"
+          },
+          {
+            "state": 0,
+            "value": "定期团建"
+          }
+        ],
+        "workCity": "北京",
+        "workingExp": "5-10年"
+      }
+    ],
+    "method": "mobile_behavior",
+    "numTotal": 0,
+    "typeSearch": 0
+  },
+  "statusCode": 200,
+  "statusDescription": "成功",
+  "taskId": "d4e8e2f0e08543c0a0cd3b678411180b"
+}

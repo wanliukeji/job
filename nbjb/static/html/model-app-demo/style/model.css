@@ -1,0 +1,74 @@
+#cy_form {
+  padding-top: 20px;
+}
+
+.input-text {
+  border: #e7e7e7 solid 1px;
+  width: 300px;
+  height: 24px;
+  padding-left: 10px;
+  float: left;
+  margin-top: 0px;
+}
+
+.hide-select {
+  display: none;
+  width: 310px;
+  position: absolute;
+  margin-top: 24px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none;
+  text-align: left;
+  background: #FFFFFF;
+  /*overflow-y:scroll;*/
+}
+
+.hide-li-selected {
+  cursor: pointer;
+  padding-left: 10px;
+  font: 12px/1.5 Tahoma, 'Microsoft Yahei', 'Simsun';
+  clear: both;
+  margin: 5px 0;
+  color: #444444;
+}
+
+.pn {
+  border: none;
+  padding: 1px;
+  width: 50px;
+}
+
+.ta-right {
+  width: 360px;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.td-center {
+  width: 310px;
+}
+
+.td-left-span {
+  font: 12px/1.5 Tahoma, 'Microsoft Yahei', 'Simsun';
+  color: #999;
+  clear: both;
+  margin: 5px 0;
+  color: #999;
+}
+
+.td-left-span-i {
+  color: red;
+  /*margin: 0 auto;*/
+  /*top: 3px;*/
+  /*line-height: 10px;*/
+  vertical-align: middle;
+}
+
+#cy_success {
+  background-color: #666666;
+}
