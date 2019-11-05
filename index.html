@@ -188,7 +188,7 @@
       <span style="color: red; font-size: 8px; float: right;" id="telephone_span"></span>
     </div>
     <div class="describe" style="padding-right: 0px;">
-      <input name="telephone" id="telephone" placeholder="请输入联系手机" value="13278789090"
+      <input name="telephone" id="telephone" placeholder="请输入联系手机" value="15957408879"
              style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px;">
     </div>
   </div>
@@ -202,10 +202,10 @@
     <div class="describe" style="padding-right: 0px;">
       <input type="text" id="mobile_vcode" name="mobile_vcode" placeholder="请输入验证码" value=""
              style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px; height: 30px;">
-      <button id="getVerfyCode"
-              style="position:absolute; width: 80px; right: 5px; background: #3191e9; border-radius: 5px; color: #ffffff; font-size: 10px; border: none; padding: 8px;">
+      <div id="getVerfyCode"
+              style="position:absolute; z-index: 10; width: 80px; right: 5px; background: #3191e9; border-radius: 5px; color: #ffffff; font-size: 10px; border: none; padding: 8px; top: 10px;">
         获取验证码
-      </button>
+      </div>
     </div>
   </div>
 
@@ -246,7 +246,7 @@
     <input type="hidden" name="map_zoom" id="tpl_map_zoom" value="">
     <input type="hidden" name="logovalue" id="logovalue" value="">
     <input type="hidden" id="tag" value="">
-    <button id="save_info" class="qs-btn qs-btn-blue font15" style="width: 100%;">保存</button>
+    <div id="save_info" class="qs-btn qs-btn-blue font15" style="width: 100%;">保存</div>
   </div>
 
 </form>
@@ -334,21 +334,22 @@
 
   function doAjax () {
     var mobile = $.trim($('input[name=telephone]').val())
-    // $.post('http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=send_mobile_code', {mobile: mobile}, function (result) {
-    //   if (result.status == 1) {
-    $('#telephone_span').html('<a style="color: #00CC00;">发送成功</a>')
+    $.post('http://dev.bbs.cnnb.com/plugin.php?id=alazhaopin&model=send_mobile_code', {mobile: mobile}, function (result) {
+      console.log(JSON.stringify(result));
+      if (result.status == 1) {
+    $('#mobile_vcode_span').html('<a style="color: #00CC00;">发送成功</a>')
     timer = setInterval(getCode, 1000)
-    //   } else {
-    //     $('#telephone_span').text(result.msg)
-    //   }
-    // }, 'json')
+      } else {
+        $('#telephone_span').text(result.msg)
+      }
+    }, 'json')
   }
 
   var getCode = function () {
-    ountdownVal--
+    ountdownVal--;
     if (ountdownVal <= 0) {
       clearInterval(timer)
-      ountdownVal = 180
+      ountdownVal = 180;
       $('#getVerfyCode').text('获取验证码').removeAttr('disabled')
     } else {
       $('#getVerfyCode').text('重新发送' + ountdownVal + '秒').attr('disabled', 'disabled').css({'background': '#246bab'})
