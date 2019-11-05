@@ -150,7 +150,7 @@
   <div class="describe"
        style="height: auto; white-space: initial; word-break: initial; text-indent: 2em; padding: 0 auto; padding-right: 0px;">
     <p
-      style="border: #f4f4f4 0.3px solid; color: #a2a2a2; width: 100%; vertical-align: middle; line-height: 25px; margin: 0 auto; padding: 5px;">
+      style="border: #f4f4f4 0.3px solid; color: #a2a2a2; width: 100%; vertical-align: middle; line-height: 35px; margin: 0 auto; padding: 5px;">
       宁波亿普瑞物流自动化分拣设备有限公司创立于2007年10月，是集研发、设计、制造、安装、调试和售后于一体的专业从事自动化物流输送系统的高科技企业，为客户提供整体规划和解决方案。
       公司拥有一支朝气蓬勃、有胆、有识并富有二十年以上经验的技术团队，形成了一整套适合自身发展并符合ISO9001规范的科学管理体系，使得整个公司在从业务咨询、技术认证、精工制造、安装调试及售后服务的“交钥匙工程”运作中得到规范运行，为企业的发展奠定了坚实的基础。目前公司共有员工200人，其中管理人员35人，工程技术人员25人，高级工程师5人，工程师15人。
       公司核心产品及优势：自主研发、设计（计算机软件开发）、大型智能化物流分拣中心方案规划等；主要设备有“交叉带分拣机”（非接触供电及滑触式供电系统）、直线滑块高速分拣机、物流集成分拣系统、伸缩皮带机、高低速转弯皮带机
@@ -173,7 +173,6 @@
     <div class="pic"></div>
     <div class="tit" style="font-size: 13px;">
       联系人
-      <span style="color: red; font-size: 8px; float: right;" id="contact_span"></span>
     </div>
     <div class="describe" style="padding-right: 0px;">
       <input type="text" id="contact" name="contact" placeholder="请输入联系人" value="chenyu"
@@ -185,7 +184,6 @@
     <div class="pic"></div>
     <div class="tit" style="font-size: 13px;">
       手机号码
-      <span style="color: red; font-size: 8px; float: right;" id="telephone_span"></span>
     </div>
     <div class="describe" style="padding-right: 0px;">
       <input name="telephone" id="telephone" placeholder="请输入联系手机" value="15957408879"
@@ -197,10 +195,9 @@
     <div class="pic"></div>
     <div class="tit" style="font-size: 13px;">
       验证码
-      <span style="color: red; font-size: 8px; float: right;" id="mobile_vcode_span"></span>
     </div>
     <div class="describe" style="padding-right: 0px;">
-      <input type="text" id="mobile_vcode" name="mobile_vcode" placeholder="请输入验证码" value=""
+      <input type="text" id="mobile_vcode" name="mobile_vcode" placeholder="请输入验证码" value="4369"
              style="border: #f4f4f4 0.3px solid; color: #a2a2a2; padding-left: 10px; height: 30px;">
       <div id="getVerfyCode"
               style="position:absolute; z-index: 10; width: 80px; right: 5px; background: #3191e9; border-radius: 5px; color: #ffffff; font-size: 10px; border: none; padding: 8px; top: 10px;">
@@ -209,7 +206,7 @@
     </div>
   </div>
 
-  <div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
+  <div class="com_auth" style="display: block; padding: 0.32rem 0.5rem 0rem 0.45rem; ">
     <div class="upload_box">
       <!--    <div class="addicon" style="margin: 0 auto;">+</div>-->
       <div class="font14 font_gray9 qs-center" style="vertical-align: middle; margin-top: 15%;">点击上传营业执照</div>
@@ -226,7 +223,7 @@
     </div>
   </div>
 
-  <div class="com_auth" style="display: block; padding: 0.25rem 0.25rem;">
+  <div class="com_auth" style="display: block; padding: 0.32rem 0.5rem 0rem 0.45rem;">
     <div class="upload_box">
       <!--    <div class="addicon">+</div>-->
       <div class="font14 font_gray9 qs-center" style=" margin-top: 15%;">点击上传企业授权认证</div>
@@ -325,8 +322,7 @@
   $('#getVerfyCode').click(function () {
     if (ountdownVal < 180) return false
     var mobile = $.trim($('input[name=telephone]').val())
-    if (mobile == '') {
-      $('#telephone_span').text('*请输入手机号码')
+    if (!is_telephone()) {
       return false
     }
     doAjax()
@@ -367,10 +363,10 @@
   function is_contact () {
     var contact = $.trim($('input[name=contact]').val())
     if (!is_Exits(contact)) {
-      $('#contact_span').text('*请输入联系人')
+      qsToast({type:3,context:"请输入联系人"});
       return false
     } else if (contact.length > 10) {
-      $('#contact_span').text('*联系人1-10个字')
+      qsToast({type:3,context:"联系人1-10个字"});
     } else {
       $('#contact_span').text('')
       return true
@@ -380,10 +376,10 @@
   function is_telephone () {
     var telephone = $.trim($('input[name=telephone]').val())
     if (!is_Exits(telephone)) {
-      $('#telephone_span').text('*请输入手机号码')
+      qsToast({type:3,context:"请输入手机号码!"});
       return false
     } else if (!regularMobile.test(telephone)) {
-      $('#telephone_span').text('*手机号码格式不正确')
+      qsToast({type:3,context:"手机号码格式不正确"});
       return false
     } else {
       $('#telephone_span').text('')
@@ -392,17 +388,10 @@
   }
 
   $('#save_info').click(function () {
-    // var contact = $.trim($('input[name=contact]').val())
-    // var telephone = $.trim($('input[name=telephone]').val())
     if (is_contact() && is_telephone()) {
       $(this).text('正在保存...');
       $(this).attr('disabled', 'disabled').css({'background': '#246bab'})
       ajax_http()
-    } else {
-      $(this).text('请将信息填写完整')
-      setTimeout(function () {
-        $(this).text('保存')
-      }, 2000)
     }
   })
 
@@ -427,6 +416,7 @@
       }
       reader.onload = function (e) {
         if (file.size > 10 * 1024 * 1024) {
+
           disapperTooltip('remind', '上传图片的大小须小于10M')
           return false
         }
@@ -456,11 +446,9 @@
       success: function (r) {
         if (r.status == 1) {
           if (r.data) {
-            var qsDialogTip = $(this).dialog({title: '企业认领', footer: false, loading: true})
-            qsDialogTip.setContent('<div class="batch_delivery" style="width:400px"><div class="result_info">\
-                                                  <div class="top_txt">企业认领申请成功，请等待审核通过!</div></div></div>')
+            qsToast({type:2,context:"企业认领申请成功，请等待审核通过!"});
           } else {
-            disapperTooltip('success', r.msg)
+            qsToast({type:2,context: r.msg});
           }
           var jump_auth = parseInt('1')
           if (jump_auth) {
@@ -469,12 +457,13 @@
             }, 2000)
           }
         } else {
-          disapperTooltip('remind', r.msg)
+          qsToast({type:2,context:r.msg});
         }
         $('#save_info').text('保存')
       },
       error: function (e) {
-        console.log(e)
+        $('#save_info').text('保存')
+        qsToast({type:2,context:'认领失败'});
       }
     })
   }
