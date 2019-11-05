@@ -208,12 +208,11 @@
 
   <div class="com_auth" style="display: block; padding: 0.32rem 0.5rem 0rem 0.45rem; ">
     <div class="upload_box">
-      <!--    <div class="addicon" style="margin: 0 auto;">+</div>-->
       <div class="font14 font_gray9 qs-center" style="vertical-align: middle; margin-top: 15%;">点击上传营业执照</div>
-      <input type="file" encyp id="yy_img" enctype="multipart/form-data" accept="image/*" name="yy_img"
+      <input type="file" enctype="multipart/form-data" accept="image/*"  id="bus_license" name="bus_license"
              class="browseFile"
              onchange="xmTanUploadImg(this)"/>
-      <input type="hidden" id="certificate_img_up" name="certificate_img_up" value=""/>
+<!--      <input type="hidden" id="certificate_img_up" name="certificate_img_up" value=""/>-->
       <div class="img_box">
         <img width="100%" height="250"/><br/>
       </div>
@@ -225,11 +224,10 @@
 
   <div class="com_auth" style="display: block; padding: 0.32rem 0.5rem 0rem 0.45rem;">
     <div class="upload_box">
-      <!--    <div class="addicon">+</div>-->
       <div class="font14 font_gray9 qs-center" style=" margin-top: 15%;">点击上传企业授权认证</div>
-      <input type="file" id="qy_pass_img" enctype="multipart/form-data" accept="image/*" name="qy_pass_img"
+      <input type="file"  id="certificate_img" name="certificate_img" enctype="multipart/form-data" accept="image/*"
              class="browseFile" onchange="xmTanUploadImg(this)">
-      <input type="hidden" id="qy_pass_img_up" name="qy_pass_img_up" value="">
+<!--      <input type="hidden" id="qy_pass_img_up" name="qy_pass_img_up" value="">-->
       <div class="img_box">
         <img width="100%" height="250"/><br/>
       </div>
@@ -416,8 +414,7 @@
       }
       reader.onload = function (e) {
         if (file.size > 10 * 1024 * 1024) {
-
-          disapperTooltip('remind', '上传图片的大小须小于10M')
+          qsToast({type:2,context:"上传图片的大小须小于10M"});
           return false
         }
         console.log('成功读取....')
